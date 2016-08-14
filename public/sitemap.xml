@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/</loc>
+    <loc>/</loc>
     <lastmod>2016-08-14T15:25:18-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/Software/</loc>
+    <loc>/Software/</loc>
     <lastmod>2016-08-14T15:25:18-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/whoami/</loc>
+    <loc>/whoami/</loc>
     <lastmod>2016-08-14T14:42:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://replace-this-with-your-hugo-site.com/post/post-title/</loc>
+    <loc>/post/post-title/</loc>
     <lastmod>2016-08-14T14:41:10-05:00</lastmod>
   </url>
   

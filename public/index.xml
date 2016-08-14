@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NextWave</title>
-    <link>http://replace-this-with-your-hugo-site.com/</link>
+    <link>/</link>
     <description>Recent content on NextWave</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 14 Aug 2016 15:25:18 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Open Source Software</title>
-      <link>http://replace-this-with-your-hugo-site.com/Software/</link>
+      <link>/Software/</link>
       <pubDate>Sun, 14 Aug 2016 15:25:18 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/Software/</guid>
+      <guid>/Software/</guid>
       <description>
 
 &lt;h1 id=&#34;golang&#34;&gt;Golang&lt;/h1&gt;
@@ -38,10 +38,10 @@
     
     <item>
       <title>whoami</title>
-      <link>http://replace-this-with-your-hugo-site.com/whoami/</link>
+      <link>/whoami/</link>
       <pubDate>Sun, 14 Aug 2016 14:42:31 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/whoami/</guid>
+      <guid>/whoami/</guid>
       <description>&lt;p&gt;Independent Web Developer Consultent&lt;/p&gt;
 
 &lt;ul&gt;
@@ -54,10 +54,10 @@
     
     <item>
       <title>firstPost</title>
-      <link>http://replace-this-with-your-hugo-site.com/post/post-title/</link>
+      <link>/post/post-title/</link>
       <pubDate>Sun, 14 Aug 2016 14:41:10 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/post/post-title/</guid>
+      <guid>/post/post-title/</guid>
       <description></description>
     </item>
     
