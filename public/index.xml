@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NextWave</title>
+    <link>http://replace-this-with-your-hugo-site.com/</link>
+    <description>Recent content on NextWave</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Aug 2016 15:25:18 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Open Source Software</title>
+      <link>http://replace-this-with-your-hugo-site.com/Software/</link>
+      <pubDate>Sun, 14 Aug 2016 15:25:18 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/Software/</guid>
+      <description>
+
+&lt;h1 id=&#34;golang&#34;&gt;Golang&lt;/h1&gt;
+
+&lt;h2 id=&#34;ghelper&#34;&gt;Ghelper&lt;/h2&gt;
+
+&lt;p&gt;Golang irc Bot
+&lt;a href=&#34;https://github.com/justyntemme/Ghelper&#34;&gt;https://github.com/justyntemme/Ghelper&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;gomonitor&#34;&gt;GoMonitor&lt;/h2&gt;
+
+&lt;p&gt;Golang web server monitor
+&lt;a href=&#34;https://github.com/justyntemme/goMonitor&#34;&gt;https://github.com/justyntemme/goMonitor&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;gocoin&#34;&gt;GoCoin&lt;/h2&gt;
+
+&lt;p&gt;Golang coinfetch api interface
+&lt;a href=&#34;https://github.com/justyntemme/Gocoin&#34;&gt;https://github.com/justyntemme/Gocoin&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>whoami</title>
+      <link>http://replace-this-with-your-hugo-site.com/whoami/</link>
+      <pubDate>Sun, 14 Aug 2016 14:42:31 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/whoami/</guid>
+      <description>&lt;p&gt;Independent Web Developer Consultent&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;email JustynTemme@gmail.com&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Github &lt;a href=&#34;http://github.com/justyntemme&#34;&gt;http://github.com/justyntemme&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>firstPost</title>
+      <link>http://replace-this-with-your-hugo-site.com/post/post-title/</link>
+      <pubDate>Sun, 14 Aug 2016 14:41:10 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/post/post-title/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
