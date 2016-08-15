@@ -6,33 +6,72 @@
     <description>Recent content on NextWave</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Aug 2016 15:25:18 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 15 Aug 2016 09:49:38 -0500</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Open Source Software</title>
-      <link>/Software/</link>
-      <pubDate>Sun, 14 Aug 2016 15:25:18 -0500</pubDate>
+      <title>Contracting/Consultation</title>
+      <link>/contracting/</link>
+      <pubDate>Mon, 15 Aug 2016 09:49:38 -0500</pubDate>
       
-      <guid>/Software/</guid>
+      <guid>/contracting/</guid>
+      <description>&lt;p&gt;From website development, home automation, to Ip-based security cameras, if you are ready to join to millions of users and businesses already empowering themselves with tomorrows open source technology, shoot us an email at &lt;a href=&#34;mailto:justyntemme@gmail.com&#34;&gt;justyntemme@gmail.com&lt;/a&gt; we would love to solve your problems with our solutions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Why Open source?</title>
+      <link>/post/whyopensource/</link>
+      <pubDate>Mon, 15 Aug 2016 09:10:10 -0500</pubDate>
+      
+      <guid>/post/whyopensource/</guid>
       <description>
 
-&lt;h1 id=&#34;golang&#34;&gt;Golang&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;I often compare open source to science. To where science took this whole notion of developing ideas in the open and improving on other peoples&amp;rsquo; ideas and making it into what science is today and the incredible advances that we have had.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;h2 id=&#34;ghelper&#34;&gt;Ghelper&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Linux Torvalds&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Golang irc Bot
-&lt;a href=&#34;https://github.com/justyntemme/Ghelper&#34;&gt;https://github.com/justyntemme/Ghelper&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;security&#34;&gt;Security&lt;/h2&gt;
 
-&lt;h2 id=&#34;gomonitor&#34;&gt;GoMonitor&lt;/h2&gt;
+&lt;p&gt;Open source projects allow for peer review. Just like with science journals. Many eyes on a project are much better than a single company taking the helm of security. Open source projects are often audited by security professionals who wish to see the technology of today more secure.&lt;/p&gt;
 
-&lt;p&gt;Golang web server monitor
-&lt;a href=&#34;https://github.com/justyntemme/goMonitor&#34;&gt;https://github.com/justyntemme/goMonitor&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;sustainability&#34;&gt;Sustainability&lt;/h2&gt;
 
-&lt;h2 id=&#34;gocoin&#34;&gt;GoCoin&lt;/h2&gt;
+&lt;p&gt;In a world of ever changing technology open source is the stable rock upon which the Internet is built. A proprietary company may choose to end support to it&amp;rsquo;s application at the whim of a hat, forever hurting your business relying upon the stability you were promised. Open source technology is always available for use even years after support ends. Microsoft shutdown exchange? No problem as open source has email solutions waiting to serve.&lt;/p&gt;
 
-&lt;p&gt;Golang coinfetch api interface
-&lt;a href=&#34;https://github.com/justyntemme/Gocoin&#34;&gt;https://github.com/justyntemme/Gocoin&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;adaptiveness&#34;&gt;Adaptiveness&lt;/h2&gt;
+
+&lt;p&gt;If you have ever wished a feature in a program you have longed for the adaptiveness of open source. When facing a problem where the only solution is to change the actual program, open source not only understands your problem, but allows for you to take the code base, change it, and publish it to production. By using open source technology you are no longer binded by the proprietary parent company of any software solution.&lt;/p&gt;
+
+&lt;h2 id=&#34;propelling-the-world-forward&#34;&gt;Propelling the world Forward&lt;/h2&gt;
+
+&lt;p&gt;Be a part of the huge change that is happening in the world. Be a part of the open source movement and change the world for the better.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>/software/</link>
+      <pubDate>Sun, 14 Aug 2016 15:25:18 -0500</pubDate>
+      
+      <guid>/software/</guid>
+      <description>
+
+&lt;h3 id=&#34;ghelper&#34;&gt;Ghelper&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/justyntemme/Ghelper&#34;&gt;Golang irc Bot&lt;/a&gt;
+&lt;img src=&#34;../images/ghelper.png&#34; alt=&#34;ghelper&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;gomonitor&#34;&gt;GoMonitor&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/justyntemme/goMonitor&#34;&gt;Golang web server monitor&lt;/a&gt;
+&lt;img src=&#34;../images/gomonitor.png&#34; alt=&#34;gomonitor&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;gocoin&#34;&gt;GoCoin&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/justyntemme/Gocoin&#34;&gt;Golang coinfetch api interface&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -42,23 +81,24 @@
       <pubDate>Sun, 14 Aug 2016 14:42:31 -0500</pubDate>
       
       <guid>/whoami/</guid>
-      <description>&lt;p&gt;Independent Web Developer Consultent&lt;/p&gt;
+      <description>&lt;p&gt;Independent Developer/ Technology Consultant&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;email JustynTemme@gmail.com&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Email &lt;a href=&#34;mailto:JustynTemme@gmail.com&#34;&gt;JustynTemme@gmail.com&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Github &lt;a href=&#34;http://github.com/justyntemme&#34;&gt;http://github.com/justyntemme&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://github.com/justyntemme&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
     
     <item>
-      <title>firstPost</title>
+      <title>Who is Nextwave?</title>
       <link>/post/post-title/</link>
       <pubDate>Sun, 14 Aug 2016 14:41:10 -0500</pubDate>
       
       <guid>/post/post-title/</guid>
-      <description></description>
+      <description>&lt;p&gt;&lt;strong&gt;NextWave&lt;/strong&gt; is a technology solution company empowering businesses with the next wave of technology. Open source allows for business to break the chains of old proprietary monoliths and become part of a growing community of those who care about the software they run. At NextWave we help businesses use the technology of tomorrow.&lt;/p&gt;
+</description>
     </item>
     
   </channel>
