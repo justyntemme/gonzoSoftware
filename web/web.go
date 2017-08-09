@@ -7,7 +7,7 @@ import (
 
 func Run() {
     panic(http.ListenAndServe(":8080", &logServer{
-        hdl: http.FileServer(http.Dir("public/")),
+        hdl: http.FileServer(http.Dir("/go/src/github.com/justyntemme/nextwave/public/")),
     }))
 }
 
