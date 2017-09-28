@@ -1,0 +1,35 @@
+BaseURL			="https://nextwavesolutions.io/"
+LanguageCode		="US-EN"
+Title			="NextWave Solutions"
+paginate 		= 5
+pluralizelisttitles 	= false
+DisqussShortname 	="Justyn Temme"
+Copyright 		="All rights reserved - 2017"
+canonifyurls 		=true
+theme			="casper"
+
+[params]
+	description 	= "NextWave Solutions LLC"
+	cover 		= "images/Love-Coding.png"
+	author		= "Justyn Temme"
+	authorlocation	= "United States of America"
+	authorwebsite	= "https://nextwavesolutions.io"
+	authorbio	= "Open Source Developer"
+	githubname	= "justyntemme"
+#	twittername	=	
+	linkinName	= "justyntemme"
+[[menu.main]]
+	name		= "Github repos"
+	weight		= -150
+	identifier	= "github"
+	url		= "https://github.com/justyntemme/"	
+[[menu.main]]
+	name		= "Home"
+	weight		= 100
+	identifier	= "home"
+	url		= "/"
+[[menu.main]]
+	name		= "Blog"
+	weight		= 99
+	identifier	= "blog"
+	url		= "/#content"		
