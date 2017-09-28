@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NextWave Solutions</title>
+    <link>https://nextwavesolutions.io/</link>
+    <description>Recent content on NextWave Solutions</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>US-EN</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <lastBuildDate>Thu, 28 Sep 2017 17:48:13 -0500</lastBuildDate>
+    
+	<atom:link href="https://nextwavesolutions.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Who is NextWave?</title>
+      <link>https://nextwavesolutions.io/post/whoami/</link>
+      <pubDate>Thu, 28 Sep 2017 17:48:13 -0500</pubDate>
+      
+      <guid>https://nextwavesolutions.io/post/whoami/</guid>
+      <description>NextWave is a technology solution company empowering businesses with the next wave of technology. Open source allows for business to break the chains of old proprietary monoliths and become part of a growing community of those who care about the software they run. At NextWave we help businesses use the technology of tomorrow.</description>
+    </item>
+    
+    <item>
+      <title>Contracting/Consulting</title>
+      <link>https://nextwavesolutions.io/post/consulting/</link>
+      <pubDate>Thu, 28 Sep 2017 17:43:48 -0500</pubDate>
+      
+      <guid>https://nextwavesolutions.io/post/consulting/</guid>
+      <description>From website development, home automation, to Ip-based security cameras, if you are ready to join to millions of users and businesses already empowering themselves with tomorrows open source technology, email us at justyn@nextwavesolutions.io we would love to solve your problems with our solutions.</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://nextwavesolutions.io/post/about/</link>
+      <pubDate>Thu, 28 Sep 2017 17:30:00 -0500</pubDate>
+      
+      <guid>https://nextwavesolutions.io/post/about/</guid>
+      <description>Open Source Developer / Technology Consultant
+ Email justyn@nextwavesolutions.io Github  </description>
+    </item>
+    
+    <item>
+      <title>Why open source</title>
+      <link>https://nextwavesolutions.io/post/whyopensource/</link>
+      <pubDate>Thu, 28 Sep 2017 17:01:20 -0500</pubDate>
+      
+      <guid>https://nextwavesolutions.io/post/whyopensource/</guid>
+      <description>“I often compare open source to science. To where science took this whole notion of developing ideas in the open and improving on other peoples’ ideas and making it into what science is today and the incredible advances that we have had.”
+ Linus Torvalds
+Security Open source projects allow for peer review. Just like with science journals. Many eyes on a project are much better than a single company taking the helm of security.</description>
+    </item>
+    
+  </channel>
+</rss>
