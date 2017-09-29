@@ -12,15 +12,15 @@
 
 
 
-<meta name="twitter:title" content="TLS (SSL) All the Things!"/>
+<meta name="twitter:title" content="Why Fedora?"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="TLS (SSL) All the Things! &middot; NextWave Solutions" />
+  	<meta property="og:title" content="Why Fedora? &middot; NextWave Solutions" />
   	<meta property="og:site_name" content="NextWave Solutions" />
-  	<meta property="og:url" content="https://nextwavesolutions.io/post/tlsallthethings/" />
+  	<meta property="og:url" content="https://nextwavesolutions.io/post/whyfedora/" />
 
     
         
@@ -31,15 +31,15 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2017-09-28T19:11:08-05:00" />
+    <meta property="article:published_time" content="2017-09-29T12:39:51-05:00" />
 
     
     
 
-    <title>TLS (SSL) All the Things! &middot; NextWave Solutions</title>
+    <title>Why Fedora? &middot; NextWave Solutions</title>
 
     
-    <meta name="description" content="So you have heard about it, you use it, and it also was once an endeavor that could cost quite a bit of cash. Now thanks to Letsencrypt it&amp;rsquo;s easier than e" />
+    <meta name="description" content="Many Linux advocates are familiar with CentOS server side, as well as RHEL. Fedora is often treated as the desktop RHEL distribution, instead of a fully qualifi" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -63,7 +63,7 @@
     
     <meta name="generator" content="Hugo 0.27-DEV" />
 
-    <link rel="canonical" href="https://nextwavesolutions.io/post/tlsallthethings/" />
+    <link rel="canonical" href="https://nextwavesolutions.io/post/whyfedora/" />
 
     
       
@@ -94,23 +94,23 @@
         "description": Open Source Developer
         
     },
-    "headline": TLS (SSL) All the Things!,
-    "name": TLS (SSL) All the Things!,
-    "wordCount": 362,
+    "headline": Why Fedora?,
+    "name": Why Fedora?,
+    "wordCount": 419,
     "timeRequired": "PT2M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": en
     },
-    "url": https://nextwavesolutions.io/post/tlsallthethings/,
-    "datePublished": 2017-09-28T19:11Z,
-    "dateModified": 2017-09-28T19:11Z,
+    "url": https://nextwavesolutions.io/post/whyfedora/,
+    "datePublished": 2017-09-29T12:39Z,
+    "dateModified": 2017-09-29T12:39Z,
     
     
     "description": ,
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": https://nextwavesolutions.io/post/tlsallthethings/
+        "@id": https://nextwavesolutions.io/post/whyfedora/
     }
 }
     </script>
@@ -199,13 +199,13 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">TLS (SSL) All the Things!</h1>
+        <h1 class="post-title">Why Fedora?</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2017-09-28T19:11:08-05:00">
-            Sep 28, 2017
+          <time class="post-date" datetime="2017-09-29T12:39:51-05:00">
+            Sep 29, 2017
           </time>
         
          
@@ -215,60 +215,19 @@
     <section class="post-content">
       
 
-<p>So you have heard about it, you use it, and it also was once an endeavor that could cost quite a bit of cash. Now thanks to Letsencrypt it&rsquo;s easier than ever to force HTTPS traffic to even static websites on your web server.</p>
+<p>Many Linux advocates are familiar with CentOS server side, as well as RHEL. Fedora is often treated as the desktop RHEL distribution, instead of a fully qualified server distribution. Today we will look at several reasons to use Fedora server side, as well as compare it to other server distros.</p>
 
-<h3 id="letsencrypt">Letsencrypt</h3>
+<h3 id="packages-we-have-hit-the-sweet-spot">Packages | We have hit the sweet spot</h3>
 
-<p>Letsencrypt is a free CA (certificate authority) that let&rsquo;s anyone that owns a domain generate a trusted certificate for that domain. There are many guides to do this, my favorite being our friends at <a href="https://fedoramagazine.org/letsencrypt-now-available-fedora/" title="letsencrypt">Fedora Magazine</a>. Setup the letsencrypt certificate before continuing reading.</p>
+<p>Fedora lives in a sweet spot. The packages stay very stable, and i still manage to get up to date software without having to sacrifice stability (I&rsquo;m looking at you arch). It is often called a testing ground for RHEL software. While this does tend to get the first wave of a new technology, dependability is not forgotten. With the adoption of OpenQA thanks to OpenSuse, as well as a high standard for quality releases, the distribution has never been more ready to host production systems.</p>
 
-<h3 id="apache-letsencrypt">Apache + Letsencrypt</h3>
+<h3 id="cockpit-more-than-just-a-tool-a-direction">Cockpit | More than just a tool, a direction</h3>
 
-<p>Now that you have your cert files you will need to move them to the apache key directory.</p>
+<p>Cockpit is a great example of one of the ways fedora is focusing on its server version of the distribution. The package can be built and ran on any Linux distro, however the fedora team are working on improving the server manager, as well as making sure releases work great. Cockpit is not the best server/container management engine by a long shot. However having this tool two commands away when starting a system install is something not to take for granted. Rather than look to the package for what it brings, look to what cockpit means for the fedora team. A team backed by one of the biggest linux componies is making tools on top of an already great server distro. Being backed by RHEL is much more than a financial backbone. RHEL brings experience, knowledge, and a direction for the team to head.</p>
 
-<ul>
-<li>SSLCertificateFile /etc/pki/tls/certs/mydomain.com.crt</li>
-<li>SSLCertificateChainFile /etc/pki/tls/certs/mydomain.com.chain.crt</li>
-<li>SSLCertificateKeyFile /etc/pki/tls/private/mydomain.com.key</li>
-</ul>
+<h3 id="selinux-sudo-setenfore-0">Selinux | Sudo setenfore 0</h3>
 
-<p>After moving the key files to the proper directory, it is time to tell nginx to use SSL, and where the key files are located. The Apache config files are located in /etc/httpd/ . The first config file we will need to edit is the ssl.conf found in /etc/httpd/conf.d/ssl.conf. Here we will tell Apache to listen on port 443 by adding
-<code>Listen 443 https</code> to the file head. You will find locations to add the location of your SSL cert files.</p>
-
-<pre><code>SSLCertificateFile /etc/pki/tls/certs/mydomain.com.crt 
-
-SSLCertificateKeyFile /etc/pki/tls/private/mydomain.com.key 
-
-SSLCertificateChainFile /etc/pki/tls/certs/mydomain.com.chain.crt
-</code></pre>
-
-<h3 id="apache-letsencrypt-docker">Apache + Letsencrypt + &hellip;&hellip; Docker?</h3>
-
-<p>Now that we have TLS (SSL) enabled with Apache, let&rsquo;s have some fun with reverse proxying and enable ssl to a web server in a docker container. Docker is great for containerizing applications, especially webs ervers. I will assume you have a docker container listening on port 9090 that accepts a normal HTTP connection. We will take advantage of the ability for Apache to seamlessly pass TLS traffic to a local HTTP web server. Back in your ssl.conf file you will need to create a VirtualHost for port 443. An example is given below.</p>
-
-<pre><code>&lt;VirtualHost *:443&gt;
-	ServerName		mydomain.com
-	SSLEngine		on
-
-	SSLCertificateFile	/etc/pki/tls/certs/mydomain.com.crt
-	SSLCertificateChainFile	/etc/pki/tls/certs/mydomain.com.chain.crt
-	SSLCertificateKeyFile	/etc/pki/tls/private/mydomain.com.key
-
-	SSLProxyEngine		off
-	
-	SSLProxyVerify		none
-	SSLProxyCheckPeerCN	off
-	SSLProxyCheckPeerName	off
-
-	ProxyPreserveHost	on
-	ProxyRequests		off
-	ProxyPass		/	http://mydomain.com:9090/
-	ProxyPassReverse	/	http://mydomain.com:9090/
-	
-	ErrorLog		/var/log/httpd/mydomain_apache_proxy_https_error.log
-&lt;/VirtualHost&gt;	
-</code></pre>
-
-<p>Now with a simple <code>sudo systemctl restart httpd</code> you can have a reverse apache proxy serving TLS (SSL) to a standard web server in a docker container.</p>
+<p>While most peoples first reaction to a Selinux bug is just to turn it off, there are actually many simple ways to identify and solve issues. From <code>audit2allow</code> to the GUI Selinux troubleshooter, there are a number of tools to help with any Selinux issue. By turning the entire system off you take away one of fedoras greatest tools. Selinux not only enforces policy, but alerts when processes try and break a policy. This is a great tool for system admins to monitor live systems. Selinux and the tools provided are just another one of the great examples of tooling that comes with fedora. This extensive tool set built around a distro helps make it production ready.</p>
 
     </section>
 
@@ -303,19 +262,19 @@ SSLCertificateChainFile /etc/pki/tls/certs/mydomain.com.chain.crt
     
 <section class="share">
   <h4>Share this post</h4>
-  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=TLS%20%28SSL%29%20All%20the%20Things%21&nbsp;-&nbsp;NextWave%20Solutions&amp;url=https%3a%2f%2fnextwavesolutions.io%2fpost%2ftlsallthethings%2f"
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Why%20Fedora%3f&nbsp;-&nbsp;NextWave%20Solutions&amp;url=https%3a%2f%2fnextwavesolutions.io%2fpost%2fwhyfedora%2f"
       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
       <span class="hidden">Twitter</span>
   </a>
-  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnextwavesolutions.io%2fpost%2ftlsallthethings%2f"
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnextwavesolutions.io%2fpost%2fwhyfedora%2f"
       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
       <span class="hidden">Facebook</span>
   </a>
-  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fnextwavesolutions.io%2fpost%2ftlsallthethings%2f&amp;description=TLS%20%28SSL%29%20All%20the%20Things%21"
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fnextwavesolutions.io%2fpost%2fwhyfedora%2f&amp;description=Why%20Fedora%3f"
       onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
       <span class="hidden">Pinterest</span>
   </a>
-  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fnextwavesolutions.io%2fpost%2ftlsallthethings%2f"
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fnextwavesolutions.io%2fpost%2fwhyfedora%2f"
      onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
       <span class="hidden">Google+</span>
   </a>
@@ -339,17 +298,10 @@ SSLCertificateChainFile /etc/pki/tls/certs/mydomain.com.chain.crt
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="https://nextwavesolutions.io/post/whyfedora/">
-          <section class="post">
-              <h2>Why Fedora?</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="no-cover" href="https://nextwavesolutions.io/post/whoami/">
+      <a class="read-next-story prev" style="no-cover" href="https://nextwavesolutions.io/post/tlsallthethings/">
           <section class="post">
-              <h2>Who is NextWave?</h2>
+              <h2>TLS (SSL) All the Things!</h2>
           </section>
       </a>
   
