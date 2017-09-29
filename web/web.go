@@ -3,11 +3,13 @@ package web
 import (
 	"fmt"
 	"net/http"
+
+	"github.com/rs/cors"
 )
 
 func Run() {
 	panic(http.ListenAndServe(":8080", &logServer{
-		hdl: http.FileServer(http.Dir("/go/src/github.com/justyntemme/nextwave/nextwave/public/")),
+		hdl: cors.Default().Handler(http.FileServer(http.Dir("/go/src/github.com/justyntemme/nextwave/nextwave/public/"))),
 	}))
 }
 
