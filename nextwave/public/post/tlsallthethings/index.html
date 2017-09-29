@@ -12,15 +12,15 @@
 
 
 
-<meta name="twitter:title" content="Who is NextWave?"/>
+<meta name="twitter:title" content="TLS (SSL) All the Things!"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@"/>
 
 
 
-  	<meta property="og:title" content="Who is NextWave? &middot; NextWave Solutions" />
+  	<meta property="og:title" content="TLS (SSL) All the Things! &middot; NextWave Solutions" />
   	<meta property="og:site_name" content="NextWave Solutions" />
-  	<meta property="og:url" content="https://nextwavesolutions.io/post/whoami/" />
+  	<meta property="og:url" content="https://nextwavesolutions.io/post/tlsallthethings/" />
 
     
         
@@ -31,15 +31,15 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2017-09-28T17:48:13-05:00" />
+    <meta property="article:published_time" content="2017-09-28T19:11:08-05:00" />
 
     
     
 
-    <title>Who is NextWave? &middot; NextWave Solutions</title>
+    <title>TLS (SSL) All the Things! &middot; NextWave Solutions</title>
 
     
-    <meta name="description" content="NextWave is a technology solution company empowering businesses with the next wave of technology. Open source allows for business to break the chains of old pro" />
+    <meta name="description" content="So you have heard about it, you use it, and it also was once an endeavor that could cost quite a bit of cash. Now thanks to Letsencrypt it&amp;rsquo;s easier than e" />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -63,7 +63,7 @@
     
     <meta name="generator" content="Hugo 0.27-DEV" />
 
-    <link rel="canonical" href="https://nextwavesolutions.io/post/whoami/" />
+    <link rel="canonical" href="https://nextwavesolutions.io/post/tlsallthethings/" />
 
     
       
@@ -94,23 +94,23 @@
         "description": Open Source Developer
         
     },
-    "headline": Who is NextWave?,
-    "name": Who is NextWave?,
-    "wordCount": 53,
-    "timeRequired": "PT1M",
+    "headline": TLS (SSL) All the Things!,
+    "name": TLS (SSL) All the Things!,
+    "wordCount": 362,
+    "timeRequired": "PT2M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": en
     },
-    "url": https://nextwavesolutions.io/post/whoami/,
-    "datePublished": 2017-09-28T17:48Z,
-    "dateModified": 2017-09-28T17:48Z,
+    "url": https://nextwavesolutions.io/post/tlsallthethings/,
+    "datePublished": 2017-09-28T19:11Z,
+    "dateModified": 2017-09-28T19:11Z,
     
     
     "description": ,
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": https://nextwavesolutions.io/post/whoami/
+        "@id": https://nextwavesolutions.io/post/tlsallthethings/
     }
 }
     </script>
@@ -155,7 +155,7 @@
             </li>
         
             
-            <li class="nav-opened nav-current" role="presentation">
+            <li class="nav-opened" role="presentation">
             	<a href="https://nextwavesolutions.io/post/whoami/">Who is NextWave?</a>
             </li>
         
@@ -199,12 +199,12 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">Who is NextWave?</h1>
+        <h1 class="post-title">TLS (SSL) All the Things!</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2017-09-28T17:48:13-05:00">
+          <time class="post-date" datetime="2017-09-28T19:11:08-05:00">
             Sep 28, 2017
           </time>
         
@@ -213,7 +213,62 @@
     </header>
 
     <section class="post-content">
-      <p><strong>NextWave</strong> is a technology solution company empowering businesses with the next wave of technology. Open source allows for business to break the chains of old proprietary monoliths and become part of a growing community of those who care about the software they run. At NextWave we help businesses use the technology of tomorrow.</p>
+      
+
+<p>So you have heard about it, you use it, and it also was once an endeavor that could cost quite a bit of cash. Now thanks to Letsencrypt it&rsquo;s easier than ever to force HTTPS traffic to even static websites on your web server.</p>
+
+<h3 id="letsencrypt">Letsencrypt</h3>
+
+<p>Letsencrypt is a free CA (certificate authority) that let&rsquo;s anyone that owns a domain generate a trusted certificate for that domain. There are many guides to do this, my favorite being our friends at <a href="https://fedoramagazine.org/letsencrypt-now-available-fedora/" title="letsencrypt">Fedora Magazine</a>. Setup the letsencrypt certificate before continuing reading.</p>
+
+<h3 id="apache-letsencrypt">Apache + Letsencrypt</h3>
+
+<p>Now that you have your cert files you will need to move them to the apache key directory.</p>
+
+<ul>
+<li>SSLCertificateFile /etc/pki/tls/certs/mydomain.com.crt</li>
+<li>SSLCertificateChainFile /etc/pki/tls/certs/mydomain.com.chain.crt</li>
+<li>SSLCertificateKeyFile /etc/pki/tls/private/mydomain.com.key</li>
+</ul>
+
+<p>After moving the key files to the proper directory, it is time to tell nginx to use SSL, and where the key files are located. The Apache config files are located in /etc/httpd/ . The first config file we will need to edit is the ssl.conf found in /etc/httpd/conf.d/ssl.conf. Here we will tell Apache to listen on port 443 by adding
+<code>Listen 443 https</code> to the file head. You will find locations to add the location of your SSL cert files.</p>
+
+<pre><code>SSLCertificateFile /etc/pki/tls/certs/mydomain.com.crt 
+
+SSLCertificateKeyFile /etc/pki/tls/private/mydomain.com.key 
+
+SSLCertificateChainFile /etc/pki/tls/certs/mydomain.com.chain.crt
+</code></pre>
+
+<h3 id="apache-letsencrypt-docker">Apache + Letsencrypt + &hellip;&hellip; Docker?</h3>
+
+<p>Now that we have TLS (SSL) enabled with Apache, let&rsquo;s have some fun with reverse proxying and enable ssl to a web server in a docker container. Docker is great for containerizing applications, especially webs ervers. I will assume you have a docker container listening on port 9090 that accepts a normal HTTP connection. We will take advantage of the ability for Apache to seamlessly pass TLS traffic to a local HTTP web server. Back in your ssl.conf file you will need to create a VirtualHost for port 443. An example is given below.</p>
+
+<pre><code>&lt;VirtualHost *:443&gt;
+	ServerName		mydomain.com
+	SSLEngine		on
+
+	SSLCertificateFile	/etc/pki/tls/certs/mydomain.com.crt
+	SSLCertificateChainFile	/etc/pki/tls/certs/mydomain.com.chain.crt
+	SSLCertificateKeyFile	/etc/pki/tls/private/mydomain.com.key
+
+	SSLProxyEngine		off
+	
+	SSLProxyVerify		none
+	SSLProxyCheckPeerCN	off
+	SSLProxyCheckPeerName	off
+
+	ProxyPreserveHost	on
+	ProxyRequests		off
+	ProxyPass		/	http://mydomain.com:9090/
+	ProxyPassReverse	/	http://mydomain.com:9090/
+	
+	ErrorLog		/var/log/httpd/mydomain_apache_proxy_https_error.log
+&lt;/VirtualHost&gt;	
+</code></pre>
+
+<p>Now with a simple <code>sudo systemctl restart httpd</code> you can have a reverse apache proxy serving TLS (SSL) to a standard web server in a docker container.</p>
 
     </section>
 
@@ -248,19 +303,19 @@
     
 <section class="share">
   <h4>Share this post</h4>
-  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Who%20is%20NextWave%3f&nbsp;-&nbsp;NextWave%20Solutions&amp;url=https%3a%2f%2fnextwavesolutions.io%2fpost%2fwhoami%2f"
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=TLS%20%28SSL%29%20All%20the%20Things%21&nbsp;-&nbsp;NextWave%20Solutions&amp;url=https%3a%2f%2fnextwavesolutions.io%2fpost%2ftlsallthethings%2f"
       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
       <span class="hidden">Twitter</span>
   </a>
-  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnextwavesolutions.io%2fpost%2fwhoami%2f"
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnextwavesolutions.io%2fpost%2ftlsallthethings%2f"
       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
       <span class="hidden">Facebook</span>
   </a>
-  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fnextwavesolutions.io%2fpost%2fwhoami%2f&amp;description=Who%20is%20NextWave%3f"
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fnextwavesolutions.io%2fpost%2ftlsallthethings%2f&amp;description=TLS%20%28SSL%29%20All%20the%20Things%21"
       onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
       <span class="hidden">Pinterest</span>
   </a>
-  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fnextwavesolutions.io%2fpost%2fwhoami%2f"
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fnextwavesolutions.io%2fpost%2ftlsallthethings%2f"
      onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
       <span class="hidden">Google+</span>
   </a>
@@ -284,17 +339,10 @@
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="https://nextwavesolutions.io/post/tlsallthethings/">
-          <section class="post">
-              <h2>TLS (SSL) All the Things!</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="no-cover" href="https://nextwavesolutions.io/post/consulting/">
+      <a class="read-next-story prev" style="no-cover" href="https://nextwavesolutions.io/post/whoami/">
           <section class="post">
-              <h2>Contracting/Consulting</h2>
+              <h2>Who is NextWave?</h2>
           </section>
       </a>
   

@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>US-EN</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Thu, 28 Sep 2017 17:48:13 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 28 Sep 2017 19:11:08 -0500</lastBuildDate>
     
 	<atom:link href="https://nextwavesolutions.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TLS (SSL) All the Things!</title>
+      <link>https://nextwavesolutions.io/post/tlsallthethings/</link>
+      <pubDate>Thu, 28 Sep 2017 19:11:08 -0500</pubDate>
+      
+      <guid>https://nextwavesolutions.io/post/tlsallthethings/</guid>
+      <description>So you have heard about it, you use it, and it also was once an endeavor that could cost quite a bit of cash. Now thanks to Letsencrypt it&amp;rsquo;s easier than ever to force HTTPS traffic to even static websites on your web server.
+Letsencrypt Letsencrypt is a free CA (certificate authority) that let&amp;rsquo;s anyone that owns a domain generate a trusted certificate for that domain. There are many guides to do this, my favorite being our friends at Fedora Magazine.</description>
+    </item>
     
     <item>
       <title>Who is NextWave?</title>
