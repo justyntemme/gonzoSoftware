@@ -1,6 +1,7 @@
-FROM golang:1.8
+FROM golang:latest
 
 RUN go get github.com/justyntemme/nextwave
+RUN go install github.com/justyntemme/nextwave
 RUN cp -r /go/src/github.com/justyntemme/nextwave/nextwave/public /go/bin/
 EXPOSE 8080
 ENTRYPOINT ["nextwave"]
