@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>US-EN</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Fri, 29 Sep 2017 12:39:51 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 29 Sep 2017 16:53:40 -0500</lastBuildDate>
     
 	<atom:link href="https://nextwavesolutions.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Contain Go</title>
+      <link>https://nextwavesolutions.io/post/containgo/</link>
+      <pubDate>Fri, 29 Sep 2017 16:53:40 -0500</pubDate>
+      
+      <guid>https://nextwavesolutions.io/post/containgo/</guid>
+      <description>So you have just learned Golang, built a webserver, and are ready to show the world what you can do. That&amp;rsquo;s great! Go is a very great language that scales well. In fact, many of the tools used to deliver this web page to you are written in Go. Hugo, a static website generator, was used to build the webpage. A simple Go file server is used to serve the webpage.</description>
+    </item>
     
     <item>
       <title>Why Fedora?</title>
