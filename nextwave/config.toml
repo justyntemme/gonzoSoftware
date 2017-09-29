@@ -16,8 +16,8 @@ theme			="casper"
 	authorwebsite	= "https://nextwavesolutions.io"
 	authorbio	= "Open Source Developer"
 	githubname	= "justyntemme"
-#	twittername	=	
-	linkinName	= "justyntemme"
+	twittername	= "nextwavesllc"	
+	linkdinName	= "justyntemme"
 [[menu.main]]
 	name		= "Github repos"
 	weight		= -150
