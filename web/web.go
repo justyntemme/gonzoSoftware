@@ -17,6 +17,8 @@ type logServer struct {
 
 func (l *logServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	fmt.Println(r.RemoteAddr, r.URL, r.URL.Path)
+	w.Header().Set("Content-Type", "text/html; charset=utf-8")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	l.hdl.ServeHTTP(w, r)
 }
 
