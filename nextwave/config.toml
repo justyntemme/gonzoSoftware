@@ -15,9 +15,9 @@ theme			="casper"
 	authorlocation	= "United States of America"
 	authorwebsite	= "https://nextwavesolutions.io"
 	authorbio	= "Open Source Developer"
-	githubname	= "justyntemme"
-	twittername	= "nextwavesllc"	
-	linkedin	= "justyntemme"
+	githubName	= "justyntemme"
+	twitterName	= "nextwavesllc"	
+	linkedinName	= "justyntemme"
 [[menu.main]]
 	name		= "Github repos"
 	weight		= -150
