@@ -27,7 +27,7 @@ The public ledger (Blockchain) is the public record of every transaction ever su
 ## Why Does it matter
 So what's the point to all this technology?
 
-### Decentrilization
+### Decentralization
 Becuase there is no central server handling all the transactions, the system is globally checked by miners all over the globe. There is no central agency responsible with authority and ability to act corrupt with selfish interests. As we have seen with many countries and institutions, absolute power corrupts. By creating a network in which no party has absolute control, we create a network that can stand against corruptioon. 
 
 #### Miner
