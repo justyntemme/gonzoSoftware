@@ -12,15 +12,15 @@
 
 
 
-<meta name="twitter:title" content="Contain Go"/>
+<meta name="twitter:title" content="What is Bitcoin?"/>
 <meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@nextwavesllc"/>
 
 
 
-  	<meta property="og:title" content="Contain Go &middot; NextWave Solutions" />
+  	<meta property="og:title" content="What is Bitcoin? &middot; NextWave Solutions" />
   	<meta property="og:site_name" content="NextWave Solutions" />
-  	<meta property="og:url" content="https://nextwavesolutions.io/post/containgo/" />
+  	<meta property="og:url" content="https://nextwavesolutions.io/post/whatisbitcoin/" />
 
     
         
@@ -31,15 +31,15 @@
     
     <meta property="og:description" content="" />
   	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2017-09-29T16:53:40-05:00" />
+    <meta property="article:published_time" content="2017-11-11T13:42:13-06:00" />
 
     
     
 
-    <title>Contain Go &middot; NextWave Solutions</title>
+    <title>What is Bitcoin? &middot; NextWave Solutions</title>
 
     
-    <meta name="description" content="So you have just learned Golang, built a webserver, and are ready to show the world what you can do. That&amp;rsquo;s great! Go is a very great language that scales" />
+    <meta name="description" content="What Is it Bitcoin is a decentralized cryptocurrency that has recently risen to quite a popularity among enthusiasts and investors alike. Originally created by " />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -63,7 +63,7 @@
     
     <meta name="generator" content="Hugo 0.27-DEV" />
 
-    <link rel="canonical" href="https://nextwavesolutions.io/post/containgo/" />
+    <link rel="canonical" href="https://nextwavesolutions.io/post/whatisbitcoin/" />
 
     
       
@@ -94,23 +94,23 @@
         "description": Open Source Developer
         
     },
-    "headline": Contain Go,
-    "name": Contain Go,
-    "wordCount": 561,
+    "headline": What is Bitcoin?,
+    "name": What is Bitcoin?,
+    "wordCount": 433,
     "timeRequired": "PT3M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": en
     },
-    "url": https://nextwavesolutions.io/post/containgo/,
-    "datePublished": 2017-09-29T16:53Z,
-    "dateModified": 2017-09-29T16:53Z,
+    "url": https://nextwavesolutions.io/post/whatisbitcoin/,
+    "datePublished": 2017-11-11T13:42Z,
+    "dateModified": 2017-11-11T13:42Z,
     
     
     "description": ,
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": https://nextwavesolutions.io/post/containgo/
+        "@id": https://nextwavesolutions.io/post/whatisbitcoin/
     }
 }
     </script>
@@ -199,13 +199,13 @@
   <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">Contain Go</h1>
+        <h1 class="post-title">What is Bitcoin?</h1>
         <small></small>
 
         <section class="post-meta">
         
-          <time class="post-date" datetime="2017-09-29T16:53:40-05:00">
-            Sep 29, 2017
+          <time class="post-date" datetime="2017-11-11T13:42:13-06:00">
+            Nov 11, 2017
           </time>
         
          
@@ -215,63 +215,56 @@
     <section class="post-content">
       
 
-<p>So you have just learned Golang, built a webserver, and are ready to show the world what you can do. That&rsquo;s great! Go is a very great language that scales well. In fact, many of the tools used to deliver this web page to you are written in Go. Hugo, a static website generator, was used to build the webpage. A simple Go file server is used to serve the webpage. Docker, the application responsible for containerizing the web server, is also written in go. So how <strong>do</strong> we combine these great Go technologies to deliver a containerized web server? Today, we will attempt to answer that question, as well as teach you some great practices for making website updates relatively easy.</p>
+<h2 id="what-is-it">What Is it</h2>
 
-<h3 id="go-webserver">Go Webserver</h3>
+<p>Bitcoin is a decentralized cryptocurrency that has recently risen to quite a popularity among enthusiasts and investors alike. Originally created by Satoshi Nakamoto, an anonymous member of an online community. The real identity of this creator has never been discovered.</p>
 
-<p>Go is great for hosting simple websites that you want to show to the world. You can find many examples of a web server in action. For today I will assume you have a working web server listening on port 8080. Below is an example of a file server sharing the contents of /usr/share/doc.</p>
+<h2 id="how-does-it-work">How does it work</h2>
 
-<pre><code>package main
+<p>Bitcoin works by creating a network of computers that relay transactions between each other. Each transaction is signed by the sender with a cryptographic key (explained below) that guarantees a few things.</p>
 
-import (
-	&quot;log&quot;
-	&quot;net/http&quot;
-)
+<ul>
+<li>The Sender has the required funds</li>
+<li>The Sender does, in fact, have access to the funds</li>
+</ul>
 
-func main() {
-	// Simple static webserver:
-	log.Fatal(http.ListenAndServe(&quot;:8080&quot;, http.FileServer(http.Dir(&quot;/usr/share/doc&quot;))))
-}
-</code></pre>
+<h3 id="cryptographic-keys">Cryptographic keys</h3>
 
-<p>This example can be found <a href="https://golang.org/pkg/net/http/#example_FileServer">here</a></p>
+<blockquote>
+<p>A cryptographic key is a string of bits used by a cryptographic algorithm to transform plain text into cipher text or vice versa. This key remains private and ensures secure communication.  -Techopedia</p>
+</blockquote>
 
-<h3 id="docker-file">Docker File</h3>
+<h3 id="cryptographic-signing">Cryptographic signing</h3>
 
-<p>Now that you have a working Go file server, and some sort of index.html within /usr/share/doc, it is time to build your docker file. This docker file will be built after every update of the info you have in /usr/share/doc. By hosting your website on github you will be able to take advantage of go get, Golangs command to fetch a remote git repository. Here is an example Docker file. Note: You will need to set your GOROOT on your server to /go and chown /go to the user running the command. You can set this by placing <code>export GOROOT=/go</code> in <code>~/.bashrc</code> after you have created and chowned the directory. Be sure to <code>source ~/.bashrc</code> so your current session knows of the global variable assignment.</p>
+<p>As each Cryptographic key is unique, by signing the transaction on the ledger with key you are verifying you wish to send the coin, and it is, in fact, you sending the coin.</p>
 
-<h4 id="dockerfile">Dockerfile</h4>
+<h3 id="public-ledger">Public Ledger</h3>
 
-<pre><code># Sets the docker image base. We will be using the latest golang image to run our web server
-FROM golang:latest
+<p>The public ledger (Blockchain) is the public record of every transaction ever submitted to the bitcoin network.</p>
 
-# Using Go we are able to go get our webserver/website with one clone request to the repository
-RUN go get github.com/myprofile/mywebserverrepo
+<h2 id="why-does-it-matter">Why Does it matter</h2>
 
-# go install builds the binary for the web server and moves it into $GOROOT/bin/ 
-RUN go install github.com/myprofile/mywebserverrepo
+<p>So what&rsquo;s the point to all this technology?</p>
 
-# go get installs the repository to our local /go/src/github/myprofile GOROOT. We will need to copy the web directory to /go/bin so our web server is in the same directory as our web pages
-RUN cp -r /go/src/github.com/myprofile/mywebserverrepo/public /go/bin
+<h3 id="decentrilization">Decentrilization</h3>
 
-#expose tells docker we will need to map 8080 to an external port on the machine
-EXPOSE 8080
+<p>Becuase there is no central server handling all the transactions, the system is globally checked by miners all over the globe. There is no central agency responsible with authority and ability to act corrupt with selfish interests. As we have seen with many countries and institutions, absolute power corrupts. By creating a network in which no party has absolute control, we create a network that can stand against corruptioon.</p>
 
-#Entry point tells docker where to start once the docker container is ran. This will be the name of your web server binary after you were to run go build within the directory 
-ENTRYPOINT [&quot;webserver&quot;]
-</code></pre>
+<h4 id="miner">Miner</h4>
 
-<p>Now that we have our docker file ready we can build the docker image. For easy image management I use Cockpit from the Fedora team. However, there are plenty of ways to manage images and containers how you do it is up to you.</p>
+<p>The miners are millions of computers attempting to calculate the equation of the bitcoin transaction in exchange for a small amount of bitcoin. China is the home to huge computer farms making money off of simply running these computers.</p>
 
-<p><code>docker build . -t mywebserver</code></p>
+<h4 id="bitcoin-node">Bitcoin Node</h4>
 
-<p>This will build the docker container and label it mywebserver.</p>
+<p>Bitcoin Nodes are ran by enthusiests and users alike. The bitcoin node downloads the public ledger and relays any transaction to the ledger across the network. The node is one of the ways bitcoin stays decentralized. There is no single server that is responsible for detecting errors.</p>
 
-<p>Now to run the webserver</p>
+<h3 id="completely-transparent">Completely transparent</h3>
 
-<p><code>docker run -P 8080:80 mywebserver</code></p>
+<p>With the public ledger being public, and every transaction cryptographically signed by the person sending the coin, every transaction ever made can be followed through the network from wallet to wallet. This will make the flow of money available to anyone interested, unlike cash.</p>
 
-<p>Congratulations! You have now contained a Go web server!</p>
+<h3 id="fraud-proof">Fraud-Proof</h3>
+
+<p>Due to the security of cryptographic signing, there can be no fraud on the network. Fake money won&rsquo;t be a thing, as millions of computers are calculating hashes on the bitcoin network.</p>
 
     </section>
 
@@ -306,19 +299,19 @@ ENTRYPOINT [&quot;webserver&quot;]
     
 <section class="share">
   <h4>Share this post</h4>
-  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Contain%20Go&nbsp;-&nbsp;NextWave%20Solutions&amp;url=https%3a%2f%2fnextwavesolutions.io%2fpost%2fcontaingo%2f"
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=What%20is%20Bitcoin%3f&nbsp;-&nbsp;NextWave%20Solutions&amp;url=https%3a%2f%2fnextwavesolutions.io%2fpost%2fwhatisbitcoin%2f"
       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
       <span class="hidden">Twitter</span>
   </a>
-  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnextwavesolutions.io%2fpost%2fcontaingo%2f"
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnextwavesolutions.io%2fpost%2fwhatisbitcoin%2f"
       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
       <span class="hidden">Facebook</span>
   </a>
-  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fnextwavesolutions.io%2fpost%2fcontaingo%2f&amp;description=Contain%20Go"
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fnextwavesolutions.io%2fpost%2fwhatisbitcoin%2f&amp;description=What%20is%20Bitcoin%3f"
       onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
       <span class="hidden">Pinterest</span>
   </a>
-  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fnextwavesolutions.io%2fpost%2fcontaingo%2f"
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fnextwavesolutions.io%2fpost%2fwhatisbitcoin%2f"
      onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
       <span class="hidden">Google+</span>
   </a>
@@ -342,17 +335,10 @@ ENTRYPOINT [&quot;webserver&quot;]
 
   <aside class="read-next">
   
-      <a class="read-next-story" style="no-cover" href="https://nextwavesolutions.io/post/whatisbitcoin/">
-          <section class="post">
-              <h2>What is Bitcoin?</h2>
-              
-          </section>
-      </a>
   
-  
-      <a class="read-next-story prev" style="no-cover" href="https://nextwavesolutions.io/post/whyfedora/">
+      <a class="read-next-story prev" style="no-cover" href="https://nextwavesolutions.io/post/containgo/">
           <section class="post">
-              <h2>Why Fedora?</h2>
+              <h2>Contain Go</h2>
           </section>
       </a>
   
