@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>US-EN</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Sat, 11 Nov 2017 13:42:13 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 12 Nov 2017 10:57:06 -0600</lastBuildDate>
     
 	<atom:link href="https://nextwavesolutions.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>New Project From NextWave: Tools for Bitcoin investment</title>
+      <link>https://nextwavesolutions.io/post/miner/</link>
+      <pubDate>Sun, 12 Nov 2017 10:57:06 -0600</pubDate>
+      
+      <guid>https://nextwavesolutions.io/post/miner/</guid>
+      <description>Many investors are turning to this crypto-currency as it approaches the near $10,000 mark. NextWave Bitcoin Consultation Nextwave is proud to announce a service to help investors and enthusiasts tackle the new challenge that is bitcoin investment. As an emerging technology bitcoin can be a murky lake to traverse, however with proper tooling, proprietary metrics, aggregated media, and a history of successful trades, NextWave hopes to be a lighthouse in the Bitcoin market.</description>
+    </item>
     
     <item>
       <title>What is Bitcoin?</title>
@@ -18,7 +27,7 @@
       <pubDate>Sat, 11 Nov 2017 13:42:13 -0600</pubDate>
       
       <guid>https://nextwavesolutions.io/post/whatisbitcoin/</guid>
-      <description>What Is it Bitcoin is a decentralized cryptocurrency that has recently risen to quite a popularity among enthusiasts and investors alike. Originally created by Satoshi Nakamoto, an anonymous member of an online community. The real identity of this creator has never been discovered.
+      <description>Bitcoin is a decentralized cryptocurrency that has recently risen to quite a popularity among enthusiasts and investors alike. Originally created by Satoshi Nakamoto, an anonymous member of an online community. The real identity of this creator has never been discovered.
 How does it work Bitcoin works by creating a network of computers that relay transactions between each other. Each transaction is signed by the sender with a cryptographic key (explained below) that guarantees a few things.</description>
     </item>
     
