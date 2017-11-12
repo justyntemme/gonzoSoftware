@@ -4,9 +4,6 @@ date: 2017-11-11T13:42:13-06:00
 draft: false
 ---
 
-
-
-## What Is it
 Bitcoin is a decentralized cryptocurrency that has recently risen to quite a popularity among enthusiasts and investors alike. Originally created by Satoshi Nakamoto, an anonymous member of an online community. The real identity of this creator has never been discovered.
 
 ## How does it work
@@ -28,7 +25,7 @@ The public ledger (Blockchain) is the public record of every transaction ever su
 So what's the point to all this technology?
 
 ### Decentralization
-Becuase there is no central server handling all the transactions, the system is globally checked by miners all over the globe. There is no central agency responsible with authority and ability to act corrupt with selfish interests. As we have seen with many countries and institutions, absolute power corrupts. By creating a network in which no party has absolute control, we create a network that can stand against corruptioon. 
+Becuase there is no central server handling all the transactions, the system is globally checked by miners all over the globe. There is no central agency responsible with authority and ability to act corrupt with selfish interests. As we have seen with many countries and institutions, absolute power corrupts. By creating a network in which no party has absolute control, we create a network that can stand against corruption. 
 
 #### Miner
 The miners are millions of computers attempting to calculate the equation of the bitcoin transaction in exchange for a small amount of bitcoin. China is the home to huge computer farms making money off of simply running these computers.
