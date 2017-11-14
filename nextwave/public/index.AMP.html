@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-twitter" src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
     <title>Nextwave Solutions LLC</title>
@@ -23,17 +24,16 @@
     <style amp-custom>
          body {
              background-image: url(https://nextwavesolutions.io/images/Love-Coding.png);
-             color: white;
+             color: black;
          }
 .center {
     
-    margin: auto;
-    width: 70%;
+    width: 71%;
     padding: 10px;
     color: white;
-    margin-top: 20%;
-    position:absolute;
-    margin-left:15%;
+    margin-bottom: 5%;
+    margin-left: 50px;
+
 }
 .link{
 color: black;
@@ -52,19 +52,35 @@ font-size: 1.5em;
 .sidebar {
   padding: 10px;
   margin: 0;
+  background: white;
+}
+#sidebar1 {
+  background: white;
 }
 .sidebar > li {
   list-style: none;
   margin-bottom:10px;
+  background: white;
 }
 .sidebar a {
   text-decoration: none;
+  background: white;
 }
 .close-sidebar {
   color: black;
   font-size: 1.5em;
   padding-left: 5px;
 	}
+  .well {
+    background : white;
+    border-radius : 5px;
+    color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .titleContainer {
+    background: black;
+  }
     </style>
      <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
 </head>
@@ -78,7 +94,16 @@ font-size: 1.5em;
         </ul>
         </amp-sidebar>
   <div layout="container">
-    <h2>Title</h2>  
+    <div layout="container" class="titleContainer">
+    <h2>NextWave Solutions LLC</h2>
+    </div>
+    <amp-twitter width="390" height="330" layout="responsive"class="center" data-tweetid="929761986765905921"></amp-twitter>
+    <div layout="container" class="well">
+  
+    <h2>What is Bitcoin?</h2>  
+    
+    
+
   
     <amp-live-list
       layout="container"
@@ -97,12 +122,11 @@ font-size: 1.5em;
         <div id="post1"
           data-sort-time="20171114214203">
           <div class="ampstart-card m1 blog">
-            <amp-img src="https://nextwavesolutions.io/images/Love-Coding.png"
+            <amp-img src="https://nextwavesolutions.io/images/coindesk-bpi-chart.png"
             layout="responsive"
             width="1280"
             height="853">
           </amp-img>
-          <h4 class="title">What is Bitcoin?</h4>
           <p class="text"> Insert blog post here</p>
           <p class="social-share">
               <amp-social-share type="twitter"
@@ -134,7 +158,9 @@ font-size: 1.5em;
  
     </amp-live-list>
 
-    </div>
-    <amp-twitter width="390" height="330" layout="responsive"class="center" data-tweetid="929761986765905921"></amp-twitter>
+    
+   
+  </div>
+  </div>  
   </body>
 </html>
