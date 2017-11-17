@@ -3,8 +3,10 @@
     <head>
       <meta charset="utf-8">
       <script async src="https://cdn.ampproject.org/v0.js"></script>
+      <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+      <script async custom-element="amp-live-list" src="https://cdn.ampproject.org/v0/amp-live-list-0.1.js"></script>
       <title>Why Fedora?</title>
-      <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
+      <link rel="canonical" href="https://nextwavesolutions.io/post/whyfedora/">
       <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
       <script type="application/ld+json">
         {
@@ -19,34 +21,27 @@
       </script>
       <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     </head>
-
-
-
-<header>
-
-
-
-</header>
+<body>
 
 <main class="content" role="main">
-    
-    
-    
-    
-      <article class="post amp">
-    
-        <header class="post-header">
-            <h1 class="post-title">Why Fedora?</h1>
-            <small></small>
-    
-            <section class="post-meta">
-            
-             
-            </section>
-        </header>
-    
-        <section class="post-content">
+        <amp-live-list layout="container"
+        data-poll-interval="15000"
+        data-max-items-per-page="5"
+        id="amp-live-list-insert-blog">
+        <button update
+          on="tap:amp-live-list-insert-blog.update"
+          class="ampstart-btn ml1 caps">You have updates</button>
+        <div items>
           
+          <div id="Blog Post"
+            data-sort-time="20171117223313">
+            <div class="card blog">
+              <amp-img src="https://nextwavesolutions.io/images/Love-Coding.png"
+                layout="responsive"
+                width="1280"
+                height="853">
+              </amp-img>
+              <p>
 
 <p>Many Linux advocates are familiar with CentOS server side, as well as RHEL. Fedora is often treated as the desktop RHEL distribution, instead of a fully qualified server distribution. Today we will look at several reasons to use Fedora server side, as well as compare it to other server distros.</p>
 
@@ -61,9 +56,15 @@
 <h3 id="selinux-sudo-setenfore-0">Selinux | Sudo setenfore 0</h3>
 
 <p>While most peoples first reaction to a Selinux bug is just to turn it off, there are actually many simple ways to identify and solve issues. From <code>audit2allow</code> to the GUI Selinux troubleshooter, there are a number of tools to help with any Selinux issue. By turning the entire system off you take away one of fedoras greatest tools. Selinux not only enforces policy, but alerts when processes try and break a policy. This is a great tool for system admins to monitor live systems. Selinux and the tools provided are just another one of the great examples of tooling that comes with fedora. This extensive tool set built around a distro helps make it production ready.</p>
+</p>
+            </div>
+          </div>
+          
+        </div>
+      </amp-live-list>
 
-        </section>
     
+   
     
       <footer class="post-footer">
     
@@ -127,3 +128,5 @@
     </article>
     
     </main>
+</body>
+</html>
