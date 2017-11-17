@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>https://nextwavesolutions.io/amp/whyfedora/</loc>
+    <lastmod>2017-09-29T12:39:51-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nextwavesolutions.io/post/whyfedora/</loc>
     <lastmod>2017-09-29T12:39:51-05:00</lastmod>
   </url>
@@ -45,6 +50,12 @@
   <url>
     <loc>https://nextwavesolutions.io/post/whyopensource/</loc>
     <lastmod>2017-09-28T17:01:20-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nextwavesolutions.io/amp/</loc>
+    <lastmod>2017-09-29T12:39:51-05:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
