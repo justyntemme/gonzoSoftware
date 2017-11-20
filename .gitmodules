@@ -1,3 +1,3 @@
-[submodule "nextwave/themes/casper"]
-	path = nextwave/themes/casper
+[submodule "nextwave/themes/hugo-theme-casper"]
+	path = nextwave/themes/hugo-theme-casper
 	url = https://github.com/justyntemme/hugo-theme-casper
