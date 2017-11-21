@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html amp lang="en">
     <head>
       <meta charset="utf-8">
@@ -19,6 +19,7 @@
           ]
         }
       </script>
+      <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
       <style amp-custom>
        
 
@@ -166,7 +167,6 @@ table { border-collapse: collapse; border-spacing: 0; }
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    text-decoration: none !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -372,7 +372,10 @@ blockquote {
     padding: 0 0 0 1.75em;
     border-left: #4A4A4A 0.4em solid;
 }
-
+p {
+	margin-left: 2px;
+	margin-right: 2px;
+}
 blockquote p {
     margin: 0.8em 0;
     font-style: italic;
@@ -771,7 +774,6 @@ body.nav-opened .nav {
     right: 30px;
     height: 38px;
     padding: 0 20px;
-    color: #111 !important;
     text-align: center;
     font-size: 12px;
     font-family: "Open Sans", sans-serif;
@@ -839,8 +841,6 @@ body.nav-opened .nav {
 .blog-logo {
     display: block;
     float: left;
-    background: none !important;
-    border: none !important;
 }
 
 .blog-logo img {
@@ -883,9 +883,6 @@ body.nav-opened .nav {
 
 body.nav-opened .menu-button {
     padding: 0 12px;
-    background: #111 !important;
-    border-color: #111 !important;
-    color: #fff !important;
     -webkit-transform: translate3D(94px, 0, 0);
         -ms-transform: translate3D(94px, 0, 0);
             transform: translate3D(94px, 0, 0);
@@ -1668,8 +1665,6 @@ body:not(.post-template) .post-title {
         background: none;
     }
     body.nav-opened .menu-button {
-        background: none !important;
-        border: transparent !important;
     }
 
     .main-nav.overlay a:hover {
@@ -2119,7 +2114,7 @@ body:not(.post-template) .post-title {
               <amp-img src="https://nextwavesolutions.io/images/Love-Coding.png"
                 layout="responsive"
                 width="1280"
-                height="853">
+                height="600px">
               </amp-img>
 	      <h2>Why Fedora?</h2>
               <p>
@@ -2143,12 +2138,10 @@ body:not(.post-template) .post-title {
                 data-param-url="https://https://nextwavaesolutions.io./post/whyfedora">
         </amp-social-share>
         <amp-social-share type="facebook" width="60" height="44"
-                data-param-url="https://https://nextwavaesolutions.io./post/whyfedora">
+                data-param-url="https://https://nextwavaesolutions.io./post/whyfedora"
+		data-share-endpoint="fb-messenger://share">
         </amp-social-share>
 	    <amp-social-share type="linkedin" width="60" height="44"
-                data-param-url="https://https://nextwavaesolutions.io./post/whyfedora">
-        </amp-social-share>
-	    <amp-social-share type="reddit" width="60" height="44"
                 data-param-url="https://https://nextwavaesolutions.io./post/whyfedora">
         </amp-social-share>
           </div>
@@ -2201,4 +2194,5 @@ body:not(.post-template) .post-title {
     
     </main>
 </body>
+</html>
 </html>
