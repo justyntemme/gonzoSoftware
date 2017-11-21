@@ -17,14 +17,14 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://nextwavesolutions.io/post/whyfedora"
+    "@id": "https://nextwavesolutions.io/post/{{.File.BaseFileName}}"
   },
-  "headline": "Why Choose Fedora?",
+  "headline": "{{.Title}}",
   "image": [
     "https://nextwavesolutions.io/images/Love-Coding.png"
    ],
-  "datePublished": "2017-11-11T08:00:00+08:00",
-  "dateModified": "2017-11-11T09:20:00+08:00",
+  "datePublished": "{{.PublishDate}}",
+  "dateModified": "{{.Lastmod}}",
   "author": {
     "@type": "Person",
     "name": "Justyn Temme"
@@ -37,7 +37,7 @@
       "url": "https://nextwavesolutions.io/images/Love-Coding.png"
     }
   },
-  "description": "Why Fedora is the best distro for your desktop"
+  "description": "{{.Description}}"
 }
 </script>
  
