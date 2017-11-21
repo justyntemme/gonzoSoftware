@@ -6,7 +6,7 @@ pluralizelisttitles 	= false
 DisqussShortname 	="Justyn Temme"
 Copyright 		="All rights reserved - 2017"
 canonifyurls 		=true
-theme			="hugo-theme-casper"
+theme			="hugo-theme-casper-master"
 
 [params]
 	description 	= "NextWave Solutions LLC"
