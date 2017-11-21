@@ -14,11 +14,30 @@
     
     <item>
       <title>New Project From NextWave: Tools for Bitcoin investment</title>
+      <link>https://nextwavesolutions.io/amp/miner/</link>
+      <pubDate>Sun, 12 Nov 2017 10:57:06 -0600</pubDate>
+      
+      <guid>https://nextwavesolutions.io/amp/miner/</guid>
+      <description>Many investors are turning to this crypto-currency as it approaches the near $10,000 mark. NextWave Bitcoin Consultation Nextwave is proud to announce a service to help investors and enthusiasts tackle the new challenge that is bitcoin investment. As an emerging technology bitcoin can be a murky lake to traverse, however with proper tooling, proprietary metrics, aggregated media, and a history of successful trades, NextWave hopes to be a lighthouse in the Bitcoin market.</description>
+    </item>
+    
+    <item>
+      <title>New Project From NextWave: Tools for Bitcoin investment</title>
       <link>https://nextwavesolutions.io/post/miner/</link>
       <pubDate>Sun, 12 Nov 2017 10:57:06 -0600</pubDate>
       
       <guid>https://nextwavesolutions.io/post/miner/</guid>
       <description>Many investors are turning to this crypto-currency as it approaches the near $10,000 mark. NextWave Bitcoin Consultation Nextwave is proud to announce a service to help investors and enthusiasts tackle the new challenge that is bitcoin investment. As an emerging technology bitcoin can be a murky lake to traverse, however with proper tooling, proprietary metrics, aggregated media, and a history of successful trades, NextWave hopes to be a lighthouse in the Bitcoin market.</description>
+    </item>
+    
+    <item>
+      <title>What is Bitcoin?</title>
+      <link>https://nextwavesolutions.io/amp/whatisbitcoin/</link>
+      <pubDate>Sat, 11 Nov 2017 13:42:13 -0600</pubDate>
+      
+      <guid>https://nextwavesolutions.io/amp/whatisbitcoin/</guid>
+      <description>Bitcoin is a decentralized cryptocurrency that has recently risen to quite a popularity among enthusiasts and investors alike. Originally created by Satoshi Nakamoto, an anonymous member of an online community. The real identity of this creator has never been discovered.
+How does it work Bitcoin works by creating a network of computers that relay transactions between each other. Each transaction is signed by the sender with a cryptographic key (explained below) that guarantees a few things.</description>
     </item>
     
     <item>
@@ -29,6 +48,15 @@
       <guid>https://nextwavesolutions.io/post/whatisbitcoin/</guid>
       <description>Bitcoin is a decentralized cryptocurrency that has recently risen to quite a popularity among enthusiasts and investors alike. Originally created by Satoshi Nakamoto, an anonymous member of an online community. The real identity of this creator has never been discovered.
 How does it work Bitcoin works by creating a network of computers that relay transactions between each other. Each transaction is signed by the sender with a cryptographic key (explained below) that guarantees a few things.</description>
+    </item>
+    
+    <item>
+      <title>Contain Go</title>
+      <link>https://nextwavesolutions.io/amp/containgo/</link>
+      <pubDate>Fri, 29 Sep 2017 16:53:40 -0500</pubDate>
+      
+      <guid>https://nextwavesolutions.io/amp/containgo/</guid>
+      <description>So you have just learned Golang, built a webserver, and are ready to show the world what you can do. That&amp;rsquo;s great! Go is a very great language that scales well. In fact, many of the tools used to deliver this web page to you are written in Go. Hugo, a static website generator, was used to build the webpage. A simple Go file server is used to serve the webpage.</description>
     </item>
     
     <item>
@@ -62,12 +90,31 @@ Packages | We have hit the sweet spot Fedora lives in a sweet spot. The packages
     
     <item>
       <title>TLS (SSL) All the Things!</title>
+      <link>https://nextwavesolutions.io/amp/tlsallthethings/</link>
+      <pubDate>Thu, 28 Sep 2017 19:11:08 -0500</pubDate>
+      
+      <guid>https://nextwavesolutions.io/amp/tlsallthethings/</guid>
+      <description>So you have heard about it, you use it, and it also was once an endeavor that could cost quite a bit of cash. Now thanks to Letsencrypt it&amp;rsquo;s easier than ever to force HTTPS traffic to even static websites on your web server.
+Letsencrypt Letsencrypt is a free CA (certificate authority) that let&amp;rsquo;s anyone that owns a domain generate a trusted certificate for that domain. There are many guides to do this, my favorite being our friends at Fedora Magazine.</description>
+    </item>
+    
+    <item>
+      <title>TLS (SSL) All the Things!</title>
       <link>https://nextwavesolutions.io/post/tlsallthethings/</link>
       <pubDate>Thu, 28 Sep 2017 19:11:08 -0500</pubDate>
       
       <guid>https://nextwavesolutions.io/post/tlsallthethings/</guid>
       <description>So you have heard about it, you use it, and it also was once an endeavor that could cost quite a bit of cash. Now thanks to Letsencrypt it&amp;rsquo;s easier than ever to force HTTPS traffic to even static websites on your web server.
 Letsencrypt Letsencrypt is a free CA (certificate authority) that let&amp;rsquo;s anyone that owns a domain generate a trusted certificate for that domain. There are many guides to do this, my favorite being our friends at Fedora Magazine.</description>
+    </item>
+    
+    <item>
+      <title>Who is NextWave?</title>
+      <link>https://nextwavesolutions.io/amp/whoami/</link>
+      <pubDate>Thu, 28 Sep 2017 17:48:13 -0500</pubDate>
+      
+      <guid>https://nextwavesolutions.io/amp/whoami/</guid>
+      <description>NextWave is a technology solution company empowering businesses with the next wave of technology. Open source allows for business to break the chains of old proprietary monoliths and become part of a growing community of those who care about the software they run. At NextWave we help businesses use the technology of tomorrow.</description>
     </item>
     
     <item>
@@ -81,11 +128,30 @@ Letsencrypt Letsencrypt is a free CA (certificate authority) that let&amp;rsquo;
     
     <item>
       <title>Contracting/Consulting</title>
+      <link>https://nextwavesolutions.io/amp/consulting/</link>
+      <pubDate>Thu, 28 Sep 2017 17:43:48 -0500</pubDate>
+      
+      <guid>https://nextwavesolutions.io/amp/consulting/</guid>
+      <description>From website development, home automation, to Ip-based security cameras, if you are ready to join to millions of users and businesses already empowering themselves with tomorrows open source technology, email us at justyn@nextwavesolutions.io we would love to solve your problems with our solutions.</description>
+    </item>
+    
+    <item>
+      <title>Contracting/Consulting</title>
       <link>https://nextwavesolutions.io/post/consulting/</link>
       <pubDate>Thu, 28 Sep 2017 17:43:48 -0500</pubDate>
       
       <guid>https://nextwavesolutions.io/post/consulting/</guid>
       <description>From website development, home automation, to Ip-based security cameras, if you are ready to join to millions of users and businesses already empowering themselves with tomorrows open source technology, email us at justyn@nextwavesolutions.io we would love to solve your problems with our solutions.</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://nextwavesolutions.io/amp/about/</link>
+      <pubDate>Thu, 28 Sep 2017 17:30:00 -0500</pubDate>
+      
+      <guid>https://nextwavesolutions.io/amp/about/</guid>
+      <description>Open Source Developer / Technology Consultant
+ Email justyn@nextwavesolutions.io Github  </description>
     </item>
     
     <item>
@@ -96,6 +162,17 @@ Letsencrypt Letsencrypt is a free CA (certificate authority) that let&amp;rsquo;
       <guid>https://nextwavesolutions.io/post/about/</guid>
       <description>Open Source Developer / Technology Consultant
  Email justyn@nextwavesolutions.io Github  </description>
+    </item>
+    
+    <item>
+      <title>Why open source</title>
+      <link>https://nextwavesolutions.io/amp/whyopensource/</link>
+      <pubDate>Thu, 28 Sep 2017 17:01:20 -0500</pubDate>
+      
+      <guid>https://nextwavesolutions.io/amp/whyopensource/</guid>
+      <description>“I often compare open source to science. To where science took this whole notion of developing ideas in the open and improving on other peoples’ ideas and making it into what science is today and the incredible advances that we have had.”
+ Linus Torvalds
+Security Open source projects allow for peer review. Just like with science journals. Many eyes on a project are much better than a single company taking the helm of security.</description>
     </item>
     
     <item>
