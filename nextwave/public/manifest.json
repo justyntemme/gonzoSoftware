@@ -1,0 +1,9 @@
+i{
+  "name": "NextWave Solutions",
+  "short_name": "NextWave",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation" : "portrait",
+  "background_color": "#000000",
+  "theme_color": "#000000"
+}

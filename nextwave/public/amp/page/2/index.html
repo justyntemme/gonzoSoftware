@@ -2,6 +2,7 @@
 <html lang="US-EN">
 <meta name="theme-color" content="#fffcf9"/>
 <head>
+    <meta rel="manifest" href="https://nextwavesolutions.io/static/maniffest.json">
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -400,5 +401,21 @@ Security Open source projects allow for peer review. Just like with science jour
     <script type="text/javascript" src="https://nextwavesolutions.io/js/jquery.fitvids.js"></script>
     <script type="text/javascript" src="https://nextwavesolutions.io/js/index.js"></script>
     
+
+<script>
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('/sw.js', { scope: '/' })
+            .then(function(registration) {
+                console.log('Service Worker Registered');
+            });
+
+        navigator.serviceWorker
+            .ready
+            .then(function(registration) {
+                console.log('Service Worker Ready');
+            });
+    }
+</script>
 </body>
 </html>

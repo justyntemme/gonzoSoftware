@@ -177,5 +177,23 @@ Security Open source projects allow for peer review. Just like with science jour
 Security Open source projects allow for peer review. Just like with science journals. Many eyes on a project are much better than a single company taking the helm of security.</description>
     </item>
     
+    <item>
+      <title>Darn... Page not found.</title>
+      <link>https://nextwavesolutions.io/404/404/</link>
+      <pubDate>Sun, 16 Oct 2016 19:28:41 +0200</pubDate>
+      
+      <guid>https://nextwavesolutions.io/404/404/</guid>
+      <description>You should look somewhere else.</description>
+    </item>
+    
+    <item>
+      <title>Oops, you are offline.</title>
+      <link>https://nextwavesolutions.io/offline/offline/</link>
+      <pubDate>Sun, 16 Oct 2016 19:28:41 +0200</pubDate>
+      
+      <guid>https://nextwavesolutions.io/offline/offline/</guid>
+      <description>You should try to find some internet connection to browse here.</description>
+    </item>
+    
   </channel>
 </rss>
