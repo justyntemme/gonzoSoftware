@@ -1,3 +1,4 @@
+enableRobotsTXT = true
 BaseURL			="https://nextwavesolutions.io/"
 LanguageCode		="US-EN"
 Title			="NextWave Solutions"
