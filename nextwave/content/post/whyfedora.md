@@ -1,6 +1,7 @@
 ﻿---
 title: "Why Fedora?"
 date: 2017-09-29T12:39:51-05:00
+description: "Why choose Fedora as your linux distrobution?"
 draft: false
 ---
 
