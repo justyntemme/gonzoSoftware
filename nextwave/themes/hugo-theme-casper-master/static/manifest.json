@@ -1,5 +1,12 @@
 i{
   "name": "NextWave Solutions",
+  "icons": [
+  {
+    "src": "/images/nextWave.png",
+    "sizes": "128x128",
+    "type": "image/png"
+  }
+  ]
   "short_name": "NextWave",
   "start_url": "/index.html",
   "display": "standalone",
