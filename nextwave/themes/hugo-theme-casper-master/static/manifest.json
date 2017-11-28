@@ -6,7 +6,7 @@
     "sizes": "192x192",
     "type": "image/png"
   }
-  ]
+  ],
   "short_name": "NextWave",
   "start_url": "/index.html",
   "display": "standalone",
