@@ -1,14 +1,24 @@
+<amp-live-list
+	layout="container"
+	data-poll-interval="15000"
+	data-max-items-per-page="5"
+	id="amp-live-list-insert-blog">
+		<div items>
+			
 <article class="post {{ .Section }}">
     <header class="post-header">
-        <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+	<div class="ampstart-card m1 blog">
+        <h2 class="title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
     </header>
     <section class="post-excerpt">
         {{if .Params.excerpt }}
             <p>{{ .Params.excerpt }} <a class="read-more" href="{{.RelPermalink}}">&raquo;</a></p>
         {{else}}
-            <p>{{ .Summary }} <a class="read-more" href="{{.RelPermalink}}">&raquo;</a></p>
+            <p class="text">{{ .Summary }} <a class="read-more" href="{{.RelPermalink}}">&raquo;</a></p>
         {{end}}
     </section>
+	</div>
+	</amp-live-list>
     <footer class="post-meta">
         
 
@@ -35,3 +45,4 @@
         </time>
     </footer>
 </article>
+</div>
