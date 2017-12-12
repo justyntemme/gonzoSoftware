@@ -1,140 +1,141 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://nextwavesolutions.io/post/miner/</loc>
-    <lastmod>2017-11-12T10:57:06-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/amp/whatisbitcoin/</loc>
-    <lastmod>2017-11-11T13:42:13-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/post/whatisbitcoin/</loc>
-    <lastmod>2017-11-11T13:42:13-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/amp/containgo/</loc>
-    <lastmod>2017-09-29T16:53:40-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/post/containgo/</loc>
-    <lastmod>2017-09-29T16:53:40-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/amp/whyfedora/</loc>
-    <lastmod>2017-09-29T12:39:51-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/post/whyfedora/</loc>
-    <lastmod>2017-09-29T12:39:51-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/amp/tlsallthethings/</loc>
-    <lastmod>2017-09-28T19:11:08-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/post/tlsallthethings/</loc>
-    <lastmod>2017-09-28T19:11:08-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/amp/whoami/</loc>
-    <lastmod>2017-09-28T17:48:13-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/post/whoami/</loc>
-    <lastmod>2017-09-28T17:48:13-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/amp/consulting/</loc>
-    <lastmod>2017-09-28T17:43:48-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/post/consulting/</loc>
-    <lastmod>2017-09-28T17:43:48-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/amp/about/</loc>
-    <lastmod>2017-09-28T17:30:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/post/about/</loc>
-    <lastmod>2017-09-28T17:30:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/amp/whyopensource/</loc>
-    <lastmod>2017-09-28T17:01:20-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/post/whyopensource/</loc>
-    <lastmod>2017-09-28T17:01:20-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/404/404/</loc>
-    <lastmod>2016-10-16T19:28:41+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/offline/offline/</loc>
-    <lastmod>2016-10-16T19:28:41+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/404/</loc>
-    <lastmod>2016-10-16T19:28:41+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/amp/</loc>
-    <lastmod>2017-11-11T13:42:13-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/</loc>
-    <lastmod>2017-11-12T10:57:06-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/offline/</loc>
-    <lastmod>2016-10-16T19:28:41+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/post/</loc>
-    <lastmod>2017-11-12T10:57:06-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://nextwavesolutions.io/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    <url>
+        <loc>https://nextwavesolutions.io/post/miner/</loc>
+        <lastmod>2017-11-12T10:57:06-06:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/amp/whatisbitcoin/</loc>
+        <lastmod>2017-11-11T13:42:13-06:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/post/whatisbitcoin/</loc>
+        <lastmod>2017-11-11T13:42:13-06:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/amp/containgo/</loc>
+        <lastmod>2017-09-29T16:53:40-05:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/post/containgo/</loc>
+        <lastmod>2017-09-29T16:53:40-05:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/amp/whyfedora/</loc>
+        <lastmod>2017-09-29T12:39:51-05:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/post/whyfedora/</loc>
+        <lastmod>2017-09-29T12:39:51-05:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/amp/tlsallthethings/</loc>
+        <lastmod>2017-09-28T19:11:08-05:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/post/tlsallthethings/</loc>
+        <lastmod>2017-09-28T19:11:08-05:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/amp/whoami/</loc>
+        <lastmod>2017-09-28T17:48:13-05:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/post/whoami/</loc>
+        <lastmod>2017-09-28T17:48:13-05:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/amp/consulting/</loc>
+        <lastmod>2017-09-28T17:43:48-05:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/post/consulting/</loc>
+        <lastmod>2017-09-28T17:43:48-05:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/amp/about/</loc>
+        <lastmod>2017-09-28T17:30:00-05:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/post/about/</loc>
+        <lastmod>2017-09-28T17:30:00-05:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/amp/whyopensource/</loc>
+        <lastmod>2017-09-28T17:01:20-05:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/post/whyopensource/</loc>
+        <lastmod>2017-09-28T17:01:20-05:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/404/404/</loc>
+        <lastmod>2016-10-16T19:28:41+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/offline/offline/</loc>
+        <lastmod>2016-10-16T19:28:41+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/404/</loc>
+        <lastmod>2016-10-16T19:28:41+02:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/amp/</loc>
+        <lastmod>2017-11-11T13:42:13-06:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/categories/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/</loc>
+        <lastmod>2017-11-12T10:57:06-06:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/offline/</loc>
+        <lastmod>2016-10-16T19:28:41+02:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/post/</loc>
+        <lastmod>2017-11-12T10:57:06-06:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://nextwavesolutions.io/tags/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
 </urlset>

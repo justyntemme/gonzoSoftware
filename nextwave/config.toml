@@ -7,9 +7,19 @@ pluralizelisttitles 	= false
 DisqussShortname 	="Justyn Temme"
 Copyright 		="All rights reserved - 2017"
 canonifyurls 		=true
-theme			="hugo-theme-casper-master"
+theme			="gohugo-amp"
 
 [params]
+	amp = true
+	ampElements = ["amp-accordion","amp-analytics","amp-app-banner","amp-dynamic-css-classes","amp-form","amp-fx-flying-carpet","amp-image-lightbox","amp-lightbox","amp-sidebar","amp-social-share","amp-sticky-ad","amp-user-notification"]
+
+	themeColor = "blue"
+	googleAnalytics = "UA-109147161-1"
+	ampManifest = "/manifest.json"
+
+	alternatePageName = "NextWave Solutions"
+	organisationName = "NextWave Solutions"
+	socialProfiles = ["https://twitter.com/nextwavesllc"]
 	description 	= "NextWave Solutions LLC"
 	cover 		= "images/Love-Coding.png"
 	author		= "Justyn Temme"
