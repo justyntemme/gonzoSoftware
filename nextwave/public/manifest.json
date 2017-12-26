@@ -1,0 +1,16 @@
+{
+  "name": "NextWave Solutions",
+  "icons": [
+  {
+    "src": "https://nextwavesolutions.io/images/nextWave.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }
+  ],
+  "short_name": "NextWave",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation" : "portrait",
+  "background_color": "#000000",
+  "theme_color": "#000000"
+}
