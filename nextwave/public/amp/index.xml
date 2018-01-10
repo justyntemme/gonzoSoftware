@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>US-EN</language>
     <copyright>All rights reserved - 2017</copyright>
-    <lastBuildDate>Sat, 11 Nov 2017 13:42:13 -0600</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jan 2018 10:54:34 -0600</lastBuildDate>
     
 	<atom:link href="https://nextwavesolutions.io/amp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Contain your backend services with dockers private networking</title>
+      <link>https://nextwavesolutions.io/amp/containerizeitall/</link>
+      <pubDate>Wed, 10 Jan 2018 10:54:34 -0600</pubDate>
+      
+      <guid>https://nextwavesolutions.io/amp/containerizeitall/</guid>
+      <description>Keeping private traffic private In reality, no one needs to be able to see your backend services and databases. Those are strictly for the public services running on the same box to access. Unfortunately, too many database containers are exposed and pwned fairly easily due to sub-par security measures. By keeping the non-public containers only available to internal traffic, you reduce your attack service and increase security for all of your users.</description>
+    </item>
     
     <item>
       <title>What is Bitcoin?</title>
