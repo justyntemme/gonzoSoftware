@@ -1,5 +1,5 @@
 ---
-title: "Contain your backend dabases with dockers private networking"
+title: "Contain your backend services with dockers private networking"
 date: 2018-01-10T10:54:34-06:00
 draft: false
 ---
