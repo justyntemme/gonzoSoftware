@@ -1,5 +1,5 @@
 ---
-title: "Private Networking with Docker:  Keeping Private Traffic Private"
+title: "Private Networking with Docker and Nginx: Keeping Private Traffic Private"
 date: 2018-01-10T10:54:34-06:00
 draft: false
 keywords:
@@ -14,6 +14,11 @@ keywords:
 - docker
 - networking
 - firewall
+- nginx
+- reverseproxy
+- nginx reverse proxy
+- reverse proxy
+
 description: "Multi-container networking with docker. How to keep private data private."
 ---
 
