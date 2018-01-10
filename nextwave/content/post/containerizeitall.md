@@ -1,5 +1,5 @@
 ---
-title: "Contain your backend services with dockers private networking"
+title: "Private Networking with Docker:  Keeping Private Traffic Private"
 date: 2018-01-10T10:54:34-06:00
 draft: false
 ---
