@@ -2,6 +2,19 @@
 title: "Private Networking with Docker:  Keeping Private Traffic Private"
 date: 2018-01-10T10:54:34-06:00
 draft: false
+keywords:
+- private
+- docker private networking
+- multicontainer
+- multi-container
+- multi-container networking
+- docker security
+- security
+- privacy
+- docker
+- networking
+- firewall
+description: "Multi-container networking with docker. How to keep private data private."
 ---
 
 ### Keeping private traffic private
