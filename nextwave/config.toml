@@ -20,7 +20,7 @@ theme			="hugo-theme-casper-master"
 	twitterName	= "nextwavesllc"	
 	linkedinName	= "justyntemme"
 [[menu.main]]
-	name		= "Github repos"
+	name		= "Github Repos"
 	weight		= -150
 	identifier	= "github"
 	url		= "https://github.com/justyntemme/"	
