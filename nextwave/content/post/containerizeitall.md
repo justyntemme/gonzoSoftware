@@ -46,8 +46,8 @@ sendfile on;
 gzip on;
 gzip_types text/html text/css application/x-javascript text/xml application/xml application/xml+rss text/javascript;
 ~~~~~
-
-Here is where I define the server name that users will be typing into the address bar. The basic reverse proxy setup in which all traffic is forwarded to the `http://gitlab` container.  
+<br>
+Here is where I define the server name that users will be typing into the address bar. The basic reverse proxy setup, which by calling the name of thecontainer, all traffic is forwarded to the proper web-server.  
 ~~~~~
 server {
     listen 80;
