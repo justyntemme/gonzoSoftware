@@ -73,7 +73,7 @@ server {
     return 301 https://$server_name$request_uri;
 }
 ~~~~~
-Here is another example of the benefits of multi-container networking. I have another small web panel for my bitcoin trading clients. All traffic is handled by the nginx container, and there was no need to spin anything new up just to server a new webpage (except the web app docker container of course). 
+Here is another example of the benefits of multi-container networking. I have another small web panel for my bitcoin trading clients. All traffic is handled by the nginx container, and there was no need to spin anything new up just to server a new webpage (except the web app docker container of course). All I have to do is define the container within the `nginx.conf` and when the containers are spun up, nginx configures a listener for that specific request.
 ~~~~~
 
 server { 
@@ -85,22 +85,22 @@ server {
     }
 }
 ~~~~~
-Finally, here we have the main site container that stores this very site you are reading the article on. All keys are handled in this config. Notice how the docker container actually listens on port 8080, however, traffic directed to this server is forwarded via nginx. 
+Finally, here we have the main site container.SSL certs are handled in this config. Nginx makes using TLS/SSL easy, and with multi-container networking, deploying SSL/TLS certs to multiple subdomains is as simple as listing them in the nginx config. Notice how the docker container actually listens on port 8080, however, traffic directed to this server is forwarded via nginx. 
 
 ~~~~~
 server {
-    listen 443 ssl http2;
-    server_name nextwavesolutions.io
+    	listen 443 ssl http2;
+    	server_name nextwavesolutions.io
     
-    ssl on;    
-    ssl_certificate         /etc/letsencrypt/archive/www.nextwavesolutions.io/fullchain2.pem;
-        ssl_certificate_key     /etc/letsencrypt/archive/www.nextwavesolutions.io/privkey2.pem;
+    	ssl on;    
+    	ssl_certificate         /etc/letsencrypt/archive/www.nextwavesolutions.io/fullchain2.pem;
+       	 ssl_certificate_key     /etc/letsencrypt/archive/www.nextwavesolutions.io/privkey2.pem;
 
-    location / {
-        proxy_pass http://nextwave:8080;
-        proxy_redirect off;
-    }
-}
+    	location / {
+       	 proxy_pass http://nextwave:8080;
+       	 proxy_redirect off;
+    	}
+	}
 }
 ~~~~~
 
