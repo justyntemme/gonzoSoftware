@@ -4,13 +4,16 @@ date: 2018-01-10T10:54:34-06:00
 draft: false
 keywords:
 - private
+- Docker private networking
 - docker private networking
 - multicontainer
 - multi-container
 - multi-container networking
 - docker security
+- Docker security
 - security
 - privacy
+- Docker
 - docker
 - networking
 - firewall
@@ -19,24 +22,24 @@ keywords:
 - nginx reverse proxy
 - reverse proxy
 
-description: "Multi-container networking with docker. How to keep private data private."
+description: "Multi-container networking with Docker. How to keep private data private."
 ---
 
 ### Keeping private traffic private
 
-In reality, no one needs to be able to see your backend services and databases. Those are strictly for the public services running on the same box to access. Unfortunately, too many database containers are exposed and pwned fairly easily due to sub-par security measures. By keeping the non-public containers only available to internal traffic, you reduce your attack service and increase security for all of your users.
+No one needs to be able to see your backend services and databases. Those are strictly for the public web-servers to access.Too many database containers are exposed and are left vulnerable to attack due to sub-par security measures. By keeping database containers only available to traffic from your web servers, you reduce your attack service and increase security for all of your users.
 
 ### A single Nginx Container
 
 #### Centralizing keys
-In the land before time... er, excuse me...the time before docker containers, all SSL certs would be stored in a centralized server on the bare metal machine. We return to a centralized approach via a ngnix docker container responsible for handling all the connections. This could eventually scale to a load balancer if desired. 
+In the land before time -- er, excuse me - the time before Docker containers, all [SSL/TLS certifications](https://nextwavesolutions.io/post/tlsallthethings/) would be stored in a centralized server on the bare metal machine. We return to a centralized approach via Nginx in a Docker container responsible for handling all the connections.As nginx allows for rapid scaling with multiple servers, this could eventually scale to a load balancer if desired. 
 
 #### nginx.conf
 
-One would think that using multiple Docker containers, talking to each other, hidden behind the docker network would be a difficult concept to grasp, and even more difficult to implement. Fortunately for us, it's quite the opposite. Below is my nginx.conf with comments to explain how things work.
+One would think that multiple Docker containers talking to each other, not exposed to the internet would be a difficult concept to grasp, and even more difficult to implement. Fortunately for us, it's quite the opposite. Below is my nginx.conf with comments to explain how things work.
 
 
-These simply server optimizations. These are the same regardless of how many containers you are using.
+These are simply server optimizations.
 ~~~~~ 
 worker_processes 5;
 
@@ -73,7 +76,7 @@ server {
     return 301 https://$server_name$request_uri;
 }
 ~~~~~
-Here is another example of the benefits of multi-container networking. I have another small web panel for my bitcoin trading clients. All traffic is handled by the nginx container, and there was no need to spin anything new up just to server a new webpage (except the web app docker container of course). All I have to do is define the container within the `nginx.conf` and when the containers are spun up, nginx configures a listener for that specific request.
+Here is another example of the benefits of multi-container networking. I have another small web panel for my bitcoin trading clients. All traffic is handled by the nginx container, and there was no need to spin anything new up just to server a new webpage (except the web app Docker container of course). All I have to do is define the container within the `nginx.conf` and when the containers are spun up, nginx configures a listener for that specific request.
 ~~~~~
 
 server { 
@@ -84,8 +87,9 @@ server {
         proxy_redirect off;
     }
 }
+
 ~~~~~
-Finally, here we have the main site container.SSL certs are handled in this config. Nginx makes using TLS/SSL easy, and with multi-container networking, deploying SSL/TLS certs to multiple subdomains is as simple as listing them in the nginx config. Notice how the docker container actually listens on port 8080, however, traffic directed to this server is forwarded via nginx. 
+Finally, here we have the main site container.SSL certs are handled in this config. Nginx makes using TLS/SSL easy, and with multi-container networking, deploying SSL/TLS certs to multiple subdomains is as simple as listing them in the nginx config. Notice how the Docker container actually listens on port 8080, however, traffic directed to this server is forwarded via nginx. 
 
 ~~~~~
 server {
@@ -105,7 +109,7 @@ server {
 ~~~~~
 
 ### Docker compose
-Docker compose is a great tool for managing multi-container setups. The highlight of this setup is how easy it is to simply call another container. For example, if I have one container `reverse proxy` and one container `web-server` I can specify in my nginx.conf to forward all traffic for the server `web-server.com` to `http://web-server/` as seen in the engine.conf above. Yes, it's that easy, you simply call the network address, whatever you named the container in your docker-compose file. Here is an example docker-compose file I use in production.
+Docker compose is a great tool for managing multi-container setups. The highlight of this setup is how easy it is to simply call another container. For example, if I have one container `reverse proxy` and one container `web-server` I can specify in my nginx.conf to forward all traffic for the server `web-server.com` to `http://web-server/` as seen in the engine.conf above. Yes, it's that easy, you simply call the network address, whatever you named the container in your Docker-compose file. Here is an example Docker-compose file I use in production.
 
 
 Here the reverse proxy container is defined, as well as the volumes for the SSL certifications. Notice port 80, and 443 are exposed. However, no other container has any ports exposed. This is one of the main benefits of multi-container networking. I only expose what I choose to expose and keep the backend DB's from needing to be seen by the public.
