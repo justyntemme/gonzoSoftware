@@ -2,143 +2,143 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NextWave Solutions LLC</title>
-    <link>https://localhost:1313/</link>
+    <link>https://nextwavesolutions.io/</link>
     <description>Recent content on NextWave Solutions LLC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Jan 2018 08:52:16 -0600</lastBuildDate>
     
-	<atom:link href="https://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nextwavesolutions.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Custom Development</title>
-      <link>https://localhost:1313/service/webdesign/</link>
+      <link>https://nextwavesolutions.io/service/webdesign/</link>
       <pubDate>Fri, 19 Jan 2018 08:52:16 -0600</pubDate>
       
-      <guid>https://localhost:1313/service/webdesign/</guid>
+      <guid>https://nextwavesolutions.io/service/webdesign/</guid>
       <description>From front end web design to REST API&amp;rsquo;s and backend services, NextWave has you covered. Workign with modern open source technology, NextWvae builds around tools that allow for rapid application development.</description>
     </item>
     
     <item>
       <title>Private Networking with Docker and Nginx: Keeping Private Traffic Private</title>
-      <link>https://localhost:1313/post/containerizeitall/</link>
+      <link>https://nextwavesolutions.io/post/containerizeitall/</link>
       <pubDate>Wed, 10 Jan 2018 10:54:34 -0600</pubDate>
       
-      <guid>https://localhost:1313/post/containerizeitall/</guid>
+      <guid>https://nextwavesolutions.io/post/containerizeitall/</guid>
       <description>Keeping private traffic private No one needs to be able to see your backend services and databases. Those are strictly for the public web-servers to access.Too many database containers are exposed and are left vulnerable to attack due to sub-par security measures. By keeping database containers only available to traffic from your web servers, you reduce your attack service and increase security for all of your users.
 A single Nginx Container Centralizing keys In the land before time &amp;ndash; er, excuse me - the time before Docker containers, all SSL/TLS certifications would be stored in a centralized server on the bare metal machine.</description>
     </item>
     
     <item>
       <title>HypeBeast Essentials -G </title>
-      <link>https://localhost:1313/service/hbe/</link>
+      <link>https://nextwavesolutions.io/service/hbe/</link>
       <pubDate>Sat, 25 Nov 2017 20:45:54 -0600</pubDate>
       
-      <guid>https://localhost:1313/service/hbe/</guid>
+      <guid>https://nextwavesolutions.io/service/hbe/</guid>
       <description>The drop day is warfare, and it&amp;rsquo;s best bot win. Thousands are spend on launch item days for designer brands, yet even more is gained from the resale value of limited items. Simple economics, supply and demand.</description>
     </item>
     
     <item>
       <title>Bitcoin Investment Tools</title>
-      <link>https://localhost:1313/service/miner/</link>
+      <link>https://nextwavesolutions.io/service/miner/</link>
       <pubDate>Sun, 12 Nov 2017 10:57:06 -0600</pubDate>
       
-      <guid>https://localhost:1313/service/miner/</guid>
+      <guid>https://nextwavesolutions.io/service/miner/</guid>
       <description>As an emerging technology bitcoin can be a murky lake to traverse, however with proper tooling, proprietary metrics, aggregated media, and a history of successful trades, NextWave hopes to be a lighthouse in the Bitcoin market.</description>
     </item>
     
     <item>
       <title>New Project From NextWave: Tools for Bitcoin investment</title>
-      <link>https://localhost:1313/post/miner/</link>
+      <link>https://nextwavesolutions.io/post/miner/</link>
       <pubDate>Sun, 12 Nov 2017 10:57:06 -0600</pubDate>
       
-      <guid>https://localhost:1313/post/miner/</guid>
+      <guid>https://nextwavesolutions.io/post/miner/</guid>
       <description>Many investors are turning to this crypto-currency as it approaches the near $10,000 mark. NextWave Bitcoin Consultation Nextwave is proud to announce a service to help investors and enthusiasts tackle the new challenge that is bitcoin investment. As an emerging technology bitcoin can be a murky lake to traverse, however with proper tooling, proprietary metrics, aggregated media, and a history of successful trades, NextWave hopes to be a lighthouse in the Bitcoin market.</description>
     </item>
     
     <item>
       <title>What is Bitcoin?</title>
-      <link>https://localhost:1313/post/whatisbitcoin/</link>
+      <link>https://nextwavesolutions.io/post/whatisbitcoin/</link>
       <pubDate>Sat, 11 Nov 2017 13:42:13 -0600</pubDate>
       
-      <guid>https://localhost:1313/post/whatisbitcoin/</guid>
+      <guid>https://nextwavesolutions.io/post/whatisbitcoin/</guid>
       <description>Bitcoin is a decentralized cryptocurrency that has recently risen to quite a popularity among enthusiasts and investors alike. Originally created by Satoshi Nakamoto, an anonymous member of an online community. The real identity of this creator has never been discovered.
 How does it work Bitcoin works by creating a network of computers that relay transactions between each other. Each transaction is signed by the sender with a cryptographic key (explained below) that guarantees a few things.</description>
     </item>
     
     <item>
       <title>Contain Go</title>
-      <link>https://localhost:1313/post/containgo/</link>
+      <link>https://nextwavesolutions.io/post/containgo/</link>
       <pubDate>Fri, 29 Sep 2017 16:53:40 -0500</pubDate>
       
-      <guid>https://localhost:1313/post/containgo/</guid>
+      <guid>https://nextwavesolutions.io/post/containgo/</guid>
       <description>So you have just learned Golang, built a webserver, and are ready to show the world what you can do. That&amp;rsquo;s great! Go is a very great language that scales well. In fact, many of the tools used to deliver this web page to you are written in Go. Hugo, a static website generator, was used to build the webpage. A simple Go file server is used to serve the webpage.</description>
     </item>
     
     <item>
       <title>Why Fedora? - Benefits of the best Linux Distro - NextWave Solutions</title>
-      <link>https://localhost:1313/post/whyfedora/</link>
+      <link>https://nextwavesolutions.io/post/whyfedora/</link>
       <pubDate>Fri, 29 Sep 2017 12:39:51 -0500</pubDate>
       
-      <guid>https://localhost:1313/post/whyfedora/</guid>
+      <guid>https://nextwavesolutions.io/post/whyfedora/</guid>
       <description>Many Linux advocates are familiar with CentOS and RHEL as their primary server distrobutions. Fedora is often treated as the desktop RHEL distribution, instead of a fully qualified server distribution.
 Packages | We have hit the sweet spot The Fedora project lives in a sweet spot: the packages stay very stable, and I still manage to get up to date software without having to sacrifice stability (I&amp;rsquo;m looking at you Arch Linux).</description>
     </item>
     
     <item>
       <title>TLS (SSL) All the Things!</title>
-      <link>https://localhost:1313/post/tlsallthethings/</link>
+      <link>https://nextwavesolutions.io/post/tlsallthethings/</link>
       <pubDate>Thu, 28 Sep 2017 19:11:08 -0500</pubDate>
       
-      <guid>https://localhost:1313/post/tlsallthethings/</guid>
+      <guid>https://nextwavesolutions.io/post/tlsallthethings/</guid>
       <description>So you have heard about it, you use it, and it also was once an endeavor that could cost quite a bit of cash. Now thanks to Letsencrypt it&amp;rsquo;s easier than ever to force HTTPS traffic to even static websites on your web server.
 Letsencrypt Letsencrypt is a free CA (certificate authority) that let&amp;rsquo;s anyone that owns a domain generate a trusted certificate for that domain. There are many guides to do this, my favorite being our friends at Fedora Magazine.</description>
     </item>
     
     <item>
       <title>Who is NextWave?</title>
-      <link>https://localhost:1313/post/whoami/</link>
+      <link>https://nextwavesolutions.io/post/whoami/</link>
       <pubDate>Thu, 28 Sep 2017 17:48:13 -0500</pubDate>
       
-      <guid>https://localhost:1313/post/whoami/</guid>
+      <guid>https://nextwavesolutions.io/post/whoami/</guid>
       <description>NextWave is a technology solution company empowering businesses with the next wave of technology. Open source allows for business to break the chains of old proprietary monoliths and become part of a growing community of those who care about the software they run. At NextWave we help businesses use the technology of tomorrow.</description>
     </item>
     
     <item>
       <title>Contracting &amp; Consulting</title>
-      <link>https://localhost:1313/service/consulting/</link>
+      <link>https://nextwavesolutions.io/service/consulting/</link>
       <pubDate>Thu, 28 Sep 2017 17:43:48 -0500</pubDate>
       
-      <guid>https://localhost:1313/service/consulting/</guid>
+      <guid>https://nextwavesolutions.io/service/consulting/</guid>
       <description>NextWave offers affordable consulting to take your business to the next level.From marketing, web design, to SEO, make sure you are adapting the NextWave of technology.</description>
     </item>
     
     <item>
       <title>Contracting/Consulting</title>
-      <link>https://localhost:1313/post/consulting/</link>
+      <link>https://nextwavesolutions.io/post/consulting/</link>
       <pubDate>Thu, 28 Sep 2017 17:43:48 -0500</pubDate>
       
-      <guid>https://localhost:1313/post/consulting/</guid>
+      <guid>https://nextwavesolutions.io/post/consulting/</guid>
       <description>From website development, home automation, to Ip-based security cameras, if you are ready to join to millions of users and businesses already empowering themselves with tomorrows open source technology, email us at justyn@nextwavesolutions.io we would love to solve your problems with our solutions.</description>
     </item>
     
     <item>
       <title>About Me</title>
-      <link>https://localhost:1313/post/about/</link>
+      <link>https://nextwavesolutions.io/post/about/</link>
       <pubDate>Thu, 28 Sep 2017 17:30:00 -0500</pubDate>
       
-      <guid>https://localhost:1313/post/about/</guid>
+      <guid>https://nextwavesolutions.io/post/about/</guid>
       <description>Open Source Developer / Technology Consultant
  Email justyn@nextwavesolutions.io Github  </description>
     </item>
     
     <item>
       <title>Why open source</title>
-      <link>https://localhost:1313/post/whyopensource/</link>
+      <link>https://nextwavesolutions.io/post/whyopensource/</link>
       <pubDate>Thu, 28 Sep 2017 17:01:20 -0500</pubDate>
       
-      <guid>https://localhost:1313/post/whyopensource/</guid>
+      <guid>https://nextwavesolutions.io/post/whyopensource/</guid>
       <description>“I often compare open source to science. To where science took this whole notion of developing ideas in the open and improving on other peoples’ ideas and making it into what science is today and the incredible advances that we have had.”
  Linus Torvalds
 Security Open source projects allow for peer review. Just like with science journals. Many eyes on a project are much better than a single company taking the helm of security.</description>
@@ -146,19 +146,19 @@ Security Open source projects allow for peer review. Just like with science jour
     
     <item>
       <title>Darn... Page not found.</title>
-      <link>https://localhost:1313/404/404/</link>
+      <link>https://nextwavesolutions.io/404/404/</link>
       <pubDate>Sun, 16 Oct 2016 19:28:41 +0200</pubDate>
       
-      <guid>https://localhost:1313/404/404/</guid>
+      <guid>https://nextwavesolutions.io/404/404/</guid>
       <description>You should look somewhere else.</description>
     </item>
     
     <item>
       <title>Oops, you are offline.</title>
-      <link>https://localhost:1313/offline/offline/</link>
+      <link>https://nextwavesolutions.io/offline/offline/</link>
       <pubDate>Sun, 16 Oct 2016 19:28:41 +0200</pubDate>
       
-      <guid>https://localhost:1313/offline/offline/</guid>
+      <guid>https://nextwavesolutions.io/offline/offline/</guid>
       <description>You should try to find some internet connection to browse here.</description>
     </item>
     
