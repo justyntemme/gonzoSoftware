@@ -1,20 +1,14 @@
-[
-    {
+[{
         "id": 0,
         "name": "Btrader - Crypto-currency investment webpanel",
-        "image": "images/s1.jpg",
+        "image": "images/btrader.png",
         "url": "#",
-        "items": [
-            {
+        "items": [{
                 "name": "Github",
                 "url": "#"
             },
             {
                 "name": "Blog Post",
-                "url": "#"
-            },
-            {
-                "name": "Logotype",
                 "url": "#"
             }
         ]
@@ -22,26 +16,19 @@
     {
         "id": 1,
         "name": "Cointick - Crypto-currency command line ticker",
-        "image": "images/s1.jpg",
+        "image": "images/cointick.png",
         "url": "#",
-        "items": [
-            {
-                "name": "Web design",
-                "url": "#"
-            },
-            {
-                "name": "Wordpress",
-                "url": "#"
-            }
-        ]
+        "items": [{
+            "name": "Github repo",
+            "url": "https://github.com/justyntemme/cointick"
+        }]
     },
     {
         "id": 2,
         "name": "HypeBesat Essentials - Checkout Bot",
-        "image": "images/s1.jpg",
+        "image": "images/hbes.png",
         "url": "#",
-        "items": [
-            {
+        "items": [{
                 "name": "Buy Supreme Version",
                 "url": "#"
             },
@@ -49,56 +36,8 @@
                 "name": "Buy Gucci Version",
                 "url": "#"
             },
-	    {
-		    "name": "Blog Post",
-		    "url":"#"
-	    }
-        ]
-    },
-    {
-        "id": 3,
-        "name": "Pure ipsum - development services for people",
-        "image": "images/s1.jpg",
-        "url": "#",
-        "items": [
             {
-                "name": "Web design",
-                "url": "#"
-            },
-            {
-                "name": "Wordpress",
-                "url": "#"
-            }
-        ]
-    },
-    {
-        "id": 4,
-        "name": "Lorem studios - interior and patio design",
-        "image": "images/s1.jpg",
-        "url": "#",
-        "items": [
-            {
-                "name": "Web design",
-                "url": "#"
-            },
-            {
-                "name": "Logotype",
-                "url": "#"
-            }
-        ]
-    },
-    {
-        "id": 5,
-        "name": "Lorem studios - interior and patio design",
-        "image": "images/s1.jpg",
-        "url": "#",
-        "items": [
-            {
-                "name": "Web design",
-                "url": "#"
-            },
-            {
-                "name": "Logotype",
+                "name": "Blog Post",
                 "url": "#"
             }
         ]

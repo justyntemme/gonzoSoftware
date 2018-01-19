@@ -5,7 +5,7 @@ theme = "hugo-initio"
 publishDir = "public"
 
 [params]
-    name = "NextWave Solutions LLC"
+    name = "NextWave Solutions"
     description = "Propelling the NextWave of technology"
     email = "justyn@nextwavesolutions.io"
     year = 2018
@@ -13,16 +13,16 @@ publishDir = "public"
     favicon = ""
     DateForm = "January 18, 2018"
 
-    showSubheader = true
+    showSubheader = false
     showServices = true
     showRecentWorks = true
-    showDownload = true
+    showDownload = false
     showClients = false
 
     footerEnableContact = true
     footerEnableFollowme = true
-    footerEnableTextWidget = true
-    footerEnableFormWidget = true
+    footerEnableTextWidget = false
+    footerEnableFormWidget = false
 
 [[menu.main]]
     name = "home"
