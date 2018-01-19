@@ -1,0 +1,3 @@
+[submodule "nextwave/themes/hugo-initio"]
+	path = nextwave/themes/hugo-initio
+	url = https://github.com/miguelsimoni/hugo-initio.git

@@ -1,0 +1,38 @@
+baseURL = "https://nextwavesolutions.io"
+languageCode = "en-us"
+title = "NextWave Solutions"
+theme = "hugo-initio"
+publishDir= "docs"
+
+
+[params]
+     name = "NextWave Solutions"
+     description = "Propelling the <strong>NextWave</strong> of technology"
+     email = "info@nextwavesolutions.io"
+     phone = ""
+     address = ""
+     year = 2018
+     background = "/images/LoveCoding.png"
+     
+     showSubheader = true
+     showServices = true
+     showRecentWorks = true
+     showDownload = true
+
+     footerEnableContact = true
+     footerEnableFollowme = true
+     footerEnableTextWidget = true
+     footerEnableFormWidget = true
+
+[[menu.main]]
+     name = "Home"
+     url = "/"
+     weight = 1
+[[menu.main]]
+     name = "Blog"
+     url = "/post/"
+     weight = 5
+
+[params.disqus]
+     site = "nextwavesolutions.io"
+      

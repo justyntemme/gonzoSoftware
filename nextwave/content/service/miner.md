@@ -1,0 +1,12 @@
+---
+title: "Tools for Bitcoin investment"
+date: 2017-11-12T10:57:06-06:00
+draft: false
+
+---
+
+Nextwave is proud to announce a service to help investors and enthusiasts tackle the new challenge that is bitcoin investment. As an emerging technology bitcoin can be a murky lake to traverse, however with proper tooling, proprietary metrics, aggregated media, and a history of successful trades, NextWave hopes to be a lighthouse in the Bitcoin market.
+
+
+
+

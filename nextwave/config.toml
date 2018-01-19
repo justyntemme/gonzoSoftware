@@ -1,36 +1,73 @@
-enableRobotsTXT = true
-BaseURL			="https://nextwavesolutions.io/"
-LanguageCode		="US-EN"
-Title			="NextWave Solutions"
-paginate 		= 5
-pluralizelisttitles 	= false
-DisqussShortname 	="Justyn Temme"
-Copyright 		="All rights reserved - 2017"
-canonifyurls 		=true
-theme			="hugo-theme-casper-master"
+baseURL = "https://localhost:1313/"
+languageCode = "en-us"
+title = "NextWave Solutions LLC"
+theme = "hugo-initio"
+publishDir = "public"
 
 [params]
-	description 	= "NextWave Solutions LLC"
-	cover 		= "images/Love-Coding.png"
-	author		= "Justyn Temme"
-	authorlocation	= "United States of America"
-	authorwebsite	= "https://nextwavesolutions.io"
-	authorbio	= "Open Source Developer"
-	githubName	= "justyntemme"
-	twitterName	= "nextwavesllc"	
-	linkedinName	= "justyntemme"
+    name = "NextWave Solutions LLC"
+    description = "Propelling the NextWave of technology"
+    email = "justyn@nextwavesolutions.io"
+    year = 2018
+    background = "/images/Love-Coding.png"
+    favicon = ""
+    DateForm = "January 18, 2018"
+
+    showSubheader = true
+    showServices = true
+    showRecentWorks = true
+    showDownload = true
+    showClients = false
+
+    footerEnableContact = true
+    footerEnableFollowme = true
+    footerEnableTextWidget = true
+    footerEnableFormWidget = true
+
 [[menu.main]]
-	name		= "Github Repos"
-	weight		= -150
-	identifier	= "github"
-	url		= "https://github.com/justyntemme/"	
+    name = "home"
+    url = "/"
+    weight = 1
 [[menu.main]]
-	name		= "Home"
-	weight		= 100
-	identifier	= "home"
-	url		= "/"
-[[menu.main]]
-	name		= "Blog"
-	weight		= 99
-	identifier	= "blog"
-	url		= "/#content"		
+    name = "blog"
+    url = "/post/"
+    weight = 5
+
+[params.disqus]
+    site = "nextwavesolutions.io"
+
+[params.sharethis]
+    property = "123456789012345678901234"
+    custom = true
+
+[params.google.analytics]
+    trackerID = "UA-109147161-1"
+
+[[params.social]]
+	title = "twitter"
+	url = "https://twitter.com/nextwavesllc"
+    icon = "fa-twitter-square"
+    footer = true
+    sharethis = true
+    network = "twitter"
+[[params.social]]
+	title = "linkedin"
+	url = "https://www.linkedin.com/in/justyntemme"
+    icon = "fa-linkedin-square"
+    footer = false
+    sharethis = true
+    network = "linkedin"
+[[params.social]]
+	title = "github"
+	url = "https://github.com/justyntemme"
+    icon = "fa-github"
+    footer = true
+    sharethis = false
+    network = ""
+[[params.social]]
+	title = "email"
+	url = "mailto:info@nextwavesolutions.io"
+    icon = "fa-envelope"
+    footer = false
+    sharethis = true
+    network = "email"

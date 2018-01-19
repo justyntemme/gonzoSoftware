@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>404 on NextWave Solutions</title>
-    <link>https://nextwavesolutions.io/404/</link>
-    <description>Recent content in 404 on NextWave Solutions</description>
+    <title>404s on NextWave Solutions LLC</title>
+    <link>https://localhost:1313/404/</link>
+    <description>Recent content in 404s on NextWave Solutions LLC</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>US-EN</language>
-    <copyright>All rights reserved - 2017</copyright>
+    <language>en-us</language>
     <lastBuildDate>Sun, 16 Oct 2016 19:28:41 +0200</lastBuildDate>
     
-	<atom:link href="https://nextwavesolutions.io/404/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://localhost:1313/404/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Darn... Page not found.</title>
-      <link>https://nextwavesolutions.io/404/404/</link>
+      <link>https://localhost:1313/404/404/</link>
       <pubDate>Sun, 16 Oct 2016 19:28:41 +0200</pubDate>
       
-      <guid>https://nextwavesolutions.io/404/404/</guid>
+      <guid>https://localhost:1313/404/404/</guid>
       <description>You should look somewhere else.</description>
     </item>
     

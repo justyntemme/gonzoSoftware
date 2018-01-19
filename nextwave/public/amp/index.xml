@@ -1,99 +1,98 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Amp on NextWave Solutions</title>
-    <link>https://nextwavesolutions.io/amp/</link>
-    <description>Recent content in Amp on NextWave Solutions</description>
+    <title>Amps on NextWave Solutions LLC</title>
+    <link>https://localhost:1313/amp/</link>
+    <description>Recent content in Amps on NextWave Solutions LLC</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>US-EN</language>
-    <copyright>All rights reserved - 2017</copyright>
+    <language>en-us</language>
     <lastBuildDate>Wed, 10 Jan 2018 10:54:34 -0600</lastBuildDate>
     
-	<atom:link href="https://nextwavesolutions.io/amp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://localhost:1313/amp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Contain your backend services with dockers private networking</title>
-      <link>https://nextwavesolutions.io/amp/containerizeitall/</link>
+      <link>https://localhost:1313/amp/containerizeitall/</link>
       <pubDate>Wed, 10 Jan 2018 10:54:34 -0600</pubDate>
       
-      <guid>https://nextwavesolutions.io/amp/containerizeitall/</guid>
+      <guid>https://localhost:1313/amp/containerizeitall/</guid>
       <description>Keeping private traffic private In reality, no one needs to be able to see your backend services and databases. Those are strictly for the public services running on the same box to access. Unfortunately, too many database containers are exposed and pwned fairly easily due to sub-par security measures. By keeping the non-public containers only available to internal traffic, you reduce your attack service and increase security for all of your users.</description>
     </item>
     
     <item>
       <title>What is Bitcoin?</title>
-      <link>https://nextwavesolutions.io/amp/whatisbitcoin/</link>
+      <link>https://localhost:1313/amp/whatisbitcoin/</link>
       <pubDate>Sat, 11 Nov 2017 13:42:13 -0600</pubDate>
       
-      <guid>https://nextwavesolutions.io/amp/whatisbitcoin/</guid>
+      <guid>https://localhost:1313/amp/whatisbitcoin/</guid>
       <description>Bitcoin is a decentralized cryptocurrency that has recently risen to quite a popularity among enthusiasts and investors alike. Originally created by Satoshi Nakamoto, an anonymous member of an online community. The real identity of this creator has never been discovered.
 How does it work Bitcoin works by creating a network of computers that relay transactions between each other. Each transaction is signed by the sender with a cryptographic key (explained below) that guarantees a few things.</description>
     </item>
     
     <item>
       <title>Contain Go</title>
-      <link>https://nextwavesolutions.io/amp/containgo/</link>
+      <link>https://localhost:1313/amp/containgo/</link>
       <pubDate>Fri, 29 Sep 2017 16:53:40 -0500</pubDate>
       
-      <guid>https://nextwavesolutions.io/amp/containgo/</guid>
+      <guid>https://localhost:1313/amp/containgo/</guid>
       <description>So you have just learned Golang, built a webserver, and are ready to show the world what you can do. That&amp;rsquo;s great! Go is a very great language that scales well. In fact, many of the tools used to deliver this web page to you are written in Go. Hugo, a static website generator, was used to build the webpage. A simple Go file server is used to serve the webpage.</description>
     </item>
     
     <item>
       <title>Why Fedora?</title>
-      <link>https://nextwavesolutions.io/amp/whyfedora/</link>
+      <link>https://localhost:1313/amp/whyfedora/</link>
       <pubDate>Fri, 29 Sep 2017 12:39:51 -0500</pubDate>
       
-      <guid>https://nextwavesolutions.io/amp/whyfedora/</guid>
+      <guid>https://localhost:1313/amp/whyfedora/</guid>
       <description>Many Linux advocates are familiar with CentOS server side, as well as RHEL. Fedora is often treated as the desktop RHEL distribution, instead of a fully qualified server distribution. Today we will look at several reasons to use Fedora server side, as well as compare it to other server distros.
 Packages | We have hit the sweet spot Fedora lives in a sweet spot. The packages stay very stable, and i still manage to get up to date software without having to sacrifice stability (I&amp;rsquo;m looking at you arch).</description>
     </item>
     
     <item>
       <title>TLS (SSL) All the Things!</title>
-      <link>https://nextwavesolutions.io/amp/tlsallthethings/</link>
+      <link>https://localhost:1313/amp/tlsallthethings/</link>
       <pubDate>Thu, 28 Sep 2017 19:11:08 -0500</pubDate>
       
-      <guid>https://nextwavesolutions.io/amp/tlsallthethings/</guid>
+      <guid>https://localhost:1313/amp/tlsallthethings/</guid>
       <description>So you have heard about it, you use it, and it also was once an endeavor that could cost quite a bit of cash. Now thanks to Letsencrypt it&amp;rsquo;s easier than ever to force HTTPS traffic to even static websites on your web server.
 Letsencrypt Letsencrypt is a free CA (certificate authority) that let&amp;rsquo;s anyone that owns a domain generate a trusted certificate for that domain. There are many guides to do this, my favorite being our friends at Fedora Magazine.</description>
     </item>
     
     <item>
       <title>Who is NextWave?</title>
-      <link>https://nextwavesolutions.io/amp/whoami/</link>
+      <link>https://localhost:1313/amp/whoami/</link>
       <pubDate>Thu, 28 Sep 2017 17:48:13 -0500</pubDate>
       
-      <guid>https://nextwavesolutions.io/amp/whoami/</guid>
+      <guid>https://localhost:1313/amp/whoami/</guid>
       <description>NextWave is a technology solution company empowering businesses with the next wave of technology. Open source allows for business to break the chains of old proprietary monoliths and become part of a growing community of those who care about the software they run. At NextWave we help businesses use the technology of tomorrow.</description>
     </item>
     
     <item>
       <title>Contracting/Consulting</title>
-      <link>https://nextwavesolutions.io/amp/consulting/</link>
+      <link>https://localhost:1313/amp/consulting/</link>
       <pubDate>Thu, 28 Sep 2017 17:43:48 -0500</pubDate>
       
-      <guid>https://nextwavesolutions.io/amp/consulting/</guid>
+      <guid>https://localhost:1313/amp/consulting/</guid>
       <description>From website development, home automation, to Ip-based security cameras, if you are ready to join to millions of users and businesses already empowering themselves with tomorrows open source technology, email us at justyn@nextwavesolutions.io we would love to solve your problems with our solutions.</description>
     </item>
     
     <item>
       <title>About Me</title>
-      <link>https://nextwavesolutions.io/amp/about/</link>
+      <link>https://localhost:1313/amp/about/</link>
       <pubDate>Thu, 28 Sep 2017 17:30:00 -0500</pubDate>
       
-      <guid>https://nextwavesolutions.io/amp/about/</guid>
+      <guid>https://localhost:1313/amp/about/</guid>
       <description>Open Source Developer / Technology Consultant
  Email justyn@nextwavesolutions.io Github  </description>
     </item>
     
     <item>
       <title>Why open source</title>
-      <link>https://nextwavesolutions.io/amp/whyopensource/</link>
+      <link>https://localhost:1313/amp/whyopensource/</link>
       <pubDate>Thu, 28 Sep 2017 17:01:20 -0500</pubDate>
       
-      <guid>https://nextwavesolutions.io/amp/whyopensource/</guid>
+      <guid>https://localhost:1313/amp/whyopensource/</guid>
       <description>“I often compare open source to science. To where science took this whole notion of developing ideas in the open and improving on other peoples’ ideas and making it into what science is today and the incredible advances that we have had.”
  Linus Torvalds
 Security Open source projects allow for peer review. Just like with science journals. Many eyes on a project are much better than a single company taking the helm of security.</description>
