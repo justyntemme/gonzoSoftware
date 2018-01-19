@@ -1,5 +1,5 @@
 ---
-title: "Bitcoin Investment Tools"
+title: "Bitcoin Investment"
 date: 2017-11-12T10:57:06-06:00
 draft: false
 
