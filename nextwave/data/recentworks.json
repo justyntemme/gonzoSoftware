@@ -1,16 +1,16 @@
 [
     {
         "id": 0,
-        "name": "Sample title - big data solutions",
+        "name": "Btrader - Crypto-currency investment webpanel",
         "image": "images/s1.jpg",
         "url": "#",
         "items": [
             {
-                "name": "Web design",
+                "name": "Github",
                 "url": "#"
             },
             {
-                "name": "Wordpress",
+                "name": "Blog Post",
                 "url": "#"
             },
             {
@@ -21,7 +21,7 @@
     },
     {
         "id": 1,
-        "name": "Pure ipsum - development services for people",
+        "name": "Cointick - Crypto-currency command line ticker",
         "image": "images/s1.jpg",
         "url": "#",
         "items": [
@@ -37,18 +37,22 @@
     },
     {
         "id": 2,
-        "name": "Lorem studios - interior and patio design",
+        "name": "HypeBesat Essentials - Checkout Bot",
         "image": "images/s1.jpg",
         "url": "#",
         "items": [
             {
-                "name": "Web design",
+                "name": "Buy Supreme Version",
                 "url": "#"
             },
             {
-                "name": "Logotype",
+                "name": "Buy Gucci Version",
                 "url": "#"
-            }
+            },
+	    {
+		    "name": "Blog Post",
+		    "url":"#"
+	    }
         ]
     },
     {
