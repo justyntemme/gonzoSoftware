@@ -224,51 +224,12 @@ a:hover {
 
 
 **********************************************************************/
-#headerAbout {
-	padding: 0;
-	position: absolute;
-	left: 40%;
-	top: 10%;
-	z-index: 10;
-	
-}
-#headerAbout h1 .title {
-	color: white;
-}
-#headerAbout h1 .tagline {
-	color: white;
-}
-#headerAbout h1 .tagline a {
-	color:white;
-}
-
-
-#bvideo {
-	position: relative;
-	width: 100%;
-	top 0;
-	z-index: 0;
-	overflow: hidden;
-	object-fit: fill;
-	padding: 0;
-}
-#main {
-	z-index: 5;
-}
 #head {
-  padding: 0;
-  overflow: hidden;
-  height: 500px;
-  width: 100%;
+  background: #f4f4f4 url(../images/bg_head.jpg) top center;
   background-size: cover;
   color: #7C7C7C;
-  background: #f4f4f4;
+  padding: 30px 0 35px 0;
 }
-@media (max-width: 767px) {
-  background: #f4f4f4 url(../images/bg_head.jpg) top center;
-}
-
-
 #head img.img-circle {
   display: block;
   width: 140px;
@@ -301,6 +262,7 @@ a:hover {
   color: #5E5E5E;
 }
 .home #head {
+  padding: 90px 0;
 }
 .home #head .title {
   font-size: 49px;

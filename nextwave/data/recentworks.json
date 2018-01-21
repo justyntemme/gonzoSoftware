@@ -2,14 +2,14 @@
         "id": 0,
         "name": "Btrader - Crypto-currency investment webpanel",
         "image": "images/btrader.png",
-        "url": "#",
+        "url": "https://nextwavesolutions.io/post/miner/",
         "items": [{
                 "name": "Github",
-                "url": "#"
+                "url": "https://github.com/justyntemme/NothingInterestingOverHere"
             },
             {
                 "name": "Blog Post",
-                "url": "#"
+                "url": "https://nextwavesolutions.io/post/miner/"
             }
         ]
     },
@@ -30,15 +30,11 @@
         "url": "#",
         "items": [{
                 "name": "Buy Supreme Version",
-                "url": "#"
+                "url": "https://chrome.google.com/webstore/detail/hypebeast-essentials-s/kkckdgnjbapnaclmebocpiognliiffmg"
             },
             {
                 "name": "Buy Gucci Version",
-                "url": "#"
-            },
-            {
-                "name": "Blog Post",
-                "url": "#"
+                "url": "https://chrome.google.com/webstore/detail/hypebeast-essentials-g/capimilldmnmdbakfiolnehgcjghcjin"
             }
         ]
     }
