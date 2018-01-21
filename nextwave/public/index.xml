@@ -6,10 +6,21 @@
     <description>Recent content on NextWave Solutions LLC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jan 2018 08:52:16 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://nextwavesolutions.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fast websites with Hugo</title>
+      <link>https://nextwavesolutions.io/post/hugocms/</link>
+      <pubDate>Sun, 21 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://nextwavesolutions.io/post/hugocms/</guid>
+      <description>Many web designers are moving to static sites to manage content. Not only do static sites generally have faster page speed, the overhead on the parent server is much smaller.
+Hugo Hugo is a static site generator written in Go. Websites are generated instantly with a config file, with all content being managed from markdown files.
+The project directory config.toml This is your site config file. It tells Hugo every piece of information needed to generate your website.</description>
+    </item>
     
     <item>
       <title>Custom Development</title>
@@ -160,17 +171,6 @@ Security Open source projects allow for peer review. Just like with science jour
       
       <guid>https://nextwavesolutions.io/offline/offline/</guid>
       <description>You should try to find some internet connection to browse here.</description>
-    </item>
-    
-    <item>
-      <title>Fast websites with Hugo</title>
-      <link>https://nextwavesolutions.io/post/hugocms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://nextwavesolutions.io/post/hugocms/</guid>
-      <description>Many web designers are moving to static sites to manage content. Not only do static sites generally have faster page speed, the overhead on the parent server is much smaller.
-Hugo Hugo is a static site generator written in Go. Websites are generated instantly with a config file, with all content being managed from markdown files.
-The project directory config.toml This is your site config file. It tells Hugo every piece of information needed to generate your website.</description>
     </item>
     
   </channel>

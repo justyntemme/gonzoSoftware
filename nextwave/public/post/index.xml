@@ -6,10 +6,21 @@
     <description>Recent content in Posts on NextWave Solutions LLC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://nextwavesolutions.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fast websites with Hugo</title>
+      <link>https://nextwavesolutions.io/post/hugocms/</link>
+      <pubDate>Sun, 21 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://nextwavesolutions.io/post/hugocms/</guid>
+      <description>Many web designers are moving to static sites to manage content. Not only do static sites generally have faster page speed, the overhead on the parent server is much smaller.
+Hugo Hugo is a static site generator written in Go. Websites are generated instantly with a config file, with all content being managed from markdown files.
+The project directory config.toml This is your site config file. It tells Hugo every piece of information needed to generate your website.</description>
+    </item>
     
     <item>
       <title>Private Networking with Docker and Nginx: Keeping Private Traffic Private</title>
@@ -106,17 +117,6 @@ Letsencrypt Letsencrypt is a free CA (certificate authority) that let&amp;rsquo;
       <description>“I often compare open source to science. To where science took this whole notion of developing ideas in the open and improving on other peoples’ ideas and making it into what science is today and the incredible advances that we have had.”
  Linus Torvalds
 Security Open source projects allow for peer review. Just like with science journals. Many eyes on a project are much better than a single company taking the helm of security.</description>
-    </item>
-    
-    <item>
-      <title>Fast websites with Hugo</title>
-      <link>https://nextwavesolutions.io/post/hugocms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://nextwavesolutions.io/post/hugocms/</guid>
-      <description>Many web designers are moving to static sites to manage content. Not only do static sites generally have faster page speed, the overhead on the parent server is much smaller.
-Hugo Hugo is a static site generator written in Go. Websites are generated instantly with a config file, with all content being managed from markdown files.
-The project directory config.toml This is your site config file. It tells Hugo every piece of information needed to generate your website.</description>
     </item>
     
   </channel>

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://nextwavesolutions.io/post/hugocms/</loc>
+    <lastmod>2018-01-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nextwavesolutions.io/service/webdesign/</loc>
     <lastmod>2018-01-19T08:52:16-06:00</lastmod>
   </url>
@@ -94,12 +99,8 @@
   </url>
   
   <url>
-    <loc>https://nextwavesolutions.io/post/hugocms/</loc>
-  </url>
-  
-  <url>
     <loc>https://nextwavesolutions.io/</loc>
-    <lastmod>2018-01-19T08:52:16-06:00</lastmod>
+    <lastmod>2018-01-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -111,7 +112,7 @@
   
   <url>
     <loc>https://nextwavesolutions.io/post/</loc>
-    <lastmod>2018-01-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
