@@ -224,51 +224,26 @@ a:hover {
 
 
 **********************************************************************/
-#headerAbout {
-	padding: 0;
+#logo {
 	position: absolute;
-	left: 35%;
-	top: 10%;
+	top: 5%;
 	z-index: 10;
-	
-}
-#headerAbout h1 .title {
 	color: white;
 }
-#headerAbout h1 .tagline {
-	color: white;
-}
-#headerAbout h1 .tagline a {
-	color:white;
-}
-
-
-#bvideo {
-	position: relative;
+#head video {
 	width: 100%;
-	top 0;
-	z-index: 0;
-	overflow: hidden;
-	object-fit: fill;
-	padding: 0;
-}
-#main {
+	position: relative;
 	z-index: 5;
 }
 #head {
-  padding: 0;
-  overflow: hidden;
-  height: 500px;
-  width: 100%;
+  background: #f4f4f4 top center;
   background-size: cover;
   color: #7C7C7C;
-  background: #f4f4f4;
+  overflow: hidden;
+  height: 400px;
+  padding: 0 !important;
+  margin: 0;
 }
-@media (max-width: 767px) {
-  background: #f4f4f4 url(../images/bg_head.jpg) top center;
-}
-
-
 #head img.img-circle {
   display: block;
   width: 140px;
@@ -284,14 +259,14 @@ a:hover {
 }
 #head .title a {
   text-decoration: none;
-  color: #333333;
+  color: #white;
 }
 #head .tagline {
   display: block;
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.2em;
-  color: #7C7C7C;
+  color: #grey;
   margin: 5px 0 0;
 }
 #head .tagline b {
@@ -301,6 +276,7 @@ a:hover {
   color: #5E5E5E;
 }
 .home #head {
+  padding: 90px 0;
 }
 .home #head .title {
   font-size: 49px;

@@ -6,7 +6,7 @@
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 
-	<title>Contracting/Consulting</title>
+	<title>Fast websites with Hugo</title>
 
 	<link rel="shortcut icon" href="https://nextwavesolutions.io/">
 
@@ -99,12 +99,124 @@
  				<article class="post">
 					<header class="entry-header">
  						<div class="entry-meta">
- 							<span class="posted-on"><time class="entry-date published" date="2017-09-28 17:43:48 -0500 CDT">0000-00-0000</time></span>
+ 							<span class="posted-on"><time class="entry-date published" date="2017-11-18 18:31:37 -0600 CST">0000-00-0000</time></span>
  						</div>
- 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/consulting/" rel="bookmark">Contracting/Consulting</a></h1>
+ 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/hugocms/" rel="bookmark">Fast websites with Hugo</a></h1>
 					</header>
 					<div class="entry-content">
-						<p>From website development, home automation, to Ip-based security cameras, if you are ready to join to millions of users and businesses already empowering themselves with tomorrows open source technology, email us at justyn@nextwavesolutions.io we would love to solve your problems with our solutions.</p>
+						
+
+<p>Many web designers are moving to static sites to manage content. Not only do static sites generally have faster page speed, the overhead on the parent server is much smaller.</p>
+
+<h2 id="hugo">Hugo</h2>
+
+<p>Hugo is a static site generator written in Go. Websites are generated instantly with a config file, with all content being managed from markdown files.</p>
+
+<h3 id="the-project-directory">The project directory</h3>
+
+<h4 id="config-toml">config.toml</h4>
+
+<p>This is your site config file. It tells Hugo every piece of information needed to generate your website. Below is the config.toml needed to generate nextwavesolutions.io</p>
+
+<pre><code>baseURL = &quot;https://nextwavesolutions.io/&quot;
+languageCode = &quot;en-us&quot;
+title = &quot;NextWave Solutions LLC&quot;
+theme = &quot;hugo-initio&quot;
+publishDir = &quot;public&quot;
+
+[params]
+    name = &quot;NextWave Solutions&quot;
+    description = &quot;Propelling the NextWave of technology&quot;
+    email = &quot;justyn@nextwavesolutions.io&quot;
+    background = &quot;/images/Love-Coding.png&quot;
+    favicon = &quot;&quot;
+    DateForm = &quot;0000-00-0000&quot;
+    showSubheader = false
+    showServices = true
+    showRecentWorks = true
+    showDownload = false
+    showClients = false
+
+    footerEnableContact = true
+    footerEnableFollowme = true
+    footerEnableTextWidget = false
+    footerEnableFormWidget = false
+
+[[menu.main]]
+    name = &quot;home&quot;
+    url = &quot;/&quot;
+    weight = 1
+[[menu.main]]
+    name = &quot;blog&quot;
+    url = &quot;/post/&quot;
+    weight = 5
+
+[params.disqus]
+    site = &quot;nextwavesolutions.io&quot;
+
+[params.sharethis]
+    property = &quot;123456789012345678901234&quot;
+    custom = true
+
+[params.google.analytics]
+    trackerID = &quot;UA-109147161-1&quot;
+
+[[params.social]]
+	title = &quot;twitter&quot;
+	url = &quot;https://twitter.com/nextwavesllc&quot;
+    icon = &quot;fa-twitter-square&quot;
+    footer = true
+    sharethis = true
+    network = &quot;twitter&quot;
+[[params.social]]
+	title = &quot;linkedin&quot;
+	url = &quot;https://www.linkedin.com/in/justyntemme&quot;
+    icon = &quot;fa-linkedin-square&quot;
+    footer = false
+    sharethis = true
+    network = &quot;linkedin&quot;
+[[params.social]]
+	title = &quot;github&quot;
+	url = &quot;https://github.com/justyntemme&quot;
+    icon = &quot;fa-github&quot;
+    footer = true
+    sharethis = false
+    network = &quot;&quot;
+[[params.social]]
+	title = &quot;email&quot;
+	url = &quot;mailto:info@nextwavesolutions.io&quot;
+    icon = &quot;fa-envelope&quot;
+    footer = false
+    sharethis = true
+    network = &quot;email&quot;
+
+</code></pre>
+
+<p>There are quite a bit of configuration options on the page. However not all themes require this in depth of a configuration. Websites can be spun up in a matter of minutes. The exhausing config file does show the flexability of hugo to build more complex pages. At NextWave, we have standerdized on Hugo as the CMS.</p>
+
+<h3 id="public">public/</h3>
+
+<p>Unless specified otherwise in the config file, Hugo will generate all static pages in the public/ directory on the project. Here lives the files you will actually move to your public_html directory of your webserver.</p>
+
+<h3 id="content-post">content/post</h3>
+
+<p>Hugo allows for lots of content types that the theming engine can take advantage of. The most popular, and default content type is th  post type. Hugo will treat each markdown file in this directory as a new post. These files are used to generate each indpendent post  page, as well as added to the post index page.</p>
+
+<h3 id="static">static/</h3>
+
+<p>These are the static folders that will live at the root directory of your public folder. As any web developer knows, the static folder will host images, videos, and any other external resources needed by your webpages</p>
+
+<h3 id="themes">themes/</h3>
+
+<p>The theme folder is the directory which holds the configuration files for your theme. At a later date I will be creating a blog post detailing how themes work, and how you can make use of themes as a highly customizable content management system.</p>
+
+<h2 id="fast-pagespeed">Fast pagespeed</h2>
+
+<p>It is well known that static sites are much faster than dynamic content. This is generally due to the fact that dynamic content managed by cms systems like wordpress, store all post content in a database. A database query is required to load every page.</p>
+
+<h3 id="seo-benifits">SEO benifits</h3>
+
+<p>As google transitions to web frameworks like AMP, page speed becoumes even more of a factor for SEO. Google will rank your website over similar sites with a slower page speed loading time. Using a static site can help your bounce rate, and search result score simply by not needing a database.</p>
 
 					</div>
 				</article>

@@ -40,6 +40,17 @@ A single Nginx Container Centralizing keys In the land before time &amp;ndash; e
     </item>
     
     <item>
+      <title>Fast websites with Hugo</title>
+      <link>https://nextwavesolutions.io/post/hugocms/</link>
+      <pubDate>Sat, 18 Nov 2017 18:31:37 -0600</pubDate>
+      
+      <guid>https://nextwavesolutions.io/post/hugocms/</guid>
+      <description>Many web designers are moving to static sites to manage content. Not only do static sites generally have faster page speed, the overhead on the parent server is much smaller.
+Hugo Hugo is a static site generator written in Go. Websites are generated instantly with a config file, with all content being managed from markdown files.
+The project directory config.toml This is your site config file. It tells Hugo every piece of information needed to generate your website.</description>
+    </item>
+    
+    <item>
       <title>Bitcoin Investment</title>
       <link>https://nextwavesolutions.io/service/miner/</link>
       <pubDate>Sun, 12 Nov 2017 10:57:06 -0600</pubDate>

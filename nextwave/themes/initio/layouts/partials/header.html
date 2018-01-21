@@ -32,18 +32,16 @@
 
 <header id="header">
 	<div id="head" class="parallax" parallax-speed="2">
-		<video loop muted autoplay id="bvideo">
-			<source src="/videos/webdesign.mp4" tyle="video/mp4">
+		<video autoplay loop muted>
+			<source src="/videos/webdesign.mp4" type="video/mp4">
 		</video>
-		<div id="headerAbout">	
-		<h1 id="logo" class="text-center">
-			<img class="img-circle" src="{{ .Site.BaseURL }}images/guy.jpg" alt="">
+		<h1 id="logo" class="col-md-4 col-md-offset-4 centered text-center">
+			<img class="img-circle" src="{{ .Site.BaseURL }}images/nextWave.png" alt="">
 			<span class="title">{{ .Site.Params.name }}</span>
 			<span class="tagline">{{ .Site.Params.description }}<br>
 				<a href="">{{ .Site.Params.email }}</a>
             </span>
 		</h1>
-		</div>
 	</div>
 
     {{ partial "menu.html" . }}

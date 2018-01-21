@@ -30,8 +30,11 @@
 
 <header id="header">
 	<div id="head" class="parallax" parallax-speed="2">
-		<h1 id="logo" class="text-center">
-			<img class="img-circle" src="https://nextwavesolutions.io/images/guy.jpg" alt="">
+		<video autoplay loop muted>
+			<source src="/videos/webdesign.mp4" type="video/mp4">
+		</video>
+		<h1 id="logo" class="col-md-4 col-md-offset-4 centered text-center">
+			<img class="img-circle" src="https://nextwavesolutions.io/images/nextWave.png" alt="">
 			<span class="title">NextWave Solutions</span>
 			<span class="tagline">Propelling the NextWave of technology<br>
 				<a href="">justyn@nextwavesolutions.io</a>
@@ -96,7 +99,7 @@
 				<article class="post">
 					<header class="entry-header">
 						<div class="entry-meta">
-							<span class="posted-on"><time class="entry-date published" date="2018-01-10 10:54:34 -0600 CST">January 18, 10018</time></span>
+							<span class="posted-on"><time class="entry-date published" date="2018-01-10 10:54:34 -0600 CST">0000-00-0000</time></span>
 						</div>
 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/containerizeitall/" rel="bookmark">Private Networking with Docker and Nginx: Keeping Private Traffic Private</a></h1>
 					</header>
@@ -239,7 +242,132 @@ services:
 				<article class="post">
 					<header class="entry-header">
 						<div class="entry-meta">
-							<span class="posted-on"><time class="entry-date published" date="2017-11-12 10:57:06 -0600 CST">November 118, 12118</time></span>
+							<span class="posted-on"><time class="entry-date published" date="2017-11-18 18:31:37 -0600 CST">0000-00-0000</time></span>
+						</div>
+						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/hugocms/" rel="bookmark">Fast websites with Hugo</a></h1>
+					</header>
+					<div class="entry-content">
+						
+
+<p>Many web designers are moving to static sites to manage content. Not only do static sites generally have faster page speed, the overhead on the parent server is much smaller.</p>
+
+<h2 id="hugo">Hugo</h2>
+
+<p>Hugo is a static site generator written in Go. Websites are generated instantly with a config file, with all content being managed from markdown files.</p>
+
+<h3 id="the-project-directory">The project directory</h3>
+
+<h4 id="config-toml">config.toml</h4>
+
+<p>This is your site config file. It tells Hugo every piece of information needed to generate your website. Below is the config.toml needed to generate nextwavesolutions.io</p>
+
+<pre><code>baseURL = &quot;https://nextwavesolutions.io/&quot;
+languageCode = &quot;en-us&quot;
+title = &quot;NextWave Solutions LLC&quot;
+theme = &quot;hugo-initio&quot;
+publishDir = &quot;public&quot;
+
+[params]
+    name = &quot;NextWave Solutions&quot;
+    description = &quot;Propelling the NextWave of technology&quot;
+    email = &quot;justyn@nextwavesolutions.io&quot;
+    background = &quot;/images/Love-Coding.png&quot;
+    favicon = &quot;&quot;
+    DateForm = &quot;0000-00-0000&quot;
+    showSubheader = false
+    showServices = true
+    showRecentWorks = true
+    showDownload = false
+    showClients = false
+
+    footerEnableContact = true
+    footerEnableFollowme = true
+    footerEnableTextWidget = false
+    footerEnableFormWidget = false
+
+[[menu.main]]
+    name = &quot;home&quot;
+    url = &quot;/&quot;
+    weight = 1
+[[menu.main]]
+    name = &quot;blog&quot;
+    url = &quot;/post/&quot;
+    weight = 5
+
+[params.disqus]
+    site = &quot;nextwavesolutions.io&quot;
+
+[params.sharethis]
+    property = &quot;123456789012345678901234&quot;
+    custom = true
+
+[params.google.analytics]
+    trackerID = &quot;UA-109147161-1&quot;
+
+[[params.social]]
+	title = &quot;twitter&quot;
+	url = &quot;https://twitter.com/nextwavesllc&quot;
+    icon = &quot;fa-twitter-square&quot;
+    footer = true
+    sharethis = true
+    network = &quot;twitter&quot;
+[[params.social]]
+	title = &quot;linkedin&quot;
+	url = &quot;https://www.linkedin.com/in/justyntemme&quot;
+    icon = &quot;fa-linkedin-square&quot;
+    footer = false
+    sharethis = true
+    network = &quot;linkedin&quot;
+[[params.social]]
+	title = &quot;github&quot;
+	url = &quot;https://github.com/justyntemme&quot;
+    icon = &quot;fa-github&quot;
+    footer = true
+    sharethis = false
+    network = &quot;&quot;
+[[params.social]]
+	title = &quot;email&quot;
+	url = &quot;mailto:info@nextwavesolutions.io&quot;
+    icon = &quot;fa-envelope&quot;
+    footer = false
+    sharethis = true
+    network = &quot;email&quot;
+
+</code></pre>
+
+<p>There are quite a bit of configuration options on the page. However not all themes require this in depth of a configuration. Websites can be spun up in a matter of minutes. The exhausing config file does show the flexability of hugo to build more complex pages. At NextWave, we have standerdized on Hugo as the CMS.</p>
+
+<h3 id="public">public/</h3>
+
+<p>Unless specified otherwise in the config file, Hugo will generate all static pages in the public/ directory on the project. Here lives the files you will actually move to your public_html directory of your webserver.</p>
+
+<h3 id="content-post">content/post</h3>
+
+<p>Hugo allows for lots of content types that the theming engine can take advantage of. The most popular, and default content type is th  post type. Hugo will treat each markdown file in this directory as a new post. These files are used to generate each indpendent post  page, as well as added to the post index page.</p>
+
+<h3 id="static">static/</h3>
+
+<p>These are the static folders that will live at the root directory of your public folder. As any web developer knows, the static folder will host images, videos, and any other external resources needed by your webpages</p>
+
+<h3 id="themes">themes/</h3>
+
+<p>The theme folder is the directory which holds the configuration files for your theme. At a later date I will be creating a blog post detailing how themes work, and how you can make use of themes as a highly customizable content management system.</p>
+
+<h2 id="fast-pagespeed">Fast pagespeed</h2>
+
+<p>It is well known that static sites are much faster than dynamic content. This is generally due to the fact that dynamic content managed by cms systems like wordpress, store all post content in a database. A database query is required to load every page.</p>
+
+<h3 id="seo-benifits">SEO benifits</h3>
+
+<p>As google transitions to web frameworks like AMP, page speed becoumes even more of a factor for SEO. Google will rank your website over similar sites with a slower page speed loading time. Using a static site can help your bounce rate, and search result score simply by not needing a database.</p>
+
+					</div>
+				</article>
+                
+				<article class="post">
+					<header class="entry-header">
+						<div class="entry-meta">
+							<span class="posted-on"><time class="entry-date published" date="2017-11-12 10:57:06 -0600 CST">0000-00-0000</time></span>
 						</div>
 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/miner/" rel="bookmark">New Project From NextWave: Tools for Bitcoin investment</a></h1>
 					</header>
@@ -280,7 +408,7 @@ services:
 				<article class="post">
 					<header class="entry-header">
 						<div class="entry-meta">
-							<span class="posted-on"><time class="entry-date published" date="2017-11-11 13:42:13 -0600 CST">November 118, 11118</time></span>
+							<span class="posted-on"><time class="entry-date published" date="2017-11-11 13:42:13 -0600 CST">0000-00-0000</time></span>
 						</div>
 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/whatisbitcoin/" rel="bookmark">What is Bitcoin?</a></h1>
 					</header>
@@ -342,7 +470,7 @@ services:
 				<article class="post">
 					<header class="entry-header">
 						<div class="entry-meta">
-							<span class="posted-on"><time class="entry-date published" date="2017-09-29 16:53:40 -0500 CDT">September 98, 29098</time></span>
+							<span class="posted-on"><time class="entry-date published" date="2017-09-29 16:53:40 -0500 CDT">0000-00-0000</time></span>
 						</div>
 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/containgo/" rel="bookmark">Contain Go</a></h1>
 					</header>
@@ -413,7 +541,7 @@ ENTRYPOINT [&quot;webserver&quot;]
 				<article class="post">
 					<header class="entry-header">
 						<div class="entry-meta">
-							<span class="posted-on"><time class="entry-date published" date="2017-09-29 12:39:51 -0500 CDT">September 98, 29098</time></span>
+							<span class="posted-on"><time class="entry-date published" date="2017-09-29 12:39:51 -0500 CDT">0000-00-0000</time></span>
 						</div>
 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/whyfedora/" rel="bookmark">Why Fedora? - Benefits of the best Linux Distro - NextWave Solutions</a></h1>
 					</header>
@@ -441,7 +569,7 @@ Cockpit is a great example of one of the ways fedora is focusing on its server v
 				<article class="post">
 					<header class="entry-header">
 						<div class="entry-meta">
-							<span class="posted-on"><time class="entry-date published" date="2017-09-28 19:11:08 -0500 CDT">September 98, 28098</time></span>
+							<span class="posted-on"><time class="entry-date published" date="2017-09-28 19:11:08 -0500 CDT">0000-00-0000</time></span>
 						</div>
 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/tlsallthethings/" rel="bookmark">TLS (SSL) All the Things!</a></h1>
 					</header>
@@ -509,7 +637,7 @@ SSLCertificateChainFile /etc/pki/tls/certs/mydomain.com.chain.crt
 				<article class="post">
 					<header class="entry-header">
 						<div class="entry-meta">
-							<span class="posted-on"><time class="entry-date published" date="2017-09-28 17:48:13 -0500 CDT">September 98, 28098</time></span>
+							<span class="posted-on"><time class="entry-date published" date="2017-09-28 17:48:13 -0500 CDT">0000-00-0000</time></span>
 						</div>
 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/whoami/" rel="bookmark">Who is NextWave?</a></h1>
 					</header>
@@ -522,7 +650,7 @@ SSLCertificateChainFile /etc/pki/tls/certs/mydomain.com.chain.crt
 				<article class="post">
 					<header class="entry-header">
 						<div class="entry-meta">
-							<span class="posted-on"><time class="entry-date published" date="2017-09-28 17:43:48 -0500 CDT">September 98, 28098</time></span>
+							<span class="posted-on"><time class="entry-date published" date="2017-09-28 17:43:48 -0500 CDT">0000-00-0000</time></span>
 						</div>
 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/consulting/" rel="bookmark">Contracting/Consulting</a></h1>
 					</header>
@@ -535,7 +663,7 @@ SSLCertificateChainFile /etc/pki/tls/certs/mydomain.com.chain.crt
 				<article class="post">
 					<header class="entry-header">
 						<div class="entry-meta">
-							<span class="posted-on"><time class="entry-date published" date="2017-09-28 17:30:00 -0500 CDT">September 98, 28098</time></span>
+							<span class="posted-on"><time class="entry-date published" date="2017-09-28 17:30:00 -0500 CDT">0000-00-0000</time></span>
 						</div>
 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/about/" rel="bookmark">About Me</a></h1>
 					</header>
@@ -550,41 +678,6 @@ SSLCertificateChainFile /etc/pki/tls/certs/mydomain.com.chain.crt
 					</div>
 				</article>
                 
-				<article class="post">
-					<header class="entry-header">
-						<div class="entry-meta">
-							<span class="posted-on"><time class="entry-date published" date="2017-09-28 17:01:20 -0500 CDT">September 98, 28098</time></span>
-						</div>
-						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/whyopensource/" rel="bookmark">Why open source</a></h1>
-					</header>
-					<div class="entry-content">
-						
-
-<blockquote>
-<p>“I often compare open source to science. To where science took this whole notion of developing ideas in the open and improving on other peoples’ ideas and making it into what science is today and the incredible advances that we have had.”</p>
-</blockquote>
-
-<p>Linus Torvalds</p>
-
-<h3 id="security">Security</h3>
-
-<p>Open source projects allow for peer review. Just like with science journals. Many eyes on a project are much better than a single company taking the helm of security. Open source projects are often audited by security professionals who wish to see the technology of today more secure.</p>
-
-<h3 id="sustainability">Sustainability</h3>
-
-<p>In a world of ever changing technology open source is the stable rock upon which the Internet is built. A proprietary company may choose to end support to it’s application at the whim of a hat, forever hurting your business relying upon the stability you were promised. Open source technology is always available for use even years after support ends. Microsoft shutdown exchange? No problem as open source has email solutions waiting to serve.</p>
-
-<h3 id="adaptiveness">Adaptiveness</h3>
-
-<p>If you have ever wished a feature in a program you have longed for the adaptiveness of open source. When facing a problem where the only solution is to change the actual program, open source not only understands your problem, but allows for you to take the code base, change it, and publish it to production. By using open source technology you are no longer binded by the proprietary parent company of any software solution.</p>
-
-<h3 id="propelling-the-world-forward">Propelling the World Forward</h3>
-
-<p>Be a part of the huge change that is happening in the world. Be a part of the open source movement and change the world for the better.</p>
-
-					</div>
-				</article>
-                
 
 			</div>
 		</div>
@@ -592,6 +685,53 @@ SSLCertificateChainFile /etc/pki/tls/certs/mydomain.com.chain.crt
 		<center class="">
 			<ul class="pagination">
                 
+
+<ul class="pagination">
+    
+    <li>
+        <a href="/post/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li
+    class="disabled">
+    <a href="" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li
+    class="active"><a href="/post/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li
+    ><a href="/post/page/2/">2</a></li>
+    
+    
+    <li
+    >
+    <a href="/post/page/2/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li>
+        <a href="/post/page/2/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
 
 			</ul>
 		</center>
@@ -661,7 +801,7 @@ SSLCertificateChainFile /etc/pki/tls/certs/mydomain.com.chain.crt
 			<div class="col-md-6 widget">
 				<div class="widget-body">
 					<p class="text-right">
-						Copyright &copy; 2018, NextWave Solutions<br>
+						Copyright &copy; , NextWave Solutions<br>
 						Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> - 
                         Powered by: <a href="https://gohugo.io/" rel="poweredby">Hugo</a>
                     </p>
