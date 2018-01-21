@@ -8,11 +8,9 @@ publishDir = "public"
     name = "NextWave Solutions"
     description = "Propelling the NextWave of technology"
     email = "justyn@nextwavesolutions.io"
-    year = 2018
     background = "/images/Love-Coding.png"
     favicon = ""
-    DateForm = "January 18, 2018"
-
+    DateForm = "0000-00-0000"
     showSubheader = false
     showServices = true
     showRecentWorks = true
