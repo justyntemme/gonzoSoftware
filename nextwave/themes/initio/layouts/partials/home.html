@@ -10,6 +10,10 @@
             {{ partial "services.html" . }}
         {{ end }}
 
+	{{ if .Site.Params.showRecentBlogs }}
+	    {{ partial "recentblogs.html" . }}
+	{{ end }}
+
         {{ if .Site.Params.showRecentWorks }}
             {{ partial "recentworks.html" . }}
         {{ end }}
