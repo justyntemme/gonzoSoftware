@@ -1,6 +1,6 @@
 ---
 title: "Private Networking with Docker and Nginx: Keeping Private Traffic Private"
-date: 2018-01-10T10:54:34-06:00
+date: 2018-01-10
 draft: false
 keywords:
 - private

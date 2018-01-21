@@ -23,7 +23,7 @@
     <item>
       <title>Private Networking with Docker and Nginx: Keeping Private Traffic Private</title>
       <link>https://nextwavesolutions.io/post/containerizeitall/</link>
-      <pubDate>Wed, 10 Jan 2018 10:54:34 -0600</pubDate>
+      <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://nextwavesolutions.io/post/containerizeitall/</guid>
       <description>Keeping private traffic private No one needs to be able to see your backend services and databases. Those are strictly for the public web-servers to access.Too many database containers are exposed and are left vulnerable to attack due to sub-par security measures. By keeping database containers only available to traffic from your web servers, you reduce your attack service and increase security for all of your users.
