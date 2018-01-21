@@ -1,7 +1,7 @@
 ---
 title: "Fast websites with Hugo"
 description: "What is Hugo and how are web developers developing fast static webpages in an instant?"
-date: 2017-11-18T18:31:37-06:00
+date: 2018-1-21T18:31:37-06:00
 draft: false
 ---
 
