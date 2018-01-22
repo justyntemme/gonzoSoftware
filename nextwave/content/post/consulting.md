@@ -1,6 +1,6 @@
 ---
 title: "Contracting/Consulting"
-date: 2017-09-28T17:43:48-05:00
+date: 2017-09-28
 draft: false
 menu: main
 

@@ -3,16 +3,17 @@
     <h2 class="section-title"><span>Recent Blog Posts</span></h2>
 
     <div class="thumbnails recentworks">
-        {{ range first 3 .Paginator.Pages }}
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+	    {{ range first 3 (where .Data.Pages "Section" "post") }} 
+	    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                 <a class="thumbnail" href="{{ .Title }}">
                     <span class="title">{{ .Title }}</span>
                 </a>
 
                 <span class="details text-center">
 			<p>{{ .Summary }}</p>
-			<a href="{{ .URL }}">Read More</a>
-                </span>
+               		<p class="text-center"><a href="{{ .URL }}" class="btn btn-action">Read more</a></p>
+ 
+		</span>
             </div>
         {{ end }}
     </div>

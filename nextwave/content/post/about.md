@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-date: 2017-09-28T17:30:00-05:00
+date: 2017-09-28
 draft: false
 menu: main
 ---
