@@ -104,121 +104,9 @@
 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/hugo/" rel="bookmark">Fast websites with Hugo</a></h1>
 					</header>
 					<div class="entry-content">
-						
-
-<p>Many web designers are moving to static sites to manage content. Not only do static sites generally have faster page speed, the overhead on the parent server is much smaller.</p>
-
-<h2 id="hugo">Hugo</h2>
-
-<p>Hugo is a static site generator written in Go. Websites are generated instantly with a config file, with all content being managed from markdown files.</p>
-
-<h3 id="the-project-directory">The project directory</h3>
-
-<h4 id="config-toml">config.toml</h4>
-
-<p>This is your site config file. It tells Hugo every piece of information needed to generate your website. Below is the config.toml needed to generate nextwavesolutions.io</p>
-
-<pre><code>baseURL = &quot;https://nextwavesolutions.io/&quot;
-languageCode = &quot;en-us&quot;
-title = &quot;NextWave Solutions LLC&quot;
-theme = &quot;hugo-initio&quot;
-publishDir = &quot;public&quot;
-
-[params]
-    name = &quot;NextWave Solutions&quot;
-    description = &quot;Propelling the NextWave of technology&quot;
-    email = &quot;justyn@nextwavesolutions.io&quot;
-    background = &quot;/images/Love-Coding.png&quot;
-    favicon = &quot;&quot;
-    DateForm = &quot;0000-00-0000&quot;
-    showSubheader = false
-    showServices = true
-    showRecentWorks = true
-    showDownload = false
-    showClients = false
-
-    footerEnableContact = true
-    footerEnableFollowme = true
-    footerEnableTextWidget = false
-    footerEnableFormWidget = false
-
-[[menu.main]]
-    name = &quot;home&quot;
-    url = &quot;/&quot;
-    weight = 1
-[[menu.main]]
-    name = &quot;blog&quot;
-    url = &quot;/post/&quot;
-    weight = 5
-
-[params.disqus]
-    site = &quot;nextwavesolutions.io&quot;
-
-[params.sharethis]
-    property = &quot;123456789012345678901234&quot;
-    custom = true
-
-[params.google.analytics]
-    trackerID = &quot;UA-109147161-1&quot;
-
-[[params.social]]
-    title = &quot;twitter&quot;
-    url = &quot;https://twitter.com/nextwavesllc&quot;
-    icon = &quot;fa-twitter-square&quot;
-    footer = true
-    sharethis = true
-    network = &quot;twitter&quot;
-[[params.social]]
-    title = &quot;linkedin&quot;
-    url = &quot;https://www.linkedin.com/in/justyntemme&quot;
-    icon = &quot;fa-linkedin-square&quot;
-    footer = false
-    sharethis = true
-    network = &quot;linkedin&quot;
-[[params.social]]
-    title = &quot;github&quot;
-    url = &quot;https://github.com/justyntemme&quot;
-    icon = &quot;fa-github&quot;
-    footer = true
-    sharethis = false
-    network = &quot;&quot;
-[[params.social]]
-    title = &quot;email&quot;
-    url = &quot;mailto:info@nextwavesolutions.io&quot;
-    icon = &quot;fa-envelope&quot;
-    footer = false
-    sharethis = true
-    network = &quot;email&quot;
-
-</code></pre>
-
-<p>There are quite a bit of configuration options on the page. However, not all themes require this in depth of a configuration. Websites can be spun up in a matter of minutes. The exhausting config file does show the flexibility of Hugo to build more complex pages. At NextWave, we have standardized on Hugo as the CMS.</p>
-
-<h3 id="public">public/</h3>
-
-<p>Unless specified otherwise in the config file, Hugo will generate all static pages in the public/ directory on the project. Here are the files you will actually move to your public_html directory of your webserver.</p>
-
-<h3 id="content-post">content/post</h3>
-
-<p>Hugo allows for lots of content types that the theming engine can take advantage of. The most popular, and default content type is the post type. Hugo will treat each markdown file in this directory as a new post. These files are used to generate each independent post page, as well as added to the post index page.</p>
-
-<h3 id="static">static/</h3>
-
-<p>These are the static folders that will live in the root directory of your public folder. As any web developer knows, the static folder will host images, videos, and any other external resources needed by your webpages</p>
-
-<h3 id="themes">themes/</h3>
-
-<p>The theme folder is the directory which holds the configuration files for your theme. At a later date, I will be creating a blog post detailing how themes work, and how you can make use of themes as a highly customizable content management system.</p>
-
-<h2 id="fast-page-speed">Fast page speed</h2>
-
-<p>It is well known that static sites are much faster than dynamic content. This is generally due to the fact that dynamic content managed by cms systems like WordPress, store all post content in a database. A database query is required to load every page.</p>
-
-<h3 id="seo-benefits">SEO benefits</h3>
-
-<p>As Google transitions to web frameworks like AMP, page speed becomes even more of a factor for SEO. Google will rank your website over similar sites with a slower page speed loading time. Using a static site can help your bounce rate, and search result score simply by not needing a database.
-[user@thinkpad post]$</p>
-
+						Many web designers are moving to static sites to manage content. Not only do static sites generally have faster page speed, the overhead on the parent server is much smaller.
+Hugo Hugo is a static site generator written in Go. Websites are generated instantly with a config file, with all content being managed from markdown files.
+The project directory config.toml This is your site config file. It tells Hugo every piece of information needed to generate your website. <a href="/post/hugo/">... Read More</a>
 					</div>
 				</article>
                 
@@ -230,138 +118,8 @@ publishDir = &quot;public&quot;
 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/containerizeitall/" rel="bookmark">Private Networking with Docker and Nginx: Keeping Private Traffic Private</a></h1>
 					</header>
 					<div class="entry-content">
-						
-
-<h3 id="keeping-private-traffic-private">Keeping private traffic private</h3>
-
-<p>No one needs to be able to see your backend services and databases. Those are strictly for the public web-servers to access.Too many database containers are exposed and are left vulnerable to attack due to sub-par security measures. By keeping database containers only available to traffic from your web servers, you reduce your attack service and increase security for all of your users.</p>
-
-<h3 id="a-single-nginx-container">A single Nginx Container</h3>
-
-<h4 id="centralizing-keys">Centralizing keys</h4>
-
-<p>In the land before time &ndash; er, excuse me - the time before Docker containers, all <a href="https://nextwavesolutions.io/post/tlsallthethings/">SSL/TLS certifications</a> would be stored in a centralized server on the bare metal machine. We return to a centralized approach via Nginx in a Docker container responsible for handling all the connections.As nginx allows for rapid scaling with multiple servers, this could eventually scale to a load balancer if desired.</p>
-
-<h4 id="nginx-conf">nginx.conf</h4>
-
-<p>One would think that multiple Docker containers talking to each other, not exposed to the internet would be a difficult concept to grasp, and even more difficult to implement. Fortunately for us, it&rsquo;s quite the opposite. Below is my nginx.conf with comments to explain how things work.</p>
-
-<p>These are simply server optimizations.</p>
-
-<pre><code>worker_processes 5;
-
-events {worker_connections 1024; }
-http {
-sendfile on;
-gzip on;
-gzip_types text/html text/css application/x-javascript text/xml application/xml application/xml+rss text/javascript;
-</code></pre>
-
-<p><br>
-Here is where I define the server name that users will be typing into the address bar. The basic reverse proxy setup, which by calling the name of thecontainer, all traffic is forwarded to the proper web-server.</p>
-
-<pre><code>server {
-    listen 80;
-    server_name gitlabserver.com;
-    location / {
-        proxy_redirect off;
-        
-        proxy_set_header        X-Forwarded-Proto $scheme;
-        proxy_set_header        Host              $http_host;
-        proxy_set_header        X-Real-IP         $remote_addr;
-        proxy_set_header        X-Forwarded-For   $proxy_add_x_forwarded_for;
-        proxy_set_header        X-Frame-Options   SAMEORIGIN;
-        proxy_pass http://gitlab/;
-    }
-}
-</code></pre>
-
-<p>This is a basic 301 redirect to force https, nothing fancy here.</p>
-
-<pre><code>server {
-    listen 80;
-
-    server_name nextwavesolutions.io;
-    return 301 https://$server_name$request_uri;
-}
-</code></pre>
-
-<p>Here is another example of the benefits of multi-container networking. I have another small web panel for my bitcoin trading clients. All traffic is handled by the nginx container, and there was no need to spin anything new up just to server a new webpage (except the web app Docker container of course). All I have to do is define the container within the <code>nginx.conf</code> and when the containers are spun up, nginx configures a listener for that specific request.</p>
-
-<pre><code>
-server { 
-    listen 80;
-    server_name bitcoin.website.io;
-    location / {
-        proxy_pass http://justynbitcoin/;
-        proxy_redirect off;
-    }
-}
-
-</code></pre>
-
-<p>Finally, here we have the main site container.SSL certs are handled in this config. Nginx makes using TLS/SSL easy, and with multi-container networking, deploying SSL/TLS certs to multiple subdomains is as simple as listing them in the nginx config. Notice how the Docker container actually listens on port 8080, however, traffic directed to this server is forwarded via nginx.</p>
-
-<pre><code>server {
-    	listen 443 ssl http2;
-    	server_name nextwavesolutions.io
-    
-    	ssl on;    
-    	ssl_certificate         /etc/letsencrypt/archive/www.nextwavesolutions.io/fullchain2.pem;
-       	 ssl_certificate_key     /etc/letsencrypt/archive/www.nextwavesolutions.io/privkey2.pem;
-
-    	location / {
-       	 proxy_pass http://nextwave:8080;
-       	 proxy_redirect off;
-    	}
-	}
-}
-</code></pre>
-
-<h3 id="docker-compose">Docker compose</h3>
-
-<p>Docker compose is a great tool for managing multi-container setups. The highlight of this setup is how easy it is to simply call another container. For example, if I have one container <code>reverse proxy</code> and one container <code>web-server</code> I can specify in my nginx.conf to forward all traffic for the server <code>web-server.com</code> to <code>http://web-server/</code> as seen in the engine.conf above. Yes, it&rsquo;s that easy, you simply call the network address, whatever you named the container in your Docker-compose file. Here is an example Docker-compose file I use in production.</p>
-
-<p>Here the reverse proxy container is defined, as well as the volumes for the SSL certifications. Notice port 80, and 443 are exposed. However, no other container has any ports exposed. This is one of the main benefits of multi-container networking. I only expose what I choose to expose and keep the backend DB&rsquo;s from needing to be seen by the public.</p>
-
-<pre><code>version: '2'
-services:
-     reverseproxy:
-          image: reverseproxy
-          ports:
-               - &quot;80:80&quot;
-               - &quot;443:443&quot;
-          restart: always
-          volumes:
-               - &quot;/etc/letsencrypt/archive/www.nextwavesolutions.io:/etc/letsencrypt/archive/www.nextwavesolutions.io&quot;
-          privileged: true
-</code></pre>
-
-<p>Here I define my container holding the data for nextwavesolutions.io. As you can see, the containers name is <code>nextwave</code>. Therefore, when calling the container form the nginx.conf for forwarding, you simply call <code>http://nextwave/</code> Multi-container networking made easy.</p>
-
-<pre><code>     nextwave:
-          image: nextwave
-          restart: always
-</code></pre>
-
-<p>The rest of the containers follow the same format as the nextwave container, save some special configuration for gitlab.</p>
-
-<pre><code>     justynbitcoin:
-             image: jbitcoin
-             restart: always
-     gitlab:
-             image: gitlab/gitlab-ce:latest
-             restart: always
-             hostname: 'gitlabsubdomain.com'
-             environment:
-                     GITLAB_OMNIBUS_CONFIG: |
-                             external_url 'http://gitlabsubdomain.com'
-             volumes:
-                 - &quot;/srv/gitlab/config:/etc/gitlab&quot;
-                 - &quot;/srv/gitlab/logs:/var/log/gitlab&quot;
-                 - &quot;/srv/gitlab/data:/var/opt/gitlab&quot;
-</code></pre>
-
+						Keeping private traffic private No one needs to be able to see your backend services and databases. Those are strictly for the public web-servers to access.Too many database containers are exposed and are left vulnerable to attack due to sub-par security measures. By keeping database containers only available to traffic from your web servers, you reduce your attack service and increase security for all of your users.
+A single Nginx Container Centralizing keys In the land before time &ndash; er, excuse me - the time before Docker containers, all SSL/TLS certifications would be stored in a centralized server on the bare metal machine. <a href="/post/containerizeitall/">... Read More</a>
 					</div>
 				</article>
                 
@@ -373,36 +131,7 @@ services:
 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/miner/" rel="bookmark">New Project From NextWave: Tools for Bitcoin investment</a></h1>
 					</header>
 					<div class="entry-content">
-						
-
-<h2 id="many-investors-are-turning-to-this-crypto-currency-as-it-approaches-the-near-10-000-mark">Many investors are turning to this crypto-currency as it approaches the near $10,000 mark.</h2>
-
-<p><img src="/images/coindesk-bpi-chart.png" alt="coindesk graph" /></p>
-
-<h1 id="nextwave-bitcoin-consultation">NextWave Bitcoin Consultation</h1>
-
-<p>Nextwave is proud to announce a service to help investors and enthusiasts tackle the new challenge that is bitcoin investment. As an emerging technology bitcoin can be a murky lake to traverse, however with proper tooling, proprietary metrics, aggregated media, and a history of successful trades, NextWave hopes to be a lighthouse in the Bitcoin market.</p>
-
-<h2 id="dealing-with-the-speculation">Dealing with the speculation</h2>
-
-<p>Speculation drives the market more than actual facts. How people ~think~ the market is going to go, drives the bids on exchange sites, therefore affecting the price. Nextwave provides tools, and time-tested experience dealing with and maximizing investment profit due to speculation. At the end of the day, speculation is just that, speculation.</p>
-
-<h2 id="take-advantage-of-peaks-and-lows">Take advantage of peaks and lows</h2>
-
-<p>By buying and selling at the right times you can increase your bitcoin investment without actually spending more cash. Monitoring and addressing speculation will equip you with tools to grow at a faster rate than those who sit idly by. NextWave provides knowledge on how to properly take advantage of speculation.</p>
-
-<h2 id="invest-in-an-emerging-technology">Invest in an emerging technology</h2>
-
-<p>Bitcoin continues to grow and drown out the doubt. The longer you wait, the more you let the boat pass by. Investors that were able to buy in the birth years of bitcoin, are millionaires. Don&rsquo;t let an emerging technology pass you by.</p>
-
-<h2 id="proprietary-metrics-api">Proprietary metrics API</h2>
-
-<p>Nextwave provides a proprietary metrics API that not only provides accurate prediction information, built from years of experience trading, but also allows for you to build custom clients to monitor the API to make for rapid trading on demand through tooling and machine learning.</p>
-
-<h2 id="aggregated-media">Aggregated media</h2>
-
-<p>Checking on all of the sources for bitcoin news can be difficult. However, it is necessary to monitor speculation about future prices. NextWave Solutions provides an aggregated media feed to make it easy for you to read the mind of the masses of investors.</p>
-
+						Many investors are turning to this crypto-currency as it approaches the near $10,000 mark. NextWave Bitcoin Consultation Nextwave is proud to announce a service to help investors and enthusiasts tackle the new challenge that is bitcoin investment. As an emerging technology bitcoin can be a murky lake to traverse, however with proper tooling, proprietary metrics, aggregated media, and a history of successful trades, NextWave hopes to be a lighthouse in the Bitcoin market. <a href="/post/miner/">... Read More</a>
 					</div>
 				</article>
                 
@@ -414,57 +143,8 @@ services:
 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/whatisbitcoin/" rel="bookmark">What is Bitcoin?</a></h1>
 					</header>
 					<div class="entry-content">
-						
-
-<p>Bitcoin is a decentralized cryptocurrency that has recently risen to quite a popularity among enthusiasts and investors alike. Originally created by Satoshi Nakamoto, an anonymous member of an online community. The real identity of this creator has never been discovered.</p>
-
-<h2 id="how-does-it-work">How does it work</h2>
-
-<p>Bitcoin works by creating a network of computers that relay transactions between each other. Each transaction is signed by the sender with a cryptographic key (explained below) that guarantees a few things.</p>
-
-<ul>
-<li>The Sender has the required funds</li>
-<li>The Sender does, in fact, have access to the funds</li>
-</ul>
-
-<h3 id="cryptographic-keys">Cryptographic keys</h3>
-
-<blockquote>
-<p>A cryptographic key is a string of bits used by a cryptographic algorithm to transform plain text into cipher text or vice versa. This key remains private and ensures secure communication.  -Techopedia</p>
-</blockquote>
-
-<h3 id="cryptographic-signing">Cryptographic signing</h3>
-
-<p>As each Cryptographic key is unique, by signing the transaction on the ledger with key you are verifying you wish to send the coin, and it is, in fact, you sending the coin.</p>
-
-<h3 id="public-ledger">Public Ledger</h3>
-
-<p>The public ledger (Blockchain) is the public record of every transaction ever submitted to the bitcoin network.</p>
-
-<h2 id="why-does-it-matter">Why Does it matter</h2>
-
-<p>So what&rsquo;s the point to all this technology?</p>
-
-<h3 id="decentralization">Decentralization</h3>
-
-<p>Becuase there is no central server handling all the transactions, the system is globally checked by miners all over the globe. There is no central agency responsible with authority and ability to act corrupt with selfish interests. As we have seen with many countries and institutions, absolute power corrupts. By creating a network in which no party has absolute control, we create a network that can stand against corruption.</p>
-
-<h4 id="miner">Miner</h4>
-
-<p>The miners are millions of computers attempting to calculate the equation of the bitcoin transaction in exchange for a small amount of bitcoin. China is the home to huge computer farms making money off of simply running these computers.</p>
-
-<h4 id="bitcoin-node">Bitcoin Node</h4>
-
-<p>Bitcoin Nodes are ran by enthusiests and users alike. The bitcoin node downloads the public ledger and relays any transaction to the ledger across the network. The node is one of the ways bitcoin stays decentralized. There is no single server that is responsible for detecting errors.</p>
-
-<h3 id="completely-transparent">Completely transparent</h3>
-
-<p>With the public ledger being public, and every transaction cryptographically signed by the person sending the coin, every transaction ever made can be followed through the network from wallet to wallet. This will make the flow of money available to anyone interested, unlike cash.</p>
-
-<h3 id="fraud-proof">Fraud-Proof</h3>
-
-<p>Due to the security of cryptographic signing, there can be no fraud on the network. Fake money won&rsquo;t be a thing, as millions of computers are calculating hashes on the bitcoin network.</p>
-
+						Bitcoin is a decentralized cryptocurrency that has recently risen to quite a popularity among enthusiasts and investors alike. Originally created by Satoshi Nakamoto, an anonymous member of an online community. The real identity of this creator has never been discovered.
+How does it work Bitcoin works by creating a network of computers that relay transactions between each other. Each transaction is signed by the sender with a cryptographic key (explained below) that guarantees a few things. <a href="/post/whatisbitcoin/">... Read More</a>
 					</div>
 				</article>
                 
@@ -476,66 +156,7 @@ services:
 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/containgo/" rel="bookmark">Contain Go</a></h1>
 					</header>
 					<div class="entry-content">
-						
-
-<p>So you have just learned Golang, built a webserver, and are ready to show the world what you can do. That&rsquo;s great! Go is a very great language that scales well. In fact, many of the tools used to deliver this web page to you are written in Go. Hugo, a static website generator, was used to build the webpage. A simple Go file server is used to serve the webpage. Docker, the application responsible for containerizing the web server, is also written in go. So how <strong>do</strong> we combine these great Go technologies to deliver a containerized web server? Today, we will attempt to answer that question, as well as teach you some great practices for making website updates relatively easy.</p>
-
-<h3 id="go-webserver">Go Webserver</h3>
-
-<p>Go is great for hosting simple websites that you want to show to the world. You can find many examples of a web server in action. For today I will assume you have a working web server listening on port 8080. Below is an example of a file server sharing the contents of /usr/share/doc.</p>
-
-<pre><code>package main
-
-import (
-	&quot;log&quot;
-	&quot;net/http&quot;
-)
-
-func main() {
-	// Simple static webserver:
-	log.Fatal(http.ListenAndServe(&quot;:8080&quot;, http.FileServer(http.Dir(&quot;/usr/share/doc&quot;))))
-}
-</code></pre>
-
-<p>This example can be found <a href="https://golang.org/pkg/net/http/#example_FileServer">here</a></p>
-
-<h3 id="docker-file">Docker File</h3>
-
-<p>Now that you have a working Go file server, and some sort of index.html within /usr/share/doc, it is time to build your docker file. This docker file will be built after every update of the info you have in /usr/share/doc. By hosting your website on github you will be able to take advantage of go get, Golangs command to fetch a remote git repository. Here is an example Docker file. Note: You will need to set your GOROOT on your server to /go and chown /go to the user running the command. You can set this by placing <code>export GOROOT=/go</code> in <code>~/.bashrc</code> after you have created and chowned the directory. Be sure to <code>source ~/.bashrc</code> so your current session knows of the global variable assignment.</p>
-
-<h4 id="dockerfile">Dockerfile</h4>
-
-<pre><code># Sets the docker image base. We will be using the latest golang image to run our web server
-FROM golang:latest
-
-# Using Go we are able to go get our webserver/website with one clone request to the repository
-RUN go get github.com/myprofile/mywebserverrepo
-
-# go install builds the binary for the web server and moves it into $GOROOT/bin/ 
-RUN go install github.com/myprofile/mywebserverrepo
-
-# go get installs the repository to our local /go/src/github/myprofile GOROOT. We will need to copy the web directory to /go/bin so our web server is in the same directory as our web pages
-RUN cp -r /go/src/github.com/myprofile/mywebserverrepo/public /go/bin
-
-#expose tells docker we will need to map 8080 to an external port on the machine
-EXPOSE 8080
-
-#Entry point tells docker where to start once the docker container is ran. This will be the name of your web server binary after you were to run go build within the directory 
-ENTRYPOINT [&quot;webserver&quot;]
-</code></pre>
-
-<p>Now that we have our docker file ready we can build the docker image. For easy image management I use Cockpit from the Fedora team. However, there are plenty of ways to manage images and containers how you do it is up to you.</p>
-
-<p><code>docker build . -t mywebserver</code></p>
-
-<p>This will build the docker container and label it mywebserver.</p>
-
-<p>Now to run the webserver</p>
-
-<p><code>docker run -P 8080:80 mywebserver</code></p>
-
-<p>Congratulations! You have now contained a Go web server!</p>
-
+						So you have just learned Golang, built a webserver, and are ready to show the world what you can do. That&rsquo;s great! Go is a very great language that scales well. In fact, many of the tools used to deliver this web page to you are written in Go. Hugo, a static website generator, was used to build the webpage. A simple Go file server is used to serve the webpage. <a href="/post/containgo/">... Read More</a>
 					</div>
 				</article>
                 
@@ -547,23 +168,8 @@ ENTRYPOINT [&quot;webserver&quot;]
 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/whyfedora/" rel="bookmark">Why Fedora? - Benefits of the best Linux Distro - NextWave Solutions</a></h1>
 					</header>
 					<div class="entry-content">
-						
-
-<p>Many Linux advocates are familiar with CentOS and  RHEL as their primary server  distrobutions. Fedora is often treated as the desktop RHEL distribution, instead of a fully qualified server distribution.</p>
-
-<h3 id="packages-we-have-hit-the-sweet-spot">Packages | We have hit the sweet spot</h3>
-
-<p>The Fedora project lives in a sweet spot: the packages stay very stable, and I still manage to get up to date software without having to sacrifice stability (I&rsquo;m looking at you Arch Linux). The updates are handled easily in DNF (the latest version of the package manager).Fedora is often refered to a testing ground for RHEL software. While Fedora does tend to get the bleeding edge of a new technology, dependability is not forgotten. The Wayland display server is a great example. Fedora first adopted Wayland when it was fully usable by the end user. To be a leader in the software world you have to adapt. With the adoption of OpenQA, thanks to OpenSuse, as well as a high standard for quality releases, Fedora has never been more ready to host production systems.</p>
-
-<h3 id="cockpit-more-than-just-a-tool-a-direction">Cockpit | More than just a tool, a direction</h3>
-
-<p><img src="/images/cockpit.png" alt="coindesk graph" />
-Cockpit is a great example of one of the ways fedora is focusing on its server version of the distribution. The package can be built and ran on any Linux distro, however the fedora team are working on improving the server manager, as well as making sure releases work great. Cockpit is not the best server/container management engine by a long shot. However having this tool two commands away when starting a system install is something not to take for granted. Rather than look to the package for what it brings, look to what cockpit means for the fedora team. A team backed by one of the biggest linux companies is making tools on top of an already great server distro. Being backed by RHEL is much more than a financial backbone. RHEL brings experience, knowledge, and a direction for the team to head.</p>
-
-<h3 id="selinux-sudo-setenfore-0">Selinux | Sudo setenfore 0</h3>
-
-<p>While fedora users first reaction to a Selinux bug is just to fire up gnoem shell and setenforce to 0, there are actually many simple ways to identify and solve issues. From <code>audit2allow</code> to the GUI Selinux troubleshooter, there are a number of tools to help with any Selinux issue. By turning the entire system off you take away one of fedoras greatest tools. Selinux not only enforces policy, but alerts when processes try and break a policy. This is a great tool for system admins to monitor live systems. Selinux and the tools provided are just another one of the great examples of tooling that comes with fedora. This extensive tool set built around a distro helps make it production ready.</p>
-
+						Many Linux advocates are familiar with CentOS and RHEL as their primary server distrobutions. Fedora is often treated as the desktop RHEL distribution, instead of a fully qualified server distribution.
+Packages | We have hit the sweet spot The Fedora project lives in a sweet spot: the packages stay very stable, and I still manage to get up to date software without having to sacrifice stability (I&rsquo;m looking at you Arch Linux). <a href="/post/whyfedora/">... Read More</a>
 					</div>
 				</article>
                 
@@ -575,63 +181,8 @@ Cockpit is a great example of one of the ways fedora is focusing on its server v
 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/tlsallthethings/" rel="bookmark">TLS (SSL) All the Things!</a></h1>
 					</header>
 					<div class="entry-content">
-						
-
-<p>So you have heard about it, you use it, and it also was once an endeavor that could cost quite a bit of cash. Now thanks to Letsencrypt it&rsquo;s easier than ever to force HTTPS traffic to even static websites on your web server.</p>
-
-<h3 id="letsencrypt">Letsencrypt</h3>
-
-<p>Letsencrypt is a free CA (certificate authority) that let&rsquo;s anyone that owns a domain generate a trusted certificate for that domain. There are many guides to do this, my favorite being our friends at <a href="https://fedoramagazine.org/letsencrypt-now-available-fedora/" title="letsencrypt">Fedora Magazine</a>. Setup the letsencrypt certificate before continuing reading.</p>
-
-<h3 id="apache-letsencrypt">Apache + Letsencrypt</h3>
-
-<p>Now that you have your cert files you will need to move them to the apache key directory.</p>
-
-<ul>
-<li>SSLCertificateFile /etc/pki/tls/certs/mydomain.com.crt</li>
-<li>SSLCertificateChainFile /etc/pki/tls/certs/mydomain.com.chain.crt</li>
-<li>SSLCertificateKeyFile /etc/pki/tls/private/mydomain.com.key</li>
-</ul>
-
-<p>After moving the key files to the proper directory, it is time to tell nginx to use SSL, and where the key files are located. The Apache config files are located in /etc/httpd/ . The first config file we will need to edit is the ssl.conf found in /etc/httpd/conf.d/ssl.conf. Here we will tell Apache to listen on port 443 by adding
-<code>Listen 443 https</code> to the file head. You will find locations to add the location of your SSL cert files.</p>
-
-<pre><code>SSLCertificateFile /etc/pki/tls/certs/mydomain.com.crt 
-
-SSLCertificateKeyFile /etc/pki/tls/private/mydomain.com.key 
-
-SSLCertificateChainFile /etc/pki/tls/certs/mydomain.com.chain.crt
-</code></pre>
-
-<h3 id="apache-letsencrypt-docker">Apache + Letsencrypt + &hellip;&hellip; Docker?</h3>
-
-<p>Now that we have TLS (SSL) enabled with Apache, let&rsquo;s have some fun with reverse proxying and enable ssl to a web server in a docker container. Docker is great for containerizing applications, especially webs ervers. I will assume you have a docker container listening on port 9090 that accepts a normal HTTP connection. We will take advantage of the ability for Apache to seamlessly pass TLS traffic to a local HTTP web server. Back in your ssl.conf file you will need to create a VirtualHost for port 443. An example is given below.</p>
-
-<pre><code>&lt;VirtualHost *:443&gt;
-	ServerName		mydomain.com
-	SSLEngine		on
-
-	SSLCertificateFile	/etc/pki/tls/certs/mydomain.com.crt
-	SSLCertificateChainFile	/etc/pki/tls/certs/mydomain.com.chain.crt
-	SSLCertificateKeyFile	/etc/pki/tls/private/mydomain.com.key
-
-	SSLProxyEngine		off
-	
-	SSLProxyVerify		none
-	SSLProxyCheckPeerCN	off
-	SSLProxyCheckPeerName	off
-
-	ProxyPreserveHost	on
-	ProxyRequests		off
-	ProxyPass		/	http://mydomain.com:9090/
-	ProxyPassReverse	/	http://mydomain.com:9090/
-	
-	ErrorLog		/var/log/httpd/mydomain_apache_proxy_https_error.log
-&lt;/VirtualHost&gt;	
-</code></pre>
-
-<p>Now with a simple <code>sudo systemctl restart httpd</code> you can have a reverse apache proxy serving TLS (SSL) to a standard web server in a docker container.</p>
-
+						So you have heard about it, you use it, and it also was once an endeavor that could cost quite a bit of cash. Now thanks to Letsencrypt it&rsquo;s easier than ever to force HTTPS traffic to even static websites on your web server.
+Letsencrypt Letsencrypt is a free CA (certificate authority) that let&rsquo;s anyone that owns a domain generate a trusted certificate for that domain. There are many guides to do this, my favorite being our friends at Fedora Magazine. <a href="/post/tlsallthethings/">... Read More</a>
 					</div>
 				</article>
                 
@@ -643,39 +194,34 @@ SSLCertificateChainFile /etc/pki/tls/certs/mydomain.com.chain.crt
 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/whoami/" rel="bookmark">Who is NextWave?</a></h1>
 					</header>
 					<div class="entry-content">
-						<p><strong>NextWave</strong> is a technology solution company empowering businesses with the next wave of technology. Open source allows for business to break the chains of old proprietary monoliths and become part of a growing community of those who care about the software they run. At NextWave we help businesses use the technology of tomorrow.</p>
-
+						NextWave is a technology solution company empowering businesses with the next wave of technology. Open source allows for business to break the chains of old proprietary monoliths and become part of a growing community of those who care about the software they run. At NextWave we help businesses use the technology of tomorrow. <a href="/post/whoami/">... Read More</a>
 					</div>
 				</article>
                 
 				<article class="post">
 					<header class="entry-header">
 						<div class="entry-meta">
-							<span class="posted-on"><time class="entry-date published" date="2017-09-28 17:43:48 -0500 CDT">0000-00-0000</time></span>
+							<span class="posted-on"><time class="entry-date published" date="2017-09-28 17:01:20 -0500 CDT">0000-00-0000</time></span>
 						</div>
-						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/consulting/" rel="bookmark">Contracting/Consulting</a></h1>
+						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/whyopensource/" rel="bookmark">Why open source</a></h1>
 					</header>
 					<div class="entry-content">
-						<p>From website development, home automation, to Ip-based security cameras, if you are ready to join to millions of users and businesses already empowering themselves with tomorrows open source technology, email us at justyn@nextwavesolutions.io we would love to solve your problems with our solutions.</p>
-
+						“I often compare open source to science. To where science took this whole notion of developing ideas in the open and improving on other peoples’ ideas and making it into what science is today and the incredible advances that we have had.”
+ Linus Torvalds
+Security Open source projects allow for peer review. Just like with science journals. Many eyes on a project are much better than a single company taking the helm of security. <a href="/post/whyopensource/">... Read More</a>
 					</div>
 				</article>
                 
 				<article class="post">
 					<header class="entry-header">
 						<div class="entry-meta">
-							<span class="posted-on"><time class="entry-date published" date="2017-09-28 17:30:00 -0500 CDT">0000-00-0000</time></span>
+							<span class="posted-on"><time class="entry-date published" date="2017-09-28 00:00:00 &#43;0000 UTC">0000-00-0000</time></span>
 						</div>
 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/about/" rel="bookmark">About Me</a></h1>
 					</header>
 					<div class="entry-content">
-						<p>Open Source Developer / Technology Consultant</p>
-
-<ul>
-<li>Email justyn@nextwavesolutions.io</li>
-<li><a href="https://github.com/justyntemme/" title="Github">Github</a></li>
-</ul>
-
+						Open Source Developer / Technology Consultant
+ Email justyn@nextwavesolutions.io Github   <a href="/post/about/">... Read More</a>
 					</div>
 				</article>
                 

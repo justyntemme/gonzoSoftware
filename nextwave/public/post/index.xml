@@ -90,25 +90,6 @@ Letsencrypt Letsencrypt is a free CA (certificate authority) that let&amp;rsquo;
     </item>
     
     <item>
-      <title>Contracting/Consulting</title>
-      <link>https://nextwavesolutions.io/post/consulting/</link>
-      <pubDate>Thu, 28 Sep 2017 17:43:48 -0500</pubDate>
-      
-      <guid>https://nextwavesolutions.io/post/consulting/</guid>
-      <description>From website development, home automation, to Ip-based security cameras, if you are ready to join to millions of users and businesses already empowering themselves with tomorrows open source technology, email us at justyn@nextwavesolutions.io we would love to solve your problems with our solutions.</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>https://nextwavesolutions.io/post/about/</link>
-      <pubDate>Thu, 28 Sep 2017 17:30:00 -0500</pubDate>
-      
-      <guid>https://nextwavesolutions.io/post/about/</guid>
-      <description>Open Source Developer / Technology Consultant
- Email justyn@nextwavesolutions.io Github  </description>
-    </item>
-    
-    <item>
       <title>Why open source</title>
       <link>https://nextwavesolutions.io/post/whyopensource/</link>
       <pubDate>Thu, 28 Sep 2017 17:01:20 -0500</pubDate>
@@ -117,6 +98,25 @@ Letsencrypt Letsencrypt is a free CA (certificate authority) that let&amp;rsquo;
       <description>“I often compare open source to science. To where science took this whole notion of developing ideas in the open and improving on other peoples’ ideas and making it into what science is today and the incredible advances that we have had.”
  Linus Torvalds
 Security Open source projects allow for peer review. Just like with science journals. Many eyes on a project are much better than a single company taking the helm of security.</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://nextwavesolutions.io/post/about/</link>
+      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://nextwavesolutions.io/post/about/</guid>
+      <description>Open Source Developer / Technology Consultant
+ Email justyn@nextwavesolutions.io Github  </description>
+    </item>
+    
+    <item>
+      <title>Contracting/Consulting</title>
+      <link>https://nextwavesolutions.io/post/consulting/</link>
+      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://nextwavesolutions.io/post/consulting/</guid>
+      <description>From website development, home automation, to Ip-based security cameras, if you are ready to join to millions of users and businesses already empowering themselves with tomorrows open source technology, email us at justyn@nextwavesolutions.io we would love to solve your problems with our solutions.</description>
     </item>
     
   </channel>
