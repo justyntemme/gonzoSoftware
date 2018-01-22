@@ -1,3 +1,15 @@
+@media only screen and (max-device-width: 480px) {
+video {
+	display: none;
+}
+
+#head {
+	background: url(/images/Love-Coding.png) !important;
+
+}
+
+}
+
 html {
   font-size: 100%;
 }
