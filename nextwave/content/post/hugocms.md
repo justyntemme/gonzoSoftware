@@ -1,7 +1,7 @@
 ---
 title: "Hugo As a Highly Customizable CMS"
 description: "How Hugo and Go combine to make a developer friendly, highly customizable cms, without the need for a database."
-date: 2018-02-22
+date: 2018-01-21
 draft: false
 ---
 ## Hugo

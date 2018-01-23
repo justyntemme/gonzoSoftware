@@ -23,6 +23,17 @@ The project directory config.toml This is your site config file. It tells Hugo e
     </item>
     
     <item>
+      <title>Hugo As a Highly Customizable CMS</title>
+      <link>https://nextwavesolutions.io/post/hugocms/</link>
+      <pubDate>Sun, 21 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://nextwavesolutions.io/post/hugocms/</guid>
+      <description>Hugo You can read our intro to Hugo blog post here. Hugo is a great static website generator that NextWave Solutions is using as a content management system.
+Templating One of the main advantages of Hugo is the highly customizable themes. Easily configured, the template engine acts almost as a PHP library. It feels like you are developing on Wordpress, with similar functions.
+Theme directory Found in your project directory then themes/name-of-theme</description>
+    </item>
+    
+    <item>
       <title>Private Networking with Docker and Nginx: Keeping Private Traffic Private</title>
       <link>https://nextwavesolutions.io/post/containerizeitall/</link>
       <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>

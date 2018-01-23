@@ -6,7 +6,7 @@
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 
-	<title>Posts</title>
+	<title>Hugo As a Highly Customizable CMS</title>
 
 	<link rel="shortcut icon" href="https://nextwavesolutions.io/">
 
@@ -94,93 +94,96 @@
 <main id="main">
 
 	<div class="container">
+
 		<div class="row topspace">
 			<div class="col-sm-8 col-sm-offset-2">
 
-                
-				<article class="post">
+ 				<article class="post">
 					<header class="entry-header">
-						<div class="entry-meta">
-							<span class="posted-on"><time class="entry-date published" date="2017-09-28 00:00:00 &#43;0000 UTC">September 28, 2017</time></span>
-						</div>
-						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/about/" rel="bookmark">About Me</a></h1>
+ 						<div class="entry-meta">
+ 							<span class="posted-on"><time class="entry-date published" date="2018-01-21 00:00:00 &#43;0000 UTC">January 21, 2018</time></span>
+ 						</div>
+ 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/hugocms/" rel="bookmark">Hugo As a Highly Customizable CMS</a></h1>
 					</header>
 					<div class="entry-content">
-						Open Source Developer / Technology Consultant
- Email justyn@nextwavesolutions.io Github   <a href="/post/about/">... Read More</a>
+						
+
+<h2 id="hugo">Hugo</h2>
+
+<p>You can read our intro to Hugo blog post <a href="https://nextwavesolutions.io/post/hugo">here</a>. Hugo is a great static website generator that NextWave Solutions is using as a content management system.</p>
+
+<h3 id="templating">Templating</h3>
+
+<p>One of the main advantages of Hugo is the highly customizable themes. Easily configured, the template engine acts almost as a PHP library. It feels like you are developing on Wordpress, with similar functions.</p>
+
+<h3 id="theme-directory">Theme directory</h3>
+
+<p>Found in your project directory then <code>themes/name-of-theme</code></p>
+
+<h4 id="static-css-images-js">static/{css, images, js}</h4>
+
+<p>The static directory will merge with the project static directory. Here CSS files, local javascript files, and all necessary image and resources will be stored.</p>
+
+<h4 id="layouts-about-default-partials">layouts/{about, _default, partials}</h4>
+
+<p>Here are the bread and butter of the templating engine, where all templates are stored. The Hugo engine scans this directory to build out the website tree. Most of the work will be done in the <code>partials</code> directory, where the <code>head.html</code> will be inserted into every page as the <code>&lt;head&gt;</code>.</p>
+
+<h4 id="importing-partials-and-function-calls">Importing partials and Function Calls</h4>
+
+<p>All template functions are defined with the {{ }}. This allows the templating engine to rapidly search the content and build the necessary content HTML. If we look at the <code>index.html</code> within the <code>layouts/</code> directory, we will see the content below.</p>
+
+<pre><code>{{ partial &quot;header.html&quot; . }}
+{{ partial &quot;home.html&quot; . }}
+{{ partial &quot;footer.html&quot; . }}
+</code></pre>
+
+<p>It is important to note, not all themes will have this <code>index.html</code> layout. The theme for nextwavesolutions.io can be found <a href="https://themes.gohugo.io/hugo-initio/">here</a>.</p>
+
+<h5 id="function-calls">Function Calls</h5>
+
+<p>As shown above, to import the header, body, and footer HTML simply requires a <code>{{ partial &quot;page.html }}</code>. This makes inserting dynamic content very easy without having to manually build every page. This is a feature found commonly in content management systems, and is a highlight of Hugo. The ability to create content using pre-defined layouts is great, however, this is included without the overhead of most CMS solutions.</p>
+
+<p>Looking into the <code>header.html</code> shows us a bit more classic HTML/javascript. At least that is until we start to see more of the <code>{{ }}</code>.</p>
+
+<p>I often think of these function calls similar to that of Wordpress functions. For example the <a href="https://developer.wordpress.org/reference/functions/get_post/">get_posts()</a> function equivalant, {{ .Content }}. The documentation for all of the functions are found <a href="https://gohugo.io/documentation/">here</a>. The function calls range from <a href="https://gohugo.io/functions/htmlescape/">htmlescape</a> to <a href="https://gohugo.io/functions/string/">string</a> manipulation. Hugo has been built out to be a complete solution for managing and manipluating content.</p>
+
+<p>Hugo gives the tools to developers to create dynamic sites that are generated to static pages with a simple command.</p>
+
+<h5 id="building-truly-dynamic-content">Building Truly Dynamic Content</h5>
+
+<p>The <code>_default</code> directory is the template for each independent blog post. You will find two files in the folder, the <code>single.html</code> and <code>list.html</code>. <code>list.html</code> being the template for the page that displays all posts, while the single post is the template for each individual post. When using the  <code>{{ .Content }}</code> function inside the <code>_defualt/single.html</code>, each markdown file is looped through and addressed as the post being called.</p>
+
+<p>With everything in place you now have the ability to create pages based on your already set templates. The header.html and footer.html provide a basic start for any page you wish to create. You can then modify the pages to include content, and use Hugo function calls to manipulate stored content.</p>
+
+<h3 id="amp">AMP</h3>
+
+<p>A great example of easily building dynamic content with Hugo, is the ability to create amp pages as you create you your normal pages. Once a template for amp pages is created, each new blog post is used to create a new amp page.</p>
+
 					</div>
 				</article>
-                
-				<article class="post">
-					<header class="entry-header">
-						<div class="entry-meta">
-							<span class="posted-on"><time class="entry-date published" date="2017-09-28 00:00:00 &#43;0000 UTC">September 28, 2017</time></span>
-						</div>
-						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/consulting/" rel="bookmark">Contracting/Consulting</a></h1>
-					</header>
-					<div class="entry-content">
-						From website development, home automation, to Ip-based security cameras, if you are ready to join to millions of users and businesses already empowering themselves with tomorrows open source technology, email us at justyn@nextwavesolutions.io we would love to solve your problems with our solutions. <a href="/post/consulting/">... Read More</a>
-					</div>
-				</article>
-                
 
 			</div>
-		</div>
+		</div> 
 
-		<center class="">
-			<ul class="pagination">
-                
+        <div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
 
-<ul class="pagination">
-    
-    <li>
-        <a href="/post/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-    </li>
-    
-    <li
-    >
-    <a href="/post/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-    </li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li
-    ><a href="/post/">1</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li
-    class="active"><a href="/post/page/2/">2</a></li>
-    
-    
-    <li
-    class="disabled">
-    <a href="" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-    </li>
-    
-    <li>
-        <a href="/post/page/2/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-    </li>
-    
-</ul>
+				<div id="share">
+                    
+				</div>
+			</div>
+		</div> 
+		<div class="clearfix"></div>
 
-			</ul>
-		</center>
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
 
+				<div id="comments">
+                    
+				</div>
+			</div>
+		</div> 
+		<div class="clearfix"></div>
 
 	</div>	
 
