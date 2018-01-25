@@ -1,5 +1,5 @@
 ---
-title: "Building a Content Management Solution with Go"
+title: "Building a Web Based Hosting Control Panel with Go"
 date: 2018-01-25
 draft: false
 author: "George Shaw"
