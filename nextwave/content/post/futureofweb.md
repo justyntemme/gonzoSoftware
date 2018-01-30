@@ -1,5 +1,5 @@
 ---
-title: "Desktop is Dead and Why Google Approves"
+title:"Desktop is Dead: Why Google Approves"
 date: 2018-01-30
 draft: false
 ---
