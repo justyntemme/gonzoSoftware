@@ -9,6 +9,7 @@ I didn't say it, Google did. With Google's [AMP conference](https://www.ampproje
 ### Mobile vs Desktop
 Modern Websites typically have a responsive design, and tailor the experience to your screen size/browser. We live in a time where a perfect desktop only site is doomed to failure, while a mobile-only site looks a little out of place on the desktop. Web Developers are caught developing for two different platforms and experiences, trying to implement a common look and aesthetic.
 ![mobilevsdesktop](https://www.stonetemple.com/wp-content/uploads/2017/04/desktop-vs-mobile-visits-pie-chart.jpg)
+<em style="color: #aaa;">image credit: <a href="https://www.stonetemple.com/mobile-vs-desktop-usage-mobile-grows-but-desktop-still-a-big-player/" style="color:#aaa;text-decoration: underline;">stone temple</a></em>
 
 It's clear mobile is leading the trend with clear growth and a trajectory to take over the desktop.
 
