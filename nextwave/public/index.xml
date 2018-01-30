@@ -6,10 +6,20 @@
     <description>Recent content on NextWave Solutions LLC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://nextwavesolutions.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Desktop is Dead and Why Google Approves</title>
+      <link>https://nextwavesolutions.io/post/futureofweb/</link>
+      <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://nextwavesolutions.io/post/futureofweb/</guid>
+      <description>I didn&amp;rsquo;t say it, Google did. With Google&amp;rsquo;s AMP conference right around the corner, we can expect to see more of the tooling that will kill the desktop browser paradigm. This is just one of the ways Google intends on further replacing desktop browser usage, with the mobile screen.
+Mobile vs Desktop Modern Websites typically have a responsive design, and tailor the experience to your screen size/browser. We live in a time where a perfect desktop only site is doomed to failure, while a mobile-only site looks a little out of place on the desktop.</description>
+    </item>
     
     <item>
       <title>Building a Web Based Hosting Control Panel with Go</title>
