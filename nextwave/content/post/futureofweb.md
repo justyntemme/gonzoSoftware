@@ -28,7 +28,3 @@ Usage defines engagement. How you use an app is how you engage with it. Clearly,
 
 ### Progressive Web Apps
 Googles version of a Progressive Web App, changes the interpretation of a website. With more frameworks and tooling being released, it's clear the idea of a desktop site will be restricted to certain functionalities. The phone is the new personal computer, and it's not going anywhere soon.
-~                                                                               
-~                                                                               
-~                                                                               
-~                     
