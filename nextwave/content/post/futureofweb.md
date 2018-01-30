@@ -1,5 +1,5 @@
 ---
-title:"Desktop is Dead: Why Google Approves"
+title: "Desktop is Dead: Why Google Approves"
 date: 2018-01-30
 draft: false
 ---
@@ -18,7 +18,7 @@ Mobile does more than just change the view of the website, it offers much more i
    
 #### Location
 
-Desktop location can offer some detail to advertisers like where the user lives, and generally help establish a demographic. However, mobile can tell much more about a user. For instance, if a user frequents a specific coffee shop before school, desktop would have know idea. Mobile can not only infer your favorite caffés, it can also track where you go to school, where you like to eat, where you pick up your groceries, down to where you get your haircut. Mobile offers a different view, and it's not talking about the view of the webpage, but the view into the users unique habits, a view of the user's life.
+Desktop location can offer some detail to advertisers like where the user lives, and generally help establish a demographic. However, mobile can tell much more about a user. For instance, if a user frequents a specific coffee shop before school, desktop has no way of detecting. Mobile can not only infer your favorite caffés, it can also track where you go to school, where you like to eat, where you pick up your groceries, down to where you get your haircut. Mobile offers a different view, and it's not talking about the view of the webpage, but the view into the users unique habits, a view of the user's life.
 
 #### Engagement
 Engagement is something advertisers hear all the time. To engage with your audience is to build a relationship, and brand loyalty. While desktop may offer unique opportunities for engagement, like a coupon code for returning visitors, it pails in comparison to the opportunities of mobile. From the camera, to Foursquare's ability to generate conversations about stores, mobile continues to lead in user engagement providing unique opportunities for customers to interact with brands they love.
