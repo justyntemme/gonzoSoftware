@@ -130,31 +130,23 @@
 
 <p>It&rsquo;s well documented Go is my favorite programming language. Once again I get to explain how simple it is to create secure effective apps using the tooling built into the language. As expected with most things, goes implementation of rate limiting is basic enough to be used by any junior developer, and scales with tools and would make any senior developer ecstatic.</p>
 
-<p><code>import &quot;time&quot;</code></p>
+<p><code>import &quot;time&quot;</code>
+We will start by importing the time package. This will allow us to dictate the frequency we allow requests.</p>
 
-<p>We will start by importing the time package. This will allow us to dictate the frequency we allow requests.</p>
-
-<pre><code>
-rate:= time.Second / 10
+<pre><code class="language-go">rate:= time.Second / 10
 
 burstLimit := 100
 
 tick := time.NewTicker(rate)
 
 defer tick.Stop()
-
-
-
-
-
 </code></pre>
 
 <p>Here we are defining the options for our limiter, as well as implementing a burst limit to allow for fast response calls, and still limit the amount in a given time frame.</p>
 
 <p><code>throttle := make(chan time.time, burstLimit)</code> This will create a channel that another function can peek into and see the time or burstLimit. This will allow us to use go routines to manage requests.</p>
 
-<pre><code>
-go func() {
+<pre><code class="language-go">go func() {
 
   for t := range tick.C {
 
@@ -174,8 +166,7 @@ go func() {
 
 <p>This is the goRoutine that will tick the timer forward, and at every tick, check if the requests are greater than the burstLimit.</p>
 
-<pre><code>
-for req := range requests {
+<pre><code class="language-go">for req := range requests {
 
   &lt;-throttle  // rate limit our Service.Method RPCs
 
