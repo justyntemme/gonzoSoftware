@@ -101,6 +101,19 @@
 				<article class="post">
 					<header class="entry-header">
 						<div class="entry-meta">
+							<span class="posted-on"><time class="entry-date published" date="2018-04-12 13:39:48 -0500 CDT">April 12, 2018</time></span>
+						</div>
+						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/rate-limiting/" rel="bookmark">How to DOS Yourself With Argon2</a></h1>
+					</header>
+					<div class="entry-content">
+						Recently while penetration testing a clients server I found a DOS attack via a simple post request. On a page which took text input, as well as a hashing method, and returned the hash string, I was able to DOS the entire server.
+Starve the CPU The exploit was a simple bash script that made a POST request with the text as testing and the hash function, Argon2. Now one interesting thing to note is exactly how much CPU usage each hash function takes. <a href="/post/rate-limiting/">... Read More</a>
+					</div>
+				</article>
+                
+				<article class="post">
+					<header class="entry-header">
+						<div class="entry-meta">
 							<span class="posted-on"><time class="entry-date published" date="2018-04-06 10:03:42 -0500 CDT">April 6, 2018</time></span>
 						</div>
 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/modernphpmalware/" rel="bookmark">Modern Wordpress Malware</a></h1>
@@ -211,19 +224,6 @@ How does it work Bitcoin works by creating a network of computers that relay tra
 					</header>
 					<div class="entry-content">
 						So you have just learned Golang, built a webserver, and are ready to show the world what you can do. That&rsquo;s great! Go is a very great language that scales well. In fact, many of the tools used to deliver this web page to you are written in Go. Hugo, a static website generator, was used to build the webpage. A simple Go file server is used to serve the webpage. <a href="/post/containgo/">... Read More</a>
-					</div>
-				</article>
-                
-				<article class="post">
-					<header class="entry-header">
-						<div class="entry-meta">
-							<span class="posted-on"><time class="entry-date published" date="2017-09-29 12:39:51 -0500 CDT">September 29, 2017</time></span>
-						</div>
-						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/whyfedora/" rel="bookmark">Why Fedora? - Benefits of the best Linux Distro - NextWave Solutions</a></h1>
-					</header>
-					<div class="entry-content">
-						Many Linux advocates are familiar with CentOS and RHEL as their primary server distrobutions. Fedora is often treated as the desktop RHEL distribution, instead of a fully qualified server distribution.
-Packages | We have hit the sweet spot The Fedora project lives in a sweet spot: the packages stay very stable, and I still manage to get up to date software without having to sacrifice stability (I&rsquo;m looking at you Arch Linux). <a href="/post/whyfedora/">... Read More</a>
 					</div>
 				</article>
                 

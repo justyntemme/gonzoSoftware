@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+
+	<title>How to DOS Yourself With Argon2</title>
+
+	<link rel="shortcut icon" href="https://nextwavesolutions.io/">
+
+	
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	
+	<link rel="stylesheet" href="https://nextwavesolutions.io/css/styles.css">
+
+	
+
+    
+        <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=123456789012345678901234&product=inline-share-buttons"></script>
+    
+
+</head>
+<body class="home">
+
+<header id="header">
+	<div id="head" class="parallax" parallax-speed="2">
+		<video autoplay loop muted>
+			<source src="/videos/webdesign.mp4" type="video/mp4">
+			<source src="/videos/webdesign.webm" type="video/webm">
+			<source src="/videos/webdesign.ogv" type="video/ogg; codecs='theora, vorbis'">
+		</video>
+		<h1 id="logo" class="col-md-4 col-md-offset-4 centered text-center">
+			<img class="img-circle" src="https://nextwavesolutions.io/images/nextWave.png" alt="">
+			<span class="title">NextWave Solutions</span>
+			<span class="tagline">Propelling the NextWave of technology<br>
+				<a href="">justyn@nextwavesolutions.io</a>
+            </span>
+		</h1>
+	</div>
+
+    <nav class="navbar navbar-default navbar-sticky">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav">
+                
+                <li>
+                    <a href="/">home</a>
+                </li>
+                
+                <li>
+                    <a href="/post/">blog</a>
+                </li>
+                
+                <li>
+                    <a href="/post/about/">About Me</a>
+                </li>
+                
+                <li>
+                    <a href="/post/consulting/">Contracting/Consulting</a>
+                </li>
+                
+                <li>
+                    <a href="/post/whoami/">Who is NextWave?</a>
+                </li>
+                
+                
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+
+</header>
+
+
+<main id="main">
+
+	<div class="container">
+
+		<div class="row topspace">
+			<div class="col-sm-8 col-sm-offset-2">
+
+ 				<article class="post">
+					<header class="entry-header">
+ 						<div class="entry-meta">
+ 							<span class="posted-on"><time class="entry-date published" date="2018-04-12 13:39:48 -0500 CDT">April 12, 2018</time></span>
+ 						</div>
+ 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/rate-limiting/" rel="bookmark">How to DOS Yourself With Argon2</a></h1>
+					</header>
+					<div class="entry-content">
+						
+
+<p>Recently while penetration testing a clients server I found a DOS attack via a simple post request. On a page which took text input, as well as a hashing method, and returned the hash string, I was able to DOS the entire server.</p>
+
+<h2 id="starve-the-cpu">Starve the CPU</h2>
+
+<p>The exploit was a simple bash script that made a POST request with the text as <code>testing</code> and the hash function, <code>Argon2</code>. Now one interesting thing to note is exactly how much CPU usage each hash function takes. Many would consider this all the more reason to use Argon2 over a weak hashing function like MD5, I would agree. The issue is not within Argon2. It is a much superior hashing function. However, when a small 1 core 512mb digital ocean droplet is told to hash strings thousands of times, one after the other, the CPU usage quickly goes from idle to 100%. This caused the entire server to stop responding until we stopped the script.</p>
+
+<h2 id="mitigations">Mitigations</h2>
+
+<p>Just how can we stop attacks like this from occurring? Well as with all security, it must be thought of during the design of the software. The entire system must be taken into account as a single functioning body with many parts.</p>
+
+<h3 id="efficiency-o-o">Efficiency O(o)</h3>
+
+<p>When engineering any piece of software, from API to full-scale application, one must think of efficiency of the entire system. Does the size of the request, match the amount of processing it would take? Many would consider this to be O(o), or <code>amount of time grows linearly with the size of the input</code>. You can find the explanation referenced and more information on Big O notation explained very methodically <a href="http://www.itprotoday.com/software-development/defeating-denial-service-cpu-starvation-attacks">here</a>.</p>
+
+<h3 id="rate-limiting">Rate Limiting</h3>
+
+<p>If the goal of efficiency simply can not be met due to requirements of the software, one can look to limit the rate at which requests can be made, otherwise known as rate limiting. By stopping an attacker from leveraging an inefficient request, you can allow the server enough time to complete the function and return for the next, rather than dying a slow death.</p>
+
+<h4 id="rate-limiting-an-api-in-go">Rate Limiting an API in Go</h4>
+
+<p>It&rsquo;s well documented Go is my favorite programming language. Once again I get to explain how simple it is to create secure effective apps using the tooling built into the language. As expected with most things, goes implementation of rate limiting is basic enough to be used by any junior developer, and scales with tools and would make any senior developer ecstatic.</p>
+
+<p><code>import &quot;time&quot;</code></p>
+
+<p>We will start by importing the time package. This will allow us to dictate the frequency we allow requests.</p>
+
+<pre><code>
+rate:= time.Second / 10
+
+burstLimit := 100
+
+tick := time.NewTicker(rate)
+
+defer tick.Stop()
+
+
+
+
+
+</code></pre>
+
+<p>Here we are defining the options for our limiter, as well as implementing a burst limit to allow for fast response calls, and still limit the amount in a given time frame.</p>
+
+<p><code>throttle := make(chan time.time, burstLimit)</code> This will create a channel that another function can peek into and see the time or burstLimit. This will allow us to use go routines to manage requests.</p>
+
+<pre><code>
+go func() {
+
+  for t := range tick.C {
+
+    select {
+
+      case throttle &lt;- t:
+
+      default:
+
+    }
+
+  }  // does not exit after tick.Stop()
+
+}()
+
+</code></pre>
+
+<p>This is the goRoutine that will tick the timer forward, and at every tick, check if the requests are greater than the burstLimit.</p>
+
+<pre><code>
+for req := range requests {
+
+  &lt;-throttle  // rate limit our Service.Method RPCs
+
+  go client.Call(&quot;Service.Method&quot;, req, ...)
+
+}
+
+</code></pre>
+
+<p>Here is our final piece of code. This will look through the requests and check tick the counter within the channel the goRoutine uses. If tick.Stop is not called then the service request will carry on as normal. To see the full source code, as well as see more advanced rate limiting implementations visit the <a href="https://github.com/golang/go/wiki/RateLimiting">Golang Wiki</a></p>
+
+					</div>
+				</article>
+
+			</div>
+		</div> 
+
+        <div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+
+				<div id="share">
+                    
+				</div>
+			</div>
+		</div> 
+		<div class="clearfix"></div>
+
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+
+				<div id="comments">
+                    
+				</div>
+			</div>
+		</div> 
+		<div class="clearfix"></div>
+
+	</div>	
+
+</main>
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Contact</h3>
+				<div class="widget-body">
+					<p><br>
+						<a href="mailto:justyn@nextwavesolutions.io">justyn@nextwavesolutions.io</a><br>
+						<br>
+						
+					</p>
+				</div>
+			</div>
+			
+
+			
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Follow me</h3>
+				<div class="widget-body">
+					<p class="follow-me-icons">
+                        
+                            
+                                <a href="https://twitter.com/nextwavesllc" target="_blank"><i class="fa fa-twitter-square fa-2"></i></a>
+                            
+                        
+                            
+                        
+                            
+                                <a href="https://github.com/justyntemme" target="_blank"><i class="fa fa-github fa-2"></i></a>
+                            
+                        
+                            
+                        
+					</p>
+				</div>
+			</div>
+			
+
+			
+
+			
+
+		</div> 
+	</div>
+</footer>
+
+<footer id="underfooter">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p></p>
+				</div>
+			</div>
+
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p class="text-right">
+						Copyright &copy; , NextWave Solutions<br>
+						Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> - 
+                        Powered by: <a href="https://gohugo.io/" rel="poweredby">Hugo</a>
+                    </p>
+				</div>
+			</div>
+
+		</div> 
+	</div>
+</footer>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="https://nextwavesolutions.io/js/template.js"></script>
+<script id="dsq-count-scr" src="//nextwavesolutions.io/count.js" async></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-109147161-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+

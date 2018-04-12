@@ -6,10 +6,20 @@
     <description>Recent content in Posts on NextWave Solutions LLC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Apr 2018 10:03:42 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 12 Apr 2018 13:39:48 -0500</lastBuildDate>
     
 	<atom:link href="https://nextwavesolutions.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to DOS Yourself With Argon2</title>
+      <link>https://nextwavesolutions.io/post/rate-limiting/</link>
+      <pubDate>Thu, 12 Apr 2018 13:39:48 -0500</pubDate>
+      
+      <guid>https://nextwavesolutions.io/post/rate-limiting/</guid>
+      <description>Recently while penetration testing a clients server I found a DOS attack via a simple post request. On a page which took text input, as well as a hashing method, and returned the hash string, I was able to DOS the entire server.
+Starve the CPU The exploit was a simple bash script that made a POST request with the text as testing and the hash function, Argon2. Now one interesting thing to note is exactly how much CPU usage each hash function takes.</description>
+    </item>
     
     <item>
       <title>Modern Wordpress Malware</title>
