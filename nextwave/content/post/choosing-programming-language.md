@@ -17,7 +17,7 @@ Python was not where I stopped. Shortly after I picked up C, and watched many co
 
 ## Go Go Speed Racer
 
-Enter Golang, and specifically Todd Mcloud. Having access to the internet meant I had a wealth of knowledge at my fingertips. Hearing about this exciting programming language coming from Google I had decided to pickup a class on it. Perhaps It could teach me some things I didn't already know about programming. That is exactly what happened. Learning Go gave myself an abstraction layer above C. A lot of the data models and structures I had learned to create by hand, or with helper libraries, came default in Go. I was able to use my knowledge of how C worked, and rapidly build applications with a great set of libraries and frameworks for the Go language. My understanding allowed me to jump into the Go source to see how certain things were implemented, and understand how to best use them because of this.
+Enter Golang, and specifically Todd McLeod. Having access to the internet meant I had a wealth of knowledge at my fingertips. Hearing about this exciting programming language coming from Google I had decided to pickup a class on it. Perhaps It could teach me some things I didn't already know about programming. That is exactly what happened. Learning Go gave myself an abstraction layer above C. A lot of the data models and structures I had learned to create by hand, or with helper libraries, came default in Go. I was able to use my knowledge of how C worked, and rapidly build applications with a great set of libraries and frameworks for the Go language. My understanding allowed me to jump into the Go source to see how certain things were implemented, and understand how to best use them because of this.
 
 ## The glue of the internet
 
