@@ -4,6 +4,7 @@ date: 2018-04-25T08:57:04-05:00
 ---
 
 > Jack of all trades, master of none. Often better, than a master of one. 
+
 Adam Savage 
 
 ## Master of one
