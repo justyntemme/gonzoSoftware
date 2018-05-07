@@ -5,7 +5,7 @@
 		{
 			"src": "images/mextWave.png",
 			"type": "image/png",
-			"sizes", "140x140"
+			"sizes":, "140x140"
 		}
 	],
 	"start_url": "index.html?launcher=true"
