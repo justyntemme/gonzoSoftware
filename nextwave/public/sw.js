@@ -4,31 +4,21 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.1.0/workbox
 if (workbox) {
 	console.log('Yay! Workbox is loaded 🎉');
 	workbox.routing.registerRoute(
-		new RegExp('.*\.css'),
-		workbox.strategies.cacheFirst({
-			cacheName: 'css-cache',
-			plugins: [
-				new workbox.expiration.Plugin({
-					maxEntries: 20,
-					maxageSeconds: 7 * 24 * 60 * 60,
-				})
-			],
-		})
-
+		/\.(?:js|css)$/,
+		workbox.strategies.staleWhileRevalidate(),
 	);
 	workbox.routing.registerRoute(
-		new RegExp('.*\.png'),
+		/\.(?:png|gif|jpg|jpeg|svg)$/,
 		workbox.strategies.cacheFirst({
-			cacheName: 'image-cache',
-			plugins: [
-				new workbox.expiration.Plugin({
-					maxEntries: 20,
-					maxageSeconds: 7 * 24 * 60 * 60,
-				})
-			],
-		})
-
-	);
+		  cacheName: 'images',
+		  plugins: [
+			new workbox.expiration.Plugin({
+			  maxEntries: 60,
+			  maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+			}),
+		  ],
+		}),
+	);    
 } else {
   console.log('Boo! Workbox didnt load 😬');
 }
