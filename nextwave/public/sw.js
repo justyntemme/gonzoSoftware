@@ -16,6 +16,19 @@ if (workbox) {
 		})
 
 	);
+	workbox.routing.registerRoute(
+		new RegExp('.*\.png'),
+		workbox.strategies.cacheFirst({
+			cacheName: 'image-cache',
+			plugins: [
+				new workbox.expiration.Plugin({
+					maxEntries: 20,
+					maxageSeconds: 7 * 24 * 60 * 60,
+				})
+			],
+		})
+
+	);
 } else {
   console.log('Boo! Workbox didnt load 😬');
 }
