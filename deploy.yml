@@ -1,0 +1,38 @@
+---
+apiVersion: "extensions/v1beta1"
+kind: "Deployment"
+metadata:
+  name: "nextwavesolutions"
+  namespace: "default"
+  labels:
+    app: "nextwavesolutions"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: "nextwavesolutions"
+  template:
+    metadata:
+      labels:
+        app: "nextwavesolutions"
+    spec:
+      containers:
+      - name: "nextwavesolutions"
+        image: "nextwavesolutionsllc/nextwavesolutions"
+---
+apiVersion: "autoscaling/v1"
+kind: "HorizontalPodAutoscaler"
+metadata:
+  name: "nextwavesolutions-hpa"
+  namespace: "default"
+  labels:
+    app: "nextwavesolutions"
+spec:
+  scaleTargetRef:
+    kind: "Deployment"
+    name: "nextwavesolutions"
+    apiVersion: "apps/v1beta1"
+  minReplicas: 1
+  maxReplicas: 5
+  targetCPUUtilizationPercentage: 80
+

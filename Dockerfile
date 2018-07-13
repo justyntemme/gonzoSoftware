@@ -1,10 +1,11 @@
-FROM golang:latest
+FROM bitnami/nginx
 
-RUN go get github.com/justyntemme/nextwave
-RUN go install github.com/justyntemme/nextwave
-RUN cp -r /go/src/github.com/justyntemme/nextwave/nextwave/public /go/bin/
-EXPOSE 8080
-ENTRYPOINT ["nextwave"]
+COPY nextwave/public /app
 
-EXPOSE 8080
+COPY certs-nextwavesolutions.io/cert1.pem /bitnami/nginx/conf/bitnami/certs/server.crt
 
+COPY certs-nextwavesolutions.io/privkey1.pem /bitnami/nginx/conf/bitnami/certs/server.key
+
+EXPOSE 80
+
+EXPOSE 443
