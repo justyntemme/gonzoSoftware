@@ -1,0 +1,12 @@
+{
+	"short_name": "NextWave",
+	"name": "NextWave Solutions LLC",
+	"icons": [
+		{
+			"src": "images/mextWave.png",
+			"type": "image/png",
+			"sizes": "140x140"
+		}
+	],
+	"start_url": "index.html?launcher=true"
+}

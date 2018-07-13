@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NextWave Solutions LLC</title>
-    <link>http://localhost:1313/</link>
+    <link>http://nextwavesolutions.io/</link>
     <description>Recent content on NextWave Solutions LLC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 25 Apr 2018 08:57:04 -0500</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://nextwavesolutions.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Choosing the right tool: How to pick the right programming language</title>
-      <link>http://localhost:1313/post/choosing-programming-language/</link>
+      <link>http://nextwavesolutions.io/post/choosing-programming-language/</link>
       <pubDate>Wed, 25 Apr 2018 08:57:04 -0500</pubDate>
       
-      <guid>http://localhost:1313/post/choosing-programming-language/</guid>
+      <guid>http://nextwavesolutions.io/post/choosing-programming-language/</guid>
       <description>Jack of all trades, master of none. Often better, than a master of one.
  Adam Savage
 Master of one When I first started programming, I had figured I would learn python. It was easy enough for a young me to learn. It was powerful and could do a whole lot. I told myself the more time I spent in this language the better I would be. I spent about two years learning python.</description>
@@ -24,49 +24,49 @@ Master of one When I first started programming, I had figured I would learn pyth
     
     <item>
       <title>How to DOS Yourself With Argon2</title>
-      <link>http://localhost:1313/post/rate-limiting/</link>
+      <link>http://nextwavesolutions.io/post/rate-limiting/</link>
       <pubDate>Thu, 12 Apr 2018 13:39:48 -0500</pubDate>
       
-      <guid>http://localhost:1313/post/rate-limiting/</guid>
+      <guid>http://nextwavesolutions.io/post/rate-limiting/</guid>
       <description>Recently while penetration testing a clients server I found a DOS attack via a simple post request. On a page which took text input, as well as a hashing method, and returned the hash string, I was able to DOS the entire server.
 Starve the CPU The exploit was a simple bash script that made a POST request with the text as testing and the hash function, Argon2. Now one interesting thing to note is exactly how much CPU usage each hash function takes.</description>
     </item>
     
     <item>
       <title>Modern Wordpress Malware</title>
-      <link>http://localhost:1313/post/modernphpmalware/</link>
+      <link>http://nextwavesolutions.io/post/modernphpmalware/</link>
       <pubDate>Fri, 06 Apr 2018 10:03:42 -0500</pubDate>
       
-      <guid>http://localhost:1313/post/modernphpmalware/</guid>
+      <guid>http://nextwavesolutions.io/post/modernphpmalware/</guid>
       <description>As an interpreted language, PHP has the unique problem of disclosing all of its source code. This does not benefit malware developers trying to hide their code. Obfuscation helps, but only to a certain extent. This is to the benefit of security researchers. After finding a nasty infestation on a clients site, I was intrigued by the different ways these malware devs were using the web to defeat modern anti-virus techniques.</description>
     </item>
     
     <item>
       <title>Desktop is Dead: Why Google Approves</title>
-      <link>http://localhost:1313/post/futureofweb/</link>
+      <link>http://nextwavesolutions.io/post/futureofweb/</link>
       <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/futureofweb/</guid>
+      <guid>http://nextwavesolutions.io/post/futureofweb/</guid>
       <description>I didn&amp;rsquo;t say it, Google did. With Google&amp;rsquo;s AMP conference right around the corner, we can expect to see more of the tooling that will kill the desktop browser paradigm. This is just one of the ways Google intends on further replacing desktop browser usage, with the mobile screen.
 Mobile vs Desktop Modern Websites typically have a responsive design, and tailor the experience to your screen size/browser. We live in a time where a perfect desktop only site is doomed to failure, while a mobile-only site looks a little out of place on the desktop.</description>
     </item>
     
     <item>
       <title>Building a Web Based Hosting Control Panel with Go</title>
-      <link>http://localhost:1313/post/gocms/</link>
+      <link>http://nextwavesolutions.io/post/gocms/</link>
       <pubDate>Thu, 25 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/gocms/</guid>
+      <guid>http://nextwavesolutions.io/post/gocms/</guid>
       <description>Author Geroge Shaw github
 Project Beginnings During the development of my interest with Golang, interest within my office, Ennovar, also peaked. We were discussing it in one of our routine staff meetings one day and wanted to try and start some internal projects written in Go, in the interest of being proficient enough as an office to start using Go within our stack. I, like everyone else in the room, was thinking of ideas to start as an internal project when I thought of the idea that has since turned into a real piece of software: gPanel.</description>
     </item>
     
     <item>
       <title>Fast websites with Hugo</title>
-      <link>http://localhost:1313/post/hugo/</link>
+      <link>http://nextwavesolutions.io/post/hugo/</link>
       <pubDate>Sun, 21 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/hugo/</guid>
+      <guid>http://nextwavesolutions.io/post/hugo/</guid>
       <description>Many web designers are moving to static sites to manage content. Not only do static sites generally have faster page speed, the overhead on the parent server is much smaller.
 Hugo Hugo is a static site generator written in Go. Websites are generated instantly with a config file, with all content being managed from markdown files.
 The project directory config.toml This is your site config file. It tells Hugo every piece of information needed to generate your website.</description>
@@ -74,10 +74,10 @@ The project directory config.toml This is your site config file. It tells Hugo e
     
     <item>
       <title>Hugo As a Highly Customizable CMS</title>
-      <link>http://localhost:1313/post/hugocms/</link>
+      <link>http://nextwavesolutions.io/post/hugocms/</link>
       <pubDate>Sun, 21 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/hugocms/</guid>
+      <guid>http://nextwavesolutions.io/post/hugocms/</guid>
       <description>Hugo You can read our intro to Hugo blog post here. Hugo is a great static website generator that NextWave Solutions is using as a content management system.
 Templating One of the main advantages of Hugo is the highly customizable themes. Easily configured, the template engine acts almost as a PHP library. It feels like you are developing on Wordpress, with similar functions.
 Theme directory Found in your project directory then themes/name-of-theme</description>
@@ -85,104 +85,104 @@ Theme directory Found in your project directory then themes/name-of-theme</descr
     
     <item>
       <title>Custom Development</title>
-      <link>http://localhost:1313/service/webdesign/</link>
+      <link>http://nextwavesolutions.io/service/webdesign/</link>
       <pubDate>Fri, 19 Jan 2018 08:52:16 -0600</pubDate>
       
-      <guid>http://localhost:1313/service/webdesign/</guid>
+      <guid>http://nextwavesolutions.io/service/webdesign/</guid>
       <description>From front end web design, to REST API&amp;rsquo;s and backend services, NextWave has you covered. Working with modern, open source technology, NextWave builds around tools that allow for rapid application development.</description>
     </item>
     
     <item>
       <title>Private Networking with Docker and Nginx: Keeping Private Traffic Private</title>
-      <link>http://localhost:1313/post/containerizeitall/</link>
+      <link>http://nextwavesolutions.io/post/containerizeitall/</link>
       <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/containerizeitall/</guid>
+      <guid>http://nextwavesolutions.io/post/containerizeitall/</guid>
       <description>Keeping private traffic private No one needs to be able to see your backend services and databases. Those are strictly for the public web-servers to access.Too many database containers are exposed and are left vulnerable to attack due to sub-par security measures. By keeping database containers only available to traffic from your web servers, you reduce your attack service and increase security for all of your users.
 A single Nginx Container Centralizing keys In the land before time &amp;ndash; er, excuse me - the time before Docker containers, all SSL/TLS certifications would be stored in a centralized server on the bare metal machine.</description>
     </item>
     
     <item>
       <title>HypeBeast Essentials -G </title>
-      <link>http://localhost:1313/service/hbe/</link>
+      <link>http://nextwavesolutions.io/service/hbe/</link>
       <pubDate>Sat, 25 Nov 2017 20:45:54 -0600</pubDate>
       
-      <guid>http://localhost:1313/service/hbe/</guid>
+      <guid>http://nextwavesolutions.io/service/hbe/</guid>
       <description>The drop day is warfare, and it&amp;rsquo;s best bot win. Thousands are spend on launch item days for designer brands, yet even more is gained from the resale value of limited items. Simple economics, supply and demand.</description>
     </item>
     
     <item>
       <title>Bitcoin Investment</title>
-      <link>http://localhost:1313/service/miner/</link>
+      <link>http://nextwavesolutions.io/service/miner/</link>
       <pubDate>Sun, 12 Nov 2017 10:57:06 -0600</pubDate>
       
-      <guid>http://localhost:1313/service/miner/</guid>
+      <guid>http://nextwavesolutions.io/service/miner/</guid>
       <description>As an emerging technology bitcoin can be a murky lake to traverse, however with proper tooling, proprietary metrics, aggregated media, and a history of successful trades, NextWave hopes to be a lighthouse in the Bitcoin market.</description>
     </item>
     
     <item>
       <title>New Project From NextWave: Tools for Bitcoin investment</title>
-      <link>http://localhost:1313/post/miner/</link>
+      <link>http://nextwavesolutions.io/post/miner/</link>
       <pubDate>Sun, 12 Nov 2017 10:57:06 -0600</pubDate>
       
-      <guid>http://localhost:1313/post/miner/</guid>
+      <guid>http://nextwavesolutions.io/post/miner/</guid>
       <description>Many investors are turning to this crypto-currency as it approaches the near $10,000 mark. NextWave Bitcoin Consultation Nextwave is proud to announce a service to help investors and enthusiasts tackle the new challenge that is bitcoin investment. As an emerging technology bitcoin can be a murky lake to traverse, however with proper tooling, proprietary metrics, aggregated media, and a history of successful trades, NextWave hopes to be a lighthouse in the Bitcoin market.</description>
     </item>
     
     <item>
       <title>What is Bitcoin?</title>
-      <link>http://localhost:1313/post/whatisbitcoin/</link>
+      <link>http://nextwavesolutions.io/post/whatisbitcoin/</link>
       <pubDate>Sat, 11 Nov 2017 13:42:13 -0600</pubDate>
       
-      <guid>http://localhost:1313/post/whatisbitcoin/</guid>
+      <guid>http://nextwavesolutions.io/post/whatisbitcoin/</guid>
       <description>Bitcoin is a decentralized cryptocurrency that has recently risen to quite a popularity among enthusiasts and investors alike. Originally created by Satoshi Nakamoto, an anonymous member of an online community. The real identity of this creator has never been discovered.
 How does it work Bitcoin works by creating a network of computers that relay transactions between each other. Each transaction is signed by the sender with a cryptographic key (explained below) that guarantees a few things.</description>
     </item>
     
     <item>
       <title>Contain Go</title>
-      <link>http://localhost:1313/post/containgo/</link>
+      <link>http://nextwavesolutions.io/post/containgo/</link>
       <pubDate>Fri, 29 Sep 2017 16:53:40 -0500</pubDate>
       
-      <guid>http://localhost:1313/post/containgo/</guid>
+      <guid>http://nextwavesolutions.io/post/containgo/</guid>
       <description>So you have just learned Golang, built a webserver, and are ready to show the world what you can do. That&amp;rsquo;s great! Go is a very great language that scales well. In fact, many of the tools used to deliver this web page to you are written in Go. Hugo, a static website generator, was used to build the webpage. A simple Go file server is used to serve the webpage.</description>
     </item>
     
     <item>
       <title>Why Fedora? - Benefits of the best Linux Distro - NextWave Solutions</title>
-      <link>http://localhost:1313/post/whyfedora/</link>
+      <link>http://nextwavesolutions.io/post/whyfedora/</link>
       <pubDate>Fri, 29 Sep 2017 12:39:51 -0500</pubDate>
       
-      <guid>http://localhost:1313/post/whyfedora/</guid>
+      <guid>http://nextwavesolutions.io/post/whyfedora/</guid>
       <description>Many Linux advocates are familiar with CentOS and RHEL as their primary server distrobutions. Fedora is often treated as the desktop RHEL distribution, instead of a fully qualified server distribution.
 Packages | We have hit the sweet spot The Fedora project lives in a sweet spot: the packages stay very stable, and I still manage to get up to date software without having to sacrifice stability (I&amp;rsquo;m looking at you Arch Linux).</description>
     </item>
     
     <item>
       <title>TLS (SSL) All the Things!</title>
-      <link>http://localhost:1313/post/tlsallthethings/</link>
+      <link>http://nextwavesolutions.io/post/tlsallthethings/</link>
       <pubDate>Thu, 28 Sep 2017 19:11:08 -0500</pubDate>
       
-      <guid>http://localhost:1313/post/tlsallthethings/</guid>
+      <guid>http://nextwavesolutions.io/post/tlsallthethings/</guid>
       <description>So you have heard about it, you use it, and it also was once an endeavor that could cost quite a bit of cash. Now thanks to Letsencrypt it&amp;rsquo;s easier than ever to force HTTPS traffic to even static websites on your web server.
 Letsencrypt Letsencrypt is a free CA (certificate authority) that let&amp;rsquo;s anyone that owns a domain generate a trusted certificate for that domain. There are many guides to do this, my favorite being our friends at Fedora Magazine.</description>
     </item>
     
     <item>
       <title>Who is NextWave?</title>
-      <link>http://localhost:1313/post/whoami/</link>
+      <link>http://nextwavesolutions.io/post/whoami/</link>
       <pubDate>Thu, 28 Sep 2017 17:48:13 -0500</pubDate>
       
-      <guid>http://localhost:1313/post/whoami/</guid>
+      <guid>http://nextwavesolutions.io/post/whoami/</guid>
       <description>NextWave is a technology solution company empowering businesses with the next wave of technology. Open source allows for business to break the chains of old proprietary monoliths and become part of a growing community of those who care about the software they run. At NextWave we help businesses use the technology of tomorrow.</description>
     </item>
     
     <item>
       <title>Why open source</title>
-      <link>http://localhost:1313/post/whyopensource/</link>
+      <link>http://nextwavesolutions.io/post/whyopensource/</link>
       <pubDate>Thu, 28 Sep 2017 17:01:20 -0500</pubDate>
       
-      <guid>http://localhost:1313/post/whyopensource/</guid>
+      <guid>http://nextwavesolutions.io/post/whyopensource/</guid>
       <description>“I often compare open source to science. To where science took this whole notion of developing ideas in the open and improving on other peoples’ ideas and making it into what science is today and the incredible advances that we have had.”
  Linus Torvalds
 Security Open source projects allow for peer review. Just like with science journals. Many eyes on a project are much better than a single company taking the helm of security.</description>
@@ -190,47 +190,47 @@ Security Open source projects allow for peer review. Just like with science jour
     
     <item>
       <title>About Me</title>
-      <link>http://localhost:1313/post/about/</link>
+      <link>http://nextwavesolutions.io/post/about/</link>
       <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/about/</guid>
+      <guid>http://nextwavesolutions.io/post/about/</guid>
       <description>Open Source Developer / Technology Consultant
  Email justyn@nextwavesolutions.io Github  </description>
     </item>
     
     <item>
       <title>Contracting/Consulting</title>
-      <link>http://localhost:1313/post/consulting/</link>
+      <link>http://nextwavesolutions.io/post/consulting/</link>
       <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/consulting/</guid>
+      <guid>http://nextwavesolutions.io/post/consulting/</guid>
       <description>From website development, home automation, to Ip-based security cameras, if you are ready to join to millions of users and businesses already empowering themselves with tomorrows open source technology, email us at justyn@nextwavesolutions.io we would love to solve your problems with our solutions.</description>
     </item>
     
     <item>
       <title>Darn... Page not found.</title>
-      <link>http://localhost:1313/404/404/</link>
+      <link>http://nextwavesolutions.io/404/404/</link>
       <pubDate>Sun, 16 Oct 2016 19:28:41 +0200</pubDate>
       
-      <guid>http://localhost:1313/404/404/</guid>
+      <guid>http://nextwavesolutions.io/404/404/</guid>
       <description>You should look somewhere else.</description>
     </item>
     
     <item>
       <title>Oops, you are offline.</title>
-      <link>http://localhost:1313/offline/offline/</link>
+      <link>http://nextwavesolutions.io/offline/offline/</link>
       <pubDate>Sun, 16 Oct 2016 19:28:41 +0200</pubDate>
       
-      <guid>http://localhost:1313/offline/offline/</guid>
+      <guid>http://nextwavesolutions.io/offline/offline/</guid>
       <description>You should try to find some internet connection to browse here.</description>
     </item>
     
     <item>
       <title>Contracting &amp; Consulting</title>
-      <link>http://localhost:1313/service/consulting/</link>
+      <link>http://nextwavesolutions.io/service/consulting/</link>
       <pubDate>Thu, 28 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/service/consulting/</guid>
+      <guid>http://nextwavesolutions.io/service/consulting/</guid>
       <description>NextWave offers affordable consulting to take your business to the next level. From marketing, web design, to SEO, make sure you are staying ahead of everyone else, adapting the NextWave of technology.</description>
     </item>
     

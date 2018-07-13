@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Services on NextWave Solutions LLC</title>
-    <link>http://localhost:1313/service/</link>
+    <link>http://nextwavesolutions.io/service/</link>
     <description>Recent content in Services on NextWave Solutions LLC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Jan 2018 08:52:16 -0600</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/service/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://nextwavesolutions.io/service/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Custom Development</title>
-      <link>http://localhost:1313/service/webdesign/</link>
+      <link>http://nextwavesolutions.io/service/webdesign/</link>
       <pubDate>Fri, 19 Jan 2018 08:52:16 -0600</pubDate>
       
-      <guid>http://localhost:1313/service/webdesign/</guid>
+      <guid>http://nextwavesolutions.io/service/webdesign/</guid>
       <description>From front end web design, to REST API&amp;rsquo;s and backend services, NextWave has you covered. Working with modern, open source technology, NextWave builds around tools that allow for rapid application development.</description>
     </item>
     
     <item>
       <title>HypeBeast Essentials -G </title>
-      <link>http://localhost:1313/service/hbe/</link>
+      <link>http://nextwavesolutions.io/service/hbe/</link>
       <pubDate>Sat, 25 Nov 2017 20:45:54 -0600</pubDate>
       
-      <guid>http://localhost:1313/service/hbe/</guid>
+      <guid>http://nextwavesolutions.io/service/hbe/</guid>
       <description>The drop day is warfare, and it&amp;rsquo;s best bot win. Thousands are spend on launch item days for designer brands, yet even more is gained from the resale value of limited items. Simple economics, supply and demand.</description>
     </item>
     
     <item>
       <title>Bitcoin Investment</title>
-      <link>http://localhost:1313/service/miner/</link>
+      <link>http://nextwavesolutions.io/service/miner/</link>
       <pubDate>Sun, 12 Nov 2017 10:57:06 -0600</pubDate>
       
-      <guid>http://localhost:1313/service/miner/</guid>
+      <guid>http://nextwavesolutions.io/service/miner/</guid>
       <description>As an emerging technology bitcoin can be a murky lake to traverse, however with proper tooling, proprietary metrics, aggregated media, and a history of successful trades, NextWave hopes to be a lighthouse in the Bitcoin market.</description>
     </item>
     
     <item>
       <title>Contracting &amp; Consulting</title>
-      <link>http://localhost:1313/service/consulting/</link>
+      <link>http://nextwavesolutions.io/service/consulting/</link>
       <pubDate>Thu, 28 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/service/consulting/</guid>
+      <guid>http://nextwavesolutions.io/service/consulting/</guid>
       <description>NextWave offers affordable consulting to take your business to the next level. From marketing, web design, to SEO, make sure you are staying ahead of everyone else, adapting the NextWave of technology.</description>
     </item>
     
