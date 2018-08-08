@@ -6,10 +6,31 @@
     <description>Recent content in Posts on NextWave Solutions LLC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Apr 2018 08:57:04 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 08 Aug 2018 08:22:53 -0500</lastBuildDate>
     
 	<atom:link href="http://nextwavesolutions.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Why I started contributing to Docker</title>
+      <link>http://nextwavesolutions.io/post/why-i-contribute/</link>
+      <pubDate>Wed, 08 Aug 2018 08:22:53 -0500</pubDate>
+      
+      <guid>http://nextwavesolutions.io/post/why-i-contribute/</guid>
+      <description>Why I became a Docker contributor
+Experience Just like any spoken language, you must constantly immerse yourself in the language and culture to speak any programming language fluently. By dedicating a portion of my time to a single project, I force myself to come back to difficult tasks. Instead of abandoning a project for a new idea, I have a set amount of time each day I work through the problems I was facing yesterday.</description>
+    </item>
+    
+    <item>
+      <title>Docker to Kubes</title>
+      <link>http://nextwavesolutions.io/post/docker-to-kubes/</link>
+      <pubDate>Wed, 25 Jul 2018 08:16:52 -0500</pubDate>
+      
+      <guid>http://nextwavesolutions.io/post/docker-to-kubes/</guid>
+      <description>If I told you that the transition from Docker to Kubernetes takes an afternoon of seamlessly migrating containers, I would be lying.
+Kubernetes force me to abandon my love for docker-compose. I had to rethink my container orchestration. I would be ditching my well-tweaked Nginx SSL proxy and adopting the “serverless approach”.
+Serverless I never really understood the benefit of serverless architecture. Serverless? Really? That’s for lazy people, I thought.</description>
+    </item>
     
     <item>
       <title>Choosing the right tool: How to pick the right programming language</title>
