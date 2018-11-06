@@ -7,8 +7,8 @@
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 	<link rel="manifest" href="/manifest.json">
 	<title>Docker to Kubes</title>
-
-	<link rel="shortcut icon" href="http://nextwavesolutions.io/">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<link rel="shortcut icon" href="https://nextwavesolutions.io/">
 
 	
 	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
 	
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
 	
-	<link rel="stylesheet" href="http://nextwavesolutions.io/css/styles.css">
+	<link rel="stylesheet" href="https://nextwavesolutions.io/css/styles.css">
 
 	
 	
@@ -35,7 +35,7 @@
 			<source src="/videos/webdesign.ogv" type="video/ogg; codecs='theora, vorbis'">
 		</video>
 		<h1 id="logo" class="col-md-4 col-md-offset-4 centered text-center">
-			<img class="img-circle" src="http://nextwavesolutions.io/images/nextWave.png" alt="">
+			<img class="img-circle" src="https://nextwavesolutions.io/images/nextWave.png" alt="">
 			<span class="title">NextWave Solutions</span>
 			<span class="tagline">Propelling the NextWave of technology<br>
 				<a href="">justyn@nextwavesolutions.io</a>
@@ -102,42 +102,42 @@
  						<div class="entry-meta">
  							<span class="posted-on"><time class="entry-date published" date="2018-07-25 08:16:52 -0500 CDT">July 25, 2018</time></span>
  						</div>
- 						<h1 class="entry-title"><a href="http://nextwavesolutions.io/post/docker-to-kubes/" rel="bookmark">Docker to Kubes</a></h1>
+ 						<h1 class="entry-title"><a href="https://nextwavesolutions.io/post/docker-to-kubes/" rel="bookmark">Docker to Kubes</a></h1>
 					</header>
 					<div class="entry-content">
 						
 
 <p>If I told you that the transition from Docker to Kubernetes takes an afternoon of seamlessly migrating containers, I would be lying.</p>
 
-<p>Kubernetes force me to abandon my love for docker-compose. I had to rethink my container orchestration. I would be ditching my well-tweaked Nginx SSL proxy and adopting the “serverless approach”.</p>
+<p>Kubernetes forced me to abandon my love for docker-compose. I had to rethink my container orchestration. I would be ditching my well-tweaked Nginx SSL proxy and adopting the “serverless approach”.</p>
 
 <h3 id="serverless">Serverless</h3>
 
-<p>I never really understood the benefit of serverless architecture. Serverless? Really? That’s for lazy people, I thought. How wrong I was.</p>
+<p>In the past, I never really understood the benefit of serverless architecture. <em>Serverless? Really? That’s for lazy people,</em> I thought. How wrong I was.</p>
 
 <p>Adopting this approach forced me to think in more depth about how my application would interact with its data and the network in which it exists. I created a container that did not depend on any external data to run. I had been told many times to not include SSL certs in my containers, however, I now do in order for proper scaling to be achieved.</p>
 
 <h3 id="scaling">Scaling</h3>
 
-<p>When I finished creating my stateless application I deployed three instances of it behind a load balancer. Proper scaling had been achieved. With a few clicks, I am able to run as many as even a thousand instances of my application. This is precisely what the serverless architecture is designed for. My applications load holding ability is no longer dependent on just one server, but many servers spread out across the eUnited States</p>
+<p>When I finished creating my stateless application, I deployed three instances of it behind a load balancer. Proper scaling had been achieved. With a few clicks, I am able to run as many as even a thousand instances of my application. This is precisely what the serverless architecture is designed for. My application’s load-holding ability is no longer dependent on just one server, but many servers spread out across the United States.</p>
 
 <h3 id="persistent-volumes">Persistent Volumes</h3>
 
-<p>Typically when setting up persistent data with Docker, one would mount persistent volumes to a parent server. This allows for easy container creation and removal without the fear of accidentally deleting important data, which, is similar to what Google Cloud Platform has to offer. However, it is important to note the persistent volumes claims, Googles approach to permanent data storage can only be accessed with reading / write permissions by a single container at a time. This means the volume can’t act as a storage area for SSL keys for all containers. While it’s generally not a great idea to keep SSL keys in a container image, this is the only solution I have come up with for this issue.</p>
+<p>Typically when setting up persistent data with Docker, one would mount persistent volumes to a parent server. This allows for easy container creation and removal without the fear of accidental data deletion, which is similar to what Google Cloud Platform has to offer. However, it is important to note the persistent volumes claims (Google’s approach to permanent data storage) can only be accessed with read / write permissions by a single container at a time. This means the volume can’t act as a storage area for SSL keys for all containers. While it’s generally not a great idea to keep SSL keys in a container image, this is the only solution I have come up with for this issue.</p>
 
 <p>Persistent Volumes are tied to clusters. You may delete workloads, as well as containers, networks, and services. However, it is important to note that when deleting a cluster, you will be deleting all of its corresponding volumes.</p>
 
 <h3 id="load-balancing-nginx">Load Balancing / Nginx</h3>
 
-<p>As mentioned previously, NGINX load balancing does not work as expected. While probably possible with some proper setup, the simplest method is to use Google’s provided load balancer. I wish I could share some data on how my application was able to handle the significant load from stress testing, but I can’t report that as Google detected automated traffic as a DDOS attack and blocked most requests. So I guess that’s a win for the load balancer</p>
+<p>As mentioned previously, Nginx load balancing does not work as expected. While probably possible with some proper setup, the simplest method is to use Google’s provided load balancer. I wish I could share some data on how my application was able to handle the significant load from stress testing, but I can’t report that as Google detected automated traffic as a DDoS attack and blocked most requests. So I guess that’s a win for the load balancer.</p>
 
-<p>The Google Cloud Platform offers several methods ways to access containers within a node. It is possible to create a direct link exposing a port on a node to an outside source, however, this lacks the scalability and load balancing sought after in Kubernetes. Most often, a load balancer is used to process the request, and forward them to the correct node port. The load balancer will take into consideration resources, as well as which nodes are healthy due to a health check.</p>
+<p>The Google Cloud Platform offers several methods to access containers within a node. It is possible to create a direct link exposing a port on a node to an outside source, however, this lacks the scalability and load balancing sought after in Kubernetes. Most often, a load balancer is used to process the request, and forward them to the correct node port. The load balancer will take into consideration resources, as well as which nodes are healthy due to a health check.</p>
 
 <p>When first using the load balancer I had attempted to handle SSL/TLS on the load balancer. While this is possible, it is not ideal. Wordpress will have a difficult time telling if the connection is secure. This is just an example of issues with WordPress behind an SSL reverse proxy. It seems the better solution is to build your image to scale, handling the secure handshake at the container, and letting the load balancer handle what it was designed to do, load balance.</p>
 
 <h3 id="cost-benefit-analysis">Cost-Benefit analysis</h3>
 
-<p>Overall I am spending the same amount on the Google cloud platform that I was spending on my dedicated server. In time this will probably outgrow my spending if budget allows. While you could probably make more use of a single server for a small network if you are looking to scale your application the cost of using a Kubernetes engine is hands down the best method. I am unaware of any application that allows for the scaling Kubernetes engine does.</p>
+<p>Overall I am spending the same amount on the Google Cloud Platform that I was spending on my dedicated server. In time this will probably outgrow my spending if budget allows. While you could probably make more use of a single server for a small network if you are looking to scale your application the cost of using a Kubernetes engine is hands down the best method. I am unaware of any application that allows for the scaling Kubernetes engine does.</p>
 
 <h3 id="is-it-worth-it">Is it worth it?</h3>
 
@@ -249,7 +249,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="http://nextwavesolutions.io/js/template.js"></script>
+<script src="https://nextwavesolutions.io/js/template.js"></script>
 <script id="dsq-count-scr" src="//nextwavesolutions.io/count.js" async></script>
 <script src="/js/index.js"></script>
 <script>

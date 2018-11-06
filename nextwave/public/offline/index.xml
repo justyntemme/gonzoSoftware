@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Offlines on NextWave Solutions LLC</title>
-    <link>http://nextwavesolutions.io/offline/</link>
+    <link>https://nextwavesolutions.io/offline/</link>
     <description>Recent content in Offlines on NextWave Solutions LLC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 16 Oct 2016 19:28:41 +0200</lastBuildDate>
     
-	<atom:link href="http://nextwavesolutions.io/offline/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nextwavesolutions.io/offline/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Oops, you are offline.</title>
-      <link>http://nextwavesolutions.io/offline/offline/</link>
+      <link>https://nextwavesolutions.io/offline/offline/</link>
       <pubDate>Sun, 16 Oct 2016 19:28:41 +0200</pubDate>
       
-      <guid>http://nextwavesolutions.io/offline/offline/</guid>
+      <guid>https://nextwavesolutions.io/offline/offline/</guid>
       <description>You should try to find some internet connection to browse here.</description>
     </item>
     
